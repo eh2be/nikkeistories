@@ -9,7 +9,7 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     15px;
 
 $text-color:       #DEC575;
 $background-color: #000005;
@@ -47,21 +47,18 @@ $on-laptop:        800px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 30px;
-  max-width: 560px;
+  max-width: 800px;
   min-width: 100px;    
   
   -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
   filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
 
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F3CEC8;
+  border-radius: 10px;
+  background-color: #000005;
 
-//    border-width: 1px;
-//    border-style: solid;
-//    border-color: #F3CEC8;
-//    border-radius: 10px;
-//    opacity: 1;
-
-    background-color: #000005;
-    border-radius: 10px;
 
   .container {
     background-color: #F3CEC8;
