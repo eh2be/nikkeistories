@@ -2,9 +2,9 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    border-top: 10px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-dark;
+    min-height: 40px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -94,6 +94,15 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+
+// sticky footer
+    position: absolute;
+    background-color: #000005;
+    left: 0;
+    bottom: 0;
+    min-height: 30px;   
+    width: 100%;
+
 }
 
 .footer-heading {
@@ -126,8 +135,8 @@
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(65% - (#{$spacing-unit} / 2));
+    width:         calc(65% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
@@ -163,6 +172,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+
+
 }
 
 .page-heading {

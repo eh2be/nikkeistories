@@ -3,26 +3,24 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     15px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       #DEC575;
+$background-color: #000005;
+$brand-color:      #C70025;
 
-$grey-color:       #828282;
+$grey-color:       #E37882;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    960px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -43,6 +41,71 @@ $on-laptop:        800px;
 }
 
 
+// Greg's class and id experiments
+
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px;
+  max-width: 600px;
+  min-width: 100px;    
+  
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+  filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: transparent;
+
+
+  .container {
+    background-color: #F3CEC8;
+    border-radius: 10px;
+    opacity: 0.2;
+
+  }
+
+  .text-block {
+ //   display: block;
+    vertical-align: middle;
+    text-align: justify;
+    font-family: 'Slabo 13px', serif;
+  }
+
+  .image {
+    display: block;
+    margin: 0px;
+    margin-top: 50px;
+    vertical-align: middle;    
+  }
+
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-top: 1px solid $grey-color-dark;
+  border-bottom: 5px solid $grey-color-dark;
+
+  .text{
+    text-align: center;
+    font-size: .8em;
+  }
+}
+
+
+
+.ns-background {
+//  background-image: url("/assets/collage.png");
+//  width: 100%;
+//  height: 100%;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -50,3 +113,7 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// Import Google Fonts
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400italic);
+@import url(http://fonts.googleapis.com/css?family=Slabo+13px);
