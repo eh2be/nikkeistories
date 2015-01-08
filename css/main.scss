@@ -46,8 +46,8 @@ $on-laptop:        800px;
 .carousel {
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 30px;
-  max-width: 800px;
+  padding: 30px 0px;
+  max-width: 600px;
   min-width: 100px;    
   
   -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
@@ -55,9 +55,9 @@ $on-laptop:        800px;
 
   border-width: 1px;
   border-style: solid;
-  border-color: #F3CEC8;
+  border-color: transparent;
   border-radius: 10px;
-  background-color: #000005;
+  background-color: transparent;
 
 
   .container {
@@ -68,21 +68,41 @@ $on-laptop:        800px;
   }
 
   .text-block {
-    display: block;
-    margin: 5px;
+ //   display: block;
     vertical-align: middle;
     text-align: justify;
-
     font-family: 'Slabo 13px', serif;
   }
 
   .image {
+    display: block;
+    margin: 0px;
+    margin-top: 50px;
+    vertical-align: middle;    
   }
 
 }
 
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-top: 1px solid $grey-color-dark;
+  border-bottom: 5px solid $grey-color-dark;
+
+  .text{
+    text-align: center;
+    font-size: .8em;
+  }
+}
+
+
+
 .ns-background {
-  background-image: url("/assets/collage.png");
+//  background-image: url("/assets/collage.png");
 //  width: 100%;
 //  height: 100%;
 }
