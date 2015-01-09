@@ -505,6 +505,9 @@ pre {
   margin: 0;
   padding: 0; }
 
+.gmnoprint img {
+  max-width: none; }
+
 /* Style for our header texts
 * --------------------------------------- */
 h1 {

@@ -121,6 +121,10 @@ $on-laptop:        800px;
 #map-canvas { height: 100%; margin: 0; padding: 0;}
 #map-canvas2 { height: 100%; margin: 0; padding: 0;}
 
+.gmnoprint img {
+    max-width: none; 
+}
+
 
 // fullPage.js example settings
 /* Style for our header texts

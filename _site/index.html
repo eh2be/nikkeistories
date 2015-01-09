@@ -29,7 +29,7 @@
 
   <body class="ns-background">
     <div >
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top" style="background:transparent">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -45,7 +45,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#chronology">Chronology <span class="sr-only">(current)</span></a></li>
+        <li><a href="#chronology">Chronology</a></li>
         <li class="dropdown">
           <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -141,12 +141,16 @@
         var latlng2 = new google.maps.LatLng(49.125735, -123.178775);
         var mapOptions = {
           center: latlng1,
-          zoom: 15,
+          zoom: 17,
           disableDefaultUI: true,
           mapTypeControl: false,
-          zoomControl: false,
+          zoomControl: true,
+          zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.LARGE,
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+          },
           scrollwheel: false,
-          scaleControl: false,
+          scaleControl: true,
           draggable: false,
           disableDoubleClickZoom: true
         };
@@ -155,7 +159,11 @@
           center: latlng2,
           disableDefaultUI: true,
           mapTypeControl: false,
-          zoomControl: false,
+          zoomControl: true,
+          zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.LARGE,
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+          },
           scrollwheel: false,
           scaleControl: false,
           draggable: false,

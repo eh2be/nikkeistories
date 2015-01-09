@@ -74,12 +74,16 @@
         var latlng2 = new google.maps.LatLng(49.125735, -123.178775);
         var mapOptions = {
           center: latlng1,
-          zoom: 15,
+          zoom: 17,
           disableDefaultUI: true,
           mapTypeControl: false,
-          zoomControl: false,
+          zoomControl: true,
+          zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.LARGE,
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+          },
           scrollwheel: false,
-          scaleControl: false,
+          scaleControl: true,
           draggable: false,
           disableDoubleClickZoom: true
         };
@@ -88,7 +92,11 @@
           center: latlng2,
           disableDefaultUI: true,
           mapTypeControl: false,
-          zoomControl: false,
+          zoomControl: true,
+          zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.LARGE,
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+          },
           scrollwheel: false,
           scaleControl: false,
           draggable: false,
