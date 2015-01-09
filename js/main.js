@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
     verticalCentered: false,
-    resize: true,
+    resize: false,
     anchors: ['home', 'chronology', 'maps', 'videos', 'education', 'contact', 'credits'],
     sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
     menu: '#menu',
@@ -12,4 +12,6 @@ $(document).ready(function() {
     // scrollBar: true, //scrollbar make the pages snap more abruptly
     // responsive: 600
     });
+
   });
+

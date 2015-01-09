@@ -99,8 +99,6 @@ $on-laptop:        800px;
   }
 }
 
-
-
 .ns-background {
 //  background-image: url("/assets/collage.png");
 //  width: 100%;
@@ -117,3 +115,94 @@ $on-laptop:        800px;
 // Import Google Fonts
 @import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400italic);
 @import url(http://fonts.googleapis.com/css?family=Slabo+13px);
+
+
+// Google Maps API
+#map-canvas { height: 100%; margin: 0; padding: 0;}
+#map-canvas2 { height: 100%; margin: 0; padding: 0;}
+
+
+// fullPage.js example settings
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+  font-size: 5em;
+  font-family: arial,helvetica;
+  color: #fff;
+  margin:0;
+  padding:0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+  text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6{
+  background-size: cover;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+#section0{
+  background-image: url(imgs/bg1.jpg);
+  background-color: #E37882;
+  padding: 30% 0 0 0;
+}
+#section2{
+  background-image: url(imgs/bg3.jpg);
+  background-color: #F3CEC8;
+  padding: 6% 0 0 0;
+}
+#section3{
+  background-image: url(imgs/bg4.jpg);
+  background-color: #DEC575;    
+  padding: 6% 0 0 0;
+}
+#section4{
+  background-image: url(imgs/bg4.jpg);
+  background-color: #C70025;    
+  padding: 6% 0 0 0;
+}
+#section5{
+  background-image: url(imgs/bg4.jpg);
+  background-color: #000005;    
+  padding: 6% 0 0 0;
+}
+#section6{
+  background-image: url(imgs/bg4.jpg);
+  background-color: #68A68A;    
+  padding: 6% 0 0 0;
+}
+#section3 h1{
+  color: #000;
+}
+
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+  background-image: url(imgs/bg2.jpg);
+  padding: 6% 0 0 0;
+}
+#slide2{
+  background-image: url(imgs/bg5.jpg);
+  padding: 6% 0 0 0;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+}

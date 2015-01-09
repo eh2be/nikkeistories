@@ -13,98 +13,10 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://nikkeistories.com/about/">
   <link rel="alternate" type="application/atom+xml" title="Nikkei Stories 日系物語" href="http://nikkeistories.com/feed.xml" />
-<!--
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.css"/>
--->
 
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/examples.css" />
-  <style>
-
-  /* Style for our header texts
-  * --------------------------------------- */
-  h1{
-    font-size: 5em;
-    font-family: arial,helvetica;
-    color: #fff;
-    margin:0;
-    padding:0;
-  }
-
-  /* Centered texts in each section
-  * --------------------------------------- */
-  .section{
-    text-align:center;
-  }
-
-
-  /* Backgrounds will cover all the section
-  * --------------------------------------- */
-  #section0,
-  #section1,
-  #section2,
-  #section3,
-  #section4,
-  #section5,
-  #section6{
-    background-size: cover;
-  }
-
-  /* Defining each section background and styles
-  * --------------------------------------- */
-  #section0{
-    background-image: url(imgs/bg1.jpg);
-    background-color: #E37882;
-    padding: 30% 0 0 0;
-  }
-  #section2{
-    background-image: url(imgs/bg3.jpg);
-    background-color: #F3CEC8;
-    padding: 6% 0 0 0;
-  }
-  #section3{
-    background-image: url(imgs/bg4.jpg);
-    background-color: #DEC575;    
-    padding: 6% 0 0 0;
-  }
-  #section4{
-    background-image: url(imgs/bg4.jpg);
-    background-color: #C70025;    
-    padding: 6% 0 0 0;
-  }
-  #section5{
-    background-image: url(imgs/bg4.jpg);
-    background-color: #000005;    
-    padding: 6% 0 0 0;
-  }
-  #section6{
-    background-image: url(imgs/bg4.jpg);
-    background-color: #68A68A;    
-    padding: 6% 0 0 0;
-  }
-  #section3 h1{
-    color: #000;
-  }
-
-
-  /*Adding background for the slides
-  * --------------------------------------- */
-  #slide1{
-    background-image: url(imgs/bg2.jpg);
-    padding: 6% 0 0 0;
-  }
-  #slide2{
-    background-image: url(imgs/bg5.jpg);
-    padding: 6% 0 0 0;
-  }
-
-
-  /* Bottom menu
-  * --------------------------------------- */
-  #infoMenu li a {
-    color: #fff;
-  }
-  </style>
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -138,9 +50,49 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/examples.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+<!-- Google Maps API -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHhp-J2jqYmGiMNPYd_gX1prDjqoVp2Pc">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var latlng1 = new google.maps.LatLng(49.282748, -123.094365); 
+        var latlng2 = new google.maps.LatLng(49.125735, -123.178775);
+        var mapOptions = {
+          center: latlng1,
+          zoom: 15,
+          disableDefaultUI: true,
+          mapTypeControl: false,
+          zoomControl: false,
+          scrollwheel: false,
+          scaleControl: false,
+          draggable: false,
+          disableDoubleClickZoom: true
+        };
+        var myOptions2 = {
+          zoom: 15, 
+          center: latlng2,
+          disableDefaultUI: true,
+          mapTypeControl: false,
+          zoomControl: false,
+          scrollwheel: false,
+          scaleControl: false,
+          draggable: false,
+          disableDoubleClickZoom: true
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+        var map2 = new google.maps.Map(document.getElementById('map-canvas2'), myOptions2);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script> 
+
+
 
   </body>
 

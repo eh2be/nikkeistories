@@ -10,9 +10,49 @@
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/examples.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+<!-- Google Maps API -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHhp-J2jqYmGiMNPYd_gX1prDjqoVp2Pc">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var latlng1 = new google.maps.LatLng(49.282748, -123.094365); 
+        var latlng2 = new google.maps.LatLng(49.125735, -123.178775);
+        var mapOptions = {
+          center: latlng1,
+          zoom: 15,
+          disableDefaultUI: true,
+          mapTypeControl: false,
+          zoomControl: false,
+          scrollwheel: false,
+          scaleControl: false,
+          draggable: false,
+          disableDoubleClickZoom: true
+        };
+        var myOptions2 = {
+          zoom: 15, 
+          center: latlng2,
+          disableDefaultUI: true,
+          mapTypeControl: false,
+          zoomControl: false,
+          scrollwheel: false,
+          scaleControl: false,
+          draggable: false,
+          disableDoubleClickZoom: true
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+        var map2 = new google.maps.Map(document.getElementById('map-canvas2'), myOptions2);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script> 
+
+
 
   </body>
 
