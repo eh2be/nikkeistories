@@ -2,9 +2,10 @@
 layout: default
 ---
 
+<!--
 <nav class="navbar navbar-default navbar-fixed-top" style="background:transparent">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Brand and toggle get grouped for better mobile display
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -15,10 +16,45 @@ layout: default
       <a class="navbar-brand" href="#home">Nikkei Stories</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Collect the nav links, forms, and other content for toggling
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#chronology">Chronology</a></li>
+        <li class="dropdown">
+          <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>href="#maps">Powell Street</a></li>
+            <li><a href="#maps/1">Steveston</a></li>
+            <li><a href="#">Victoria</a></li>
+            <li><a href="#">Cumberland</a></li>           
+            <li><a href="#">Lillooet</a></li>     
+            <li class="divider"></li>
+            <li><a href="#">Southern Alberta</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Manitoba</a></li>
+          </ul>
+        </li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#credits">Credits</a></li>                
+      </ul>
+    </div><!-- /.navbar-collapse
+  </div><!-- /.container-fluid
+</nav>
+-->
+
+<!-- Sidebar -->
+<div id="wrapper">
+  <div id="sidebar-wrapper">
+  <a href="#menu-toggle" class="btn-ns" id="menu-toggle">Toggle Menu</a>
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a href="#home">Nikkei Stories</a>
+        </li>
+        <li>
+            <a href="#chronology">Chronology</a>
+        </li>
         <li class="dropdown">
           <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -36,55 +72,50 @@ layout: default
         <li><a href="#videos">Videos</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#credits">Credits</a></li>                
+        <li><a href="#credits">Credits</a></li>    
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+  </div>
+  <!-- /#sidebar-wrapper -->
 
-
-<!--
-<ul id="menu">
-  <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-  <li data-menuanchor="chronology"><a href="#chronology">Chronology</a></li>
-  <li data-menuanchor="maps"><a href="#maps">Maps</a></li>
-  <li data-menuanchor="videos"><a href="#videos">Videos</a></li>
-  <li data-menuanchor="education"><a href="#education">Education</a></li>
-  <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-  <li data-menuanchor="credits"><a href="#credits">Credits</a></li>
-</ul>
--->
-
-<div id="fullpage">
+ 
+  <div id="page-content-wrapper">
   
-  <div class="section " id="section0">
-    <div class="intro">
-      <h1>NS Landing Page</h1>
-    </div>
-  </div>
-  <div class="section" id="section2">
-    <div class="slide" id="slide1" data-anchor="slide1">
-      <h1>Chrono Period A</h1>
-    </div>
-    <div class="slide" id="slide2" data-anchor="slide2">
-      <h1>Chrono Period B</h1>
-    </div>
-    <div class="slide" id="slide2"><h1>Chrono Period C</h1></div>
-    <div class="slide" id="slide2"><h1>Chrono Period D</h1></div>
-    <div class="slide" id="slide2"><h1>Chrono Period E</h1></div>
-  </div>
-  <div class="section">
-      <div class="slide">
-        <div id="map-canvas"></div>
+    <div id="fullpage">
+
+
+
+      <div class="section " id="section0">
+        <div class="intro">
+          <h1>NS Landing Page</h1>
+        </div>
       </div>
-      <div class="slide">
-        <div id="map-canvas2"></div>
+      <div class="section" id="section2">
+        <div class="slide" id="slide1" data-anchor="slide1">
+          <h1>Chrono Period A</h1>
+        </div>
+        <div class="slide" id="slide2" data-anchor="slide2">
+          <h1>Chrono Period B</h1>
+        </div>
+        <div class="slide" id="slide2"><h1>Chrono Period C</h1></div>
+        <div class="slide" id="slide2"><h1>Chrono Period D</h1></div>
+        <div class="slide" id="slide2"><h1>Chrono Period E</h1></div>
       </div>
+      <div class="section">
+          <div class="slide">
+            <div id="map-canvas"></div>
+          </div>
+          <div class="slide">
+            <div id="map-canvas2"></div>
+          </div>
+      </div>
+      <div class="section" id="section3"><h1>Video Index</h1></div>
+      <div class="section" id="section4"><h1>Education<br />for kids</h1></div>
+      <div class="section" id="section5"><h1>Contact</h1></div>
+      <div class="section" id="section6"><h1>Credits</h1></div>
+
+    </div>
+
   </div>
-  <div class="section" id="section3"><h1>Video Index</h1></div>
-  <div class="section" id="section4"><h1>Education<br />for kids</h1></div>
-  <div class="section" id="section5"><h1>Contact</h1></div>
-  <div class="section" id="section6"><h1>Credits</h1></div>
 
 </div>
 

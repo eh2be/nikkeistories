@@ -17,6 +17,7 @@
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/examples.css" />
+  <link rel="stylesheet" type="text/css" href="css/simple-sidebar.css" />
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -99,6 +100,15 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script> 
+
+
+<!-- siderbar menu -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+      });
+    </script>
 
 
 
