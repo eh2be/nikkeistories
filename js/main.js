@@ -10,8 +10,12 @@ $(document).ready(function() {
     navigationTooltips: ['Home', 'Chronology', 'Maps', 'Videos', 'Education', 'Contact', 'Credits'],
     continuousVertical: true,
     // scrollBar: true, //scrollbar make the pages snap more abruptly
-    // responsive: 600
+     // responsive: 600
     });
+
+// sidebar ver2
+
+
 
   });
 

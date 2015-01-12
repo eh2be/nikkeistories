@@ -39,15 +39,14 @@ layout: default
         <li><a href="#contact">Contact</a></li>
         <li><a href="#credits">Credits</a></li>                
       </ul>
-    </div><!-- /.navbar-collapse
-  </div><!-- /.container-fluid
+
 </nav>
 -->
 
-<!-- Sidebar -->
+<!-- Sidebar ver 1  
 <div id="wrapper">
-  <div id="sidebar-wrapper">
   <a href="#menu-toggle" class="btn-ns" id="menu-toggle">Toggle Menu</a>
+  <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
             <a href="#home">Nikkei Stories</a>
@@ -75,14 +74,71 @@ layout: default
         <li><a href="#credits">Credits</a></li>    
       </ul>
   </div>
-  <!-- /#sidebar-wrapper -->
+</div>
+-->
 
- 
-  <div id="page-content-wrapper">
-  
+
+
+
+
+<!-- sidebar ver  -->
+
+
+     <nav class='sidebar sidebar-menu-collapsed'>
+        <a class='expandable' href='#' id='justify-icon' title="Toggle Menu">
+          <span class='glyphicon glyphicon-th-list collapsed-element'></span>
+        </a>
+        <ul>
+          <li>
+            <a class='expandable' href='#home' title='Home'>
+              <span class='glyphicon glyphicon-home collapsed-element'></span>
+              <span class='expanded-element'>Home</span>
+            </a>
+          </li>
+          <li>
+            <a class='expandable' href='#chronology' title='Chronology'>
+              <span class='glyphicon glyphicon-calendar collapsed-element'></span>
+              <span class='expanded-element'>Chronology</span>
+            </a>
+          </li>
+          <li>
+            <a class='expandable' href='#maps' title='Maps'>
+              <span class='glyphicon glyphicon-map-marker collapsed-element'></span>
+              <span class='expanded-element'>Maps</span>
+            </a>
+          </li>
+          <li>
+            <a class='expandable' href='#videos' title='Videos'>
+              <span class='glyphicon glyphicon-film collapsed-element'></span>
+              <span class='expanded-element'>Videos</span>
+            </a>
+          </li>
+          <li>
+            <a class='expandable' href='#education' title='Education'>
+              <span class='glyphicon glyphicon-book collapsed-element'></span>
+              <span class='expanded-element'>Education</span>
+            </a>
+          </li>
+          <li>
+            <a class='expandable' href='#contact' title='Contact'>
+              <span class='glyphicon glyphicon-envelope collapsed-element'></span>
+              <span class='expanded-element'>Contact</span>
+            </a>
+          </li>
+          <li>
+            <a class='expandable' href='#credits' title='Credits'>
+              <span class='glyphicon glyphicon-question-sign collapsed-element'></span>
+              <span class='expanded-element'>Credits</span>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+<div id="wrapper">
+
     <div id="fullpage">
-
-
 
       <div class="section " id="section0">
         <div class="intro">
@@ -101,6 +157,10 @@ layout: default
         <div class="slide" id="slide2"><h1>Chrono Period E</h1></div>
       </div>
       <div class="section">
+          <div class="slide" id="slide2">
+            <h1><a href="#maps/1">Powell Street</a></h1>
+            <h1><a href="#maps/2">Steveston</a><
+          </div>  
           <div class="slide">
             <div id="map-canvas"></div>
           </div>
@@ -115,7 +175,8 @@ layout: default
 
     </div>
 
-  </div>
-
 </div>
+
+
+
 
