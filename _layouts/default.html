@@ -14,6 +14,24 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/examples.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation.offcanvas.js"></script>
+    
+    <script>
+      $(document).foundation({
+      offcanvas : {
+      // Sets method in which offcanvas opens.
+      // [ move | overlap_single | overlap ]
+      open_method: 'move', 
+      // Should the menu close when a menu link is clicked?
+      // [ true | false ]
+      close_on_click : true
+  }
+
+      });
+
+
+    </script>
 
 <!-- Google Maps API -->
     <script type="text/javascript"
