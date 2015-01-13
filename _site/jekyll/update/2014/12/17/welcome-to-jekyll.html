@@ -13,10 +13,10 @@
   <link rel="canonical" href="http://nikkeistories.com/jekyll/update/2014/12/17/welcome-to-jekyll.html">
   <link rel="alternate" type="application/atom+xml" title="Nikkei Stories 日系物語" href="http://nikkeistories.com/feed.xml" />
 
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/examples.css" /> <!-- fullPage.js examples -->
   <link rel="stylesheet" type="text/css" href="css/foundation.css" />
+  <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css" />
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -60,27 +60,40 @@
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/examples.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+
     <script type="text/javascript" src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/foundation/foundation.offcanvas.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation.abide.js"></script>
     
     <script>
       $(document).foundation({
-      offcanvas : {
-      // Sets method in which offcanvas opens.
-      // [ move | overlap_single | overlap ]
-      open_method: 'move', 
-      // Should the menu close when a menu link is clicked?
-      // [ true | false ]
-      close_on_click : true
-  }
-
+        offcanvas : {
+        // Sets method in which offcanvas opens.
+        // [ move | overlap_single | overlap ]
+        open_method: 'move', 
+        // Should the menu close when a menu link is clicked?
+        // [ true | false ]
+        close_on_click : true
+        }
       });
+    </script>
 
-
+    <script>
+      $('#myForm')
+        .on('invalid', function () {
+          var invalid_fields = $(this).find('[data-invalid]');
+          console.log(invalid_fields);
+        })
+        .on('valid', function () {
+          console.log('valid!');
+        });   
     </script>
 
 <!-- Google Maps API -->
@@ -127,7 +140,6 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script> 
-
 
 
   </body>
