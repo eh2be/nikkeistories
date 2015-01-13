@@ -14,10 +14,10 @@
   <link rel="canonical" href="http://nikkeistories.com/">
   <link rel="alternate" type="application/atom+xml" title="Nikkei Stories 日系物語" href="http://nikkeistories.com/feed.xml" />
 
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/examples.css" /> <!-- fullPage.js examples -->
   <link rel="stylesheet" type="text/css" href="css/foundation.css" />
+  <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css" />
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -30,61 +30,7 @@
 
   <body class="ns-background">
     <div >
-      <!-- Bootstrap Standard top-navbar
-<nav class="navbar navbar-default navbar-fixed-top" style="background:transparent">
-  <div class="container-fluid">
-   
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#home">Nikkei Stories</a>
-    </div>
-
-   
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#chronology">Chronology</a></li>
-        <li class="dropdown">
-          <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#maps">Powell Street</a></li>
-            <li><a href="#maps/1">Steveston</a></li>
-            <li><a href="#">Victoria</a></li>
-            <li><a href="#">Cumberland</a></li>           
-            <li><a href="#">Lillooet</a></li>     
-            <li class="divider"></li>
-            <li><a href="#">Southern Alberta</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Manitoba</a></li>
-          </ul>
-        </li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#credits">Credits</a></li>                
-      </ul>
-    </div>
-  </div>
-</nav>
--->
-
-<!--
-<ul id="menu">
-  <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-  <li data-menuanchor="chronology"><a href="#chronology">Chronology</a></li>
-  <li data-menuanchor="maps"><a href="#maps">Maps</a></li>
-  <li data-menuanchor="videos"><a href="#videos">Videos</a></li>
-  <li data-menuanchor="education"><a href="#education">Education</a></li>
-  <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-  <li data-menuanchor="credits"><a href="#credits">Credits</a></li>
-</ul>
--->
-
-<div class="off-canvas-wrap" data-offcanvas>
+      <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
     <nav class="tab-bar">
       <section class="left-small">
@@ -100,20 +46,20 @@
     <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
         <li><label>Nikkei Stories</label></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#chronology">Chronology</a></li>
-        <li class="has-submenu"><a href="#">Maps</a>
+        <li><a href="#home"><i class="step fi-home"></i> Home</a></li>
+        <li><a href="#chronology"><i class="step fi-calendar"></i> Chronology</a></li>
+        <li class="has-submenu"><a href="#"><i class="step fi-map"></i> Maps</a>
           <ul class="left-submenu">
             <li class="back"><a href="#">Back</a></li>
             <li><label>Maps</label></li>
-            <li><a href="#maps">Powell Street</a></li>
-            <li><a href="#maps/1">Steveston</a></li>
+            <li><a href="#maps"><i class="step fi-marker"></i> Powell Street</a></li>
+            <li><a href="#maps/1"><i class="step fi-marker"></i> Steveston</a></li>
           </ul>
         </li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#credits">Credits</a></li>         
+        <li><a href="#videos"><i class="step fi-play-video"></i> Videos</a></li>
+        <li><a href="#education"><i class="step fi-lightbulb"></i> Education</a></li>
+        <li><a href="#contact"><i class="step fi-mail"></i> Contact</a></li>
+        <li><a href="#credits"><i class="step fi-results-demographics"></i> Credits</a></li>      
       </ul>
     </aside>
 
@@ -127,7 +73,10 @@
         
         <div class="section " id="section0">
           <div class="intro">
-            <h1>NS Landing Page</h1>
+            <h1>NS Landing Page<i class="step fi-lightbulb size-48"></i></h1>
+
+
+
           </div>
         </div>
         <div class="section" id="section2">
@@ -149,9 +98,113 @@
               <div id="map-canvas2"></div>
             </div>
         </div>
-        <div class="section" id="section3"><h1>Video Index</h1></div>
-        <div class="section" id="section4"><h1>Education<br />for kids</h1></div>
-        <div class="section" id="section5"><h1>Contact</h1></div>
+        <div class="section" id="section3">
+          <h1>Video Index</h1>
+          Paleo ethical selvage, skateboard selfies kogi Tumblr. Viral vinyl pork belly, chia ugh locavore lo-fi health goth VHS. Cray squid +1 pickled lo-fi seitan. Art party trust fund farm-to-table direct trade, tofu tattooed irony wayfarers mustache Kickstarter tilde whatever chillwave. Cold-pressed organic lomo, meh keffiyeh ethical ugh DIY Truffaut gastropub mixtape mustache. Slow-carb American Apparel lo-fi, next level retro crucifix 3 wolf moon irony mumblecore taxidermy aesthetic. Four dollar toast keffiyeh sustainable quinoa biodiesel readymade.
+
+Aesthetic pug pour-over, Thundercats actually VHS leggings roof party lumbersexual authentic mixtape before they sold out. Street art PBR&B stumptown Thundercats polaroid. Four loko polaroid flexitarian quinoa 90's fashion axe. Aesthetic church-key mumblecore, organic dreamcatcher chia +1. Lumbersexual migas meditation bicycle rights, tote bag selvage skateboard. You probably haven't heard of them pour-over taxidermy crucifix brunch. Shoreditch shabby chic four loko wolf.
+
+Freegan actually Helvetica Intelligentsia. Ennui typewriter artisan jean shorts, actually Helvetica selfies gluten-free art party mlkshk fixie seitan. Ugh deep v single-origin coffee Helvetica butcher. Kickstarter polaroid Pitchfork, irony twee asymmetrical taxidermy quinoa +1 brunch dreamcatcher. Wolf chia hella cold-pressed four loko. Beard craft beer health goth, aesthetic church-key try-hard Helvetica swag fanny pack asymmetrical quinoa drinking vinegar. Chillwave Vice before they sold out, fingerstache umami trust fund banh mi disrupt church-key kogi Godard gentrify put a bird on it paleo fixie.
+
+Plaid kitsch Schlitz retro DIY twee, Bushwick fanny pack. Asymmetrical semiotics Williamsburg sartorial, selvage gastropub church-key tofu beard literally Etsy Bushwick seitan. Trust fund scenester direct trade seitan, ennui Odd Future cray art party. 8-bit single-origin coffee fap Pinterest, yr hoodie biodiesel 3 wolf moon squid Godard paleo brunch small batch. Small batch cray yr photo booth cardigan, PBR&B salvia irony street art umami sartorial. +1 drinking vinegar deep v whatever cred, Schlitz tofu selfies Intelligentsia narwhal Brooklyn. Occupy salvia Intelligentsia, cred typewriter try-hard meditation.
+
+Bitters Portland Pitchfork fixie cardigan, Truffaut stumptown Pinterest. Bushwick tattooed biodiesel, tilde chia cliche locavore you probably haven't heard of them selfies High Life scenester deep v. Wes Anderson McSweeney's twee gastropub, you probably haven't heard of them shabby chic trust fund PBR&B XOXO chia brunch beard. Chia gluten-free viral mustache craft beer. High Life retro yr, salvia Blue Bottle direct trade messenger bag forage fap paleo. Intelligentsia mixtape Schlitz lomo hoodie. Leggings deep v PBR dreamcatcher.
+
+You probably haven't heard of them deep v biodiesel, four dollar toast tattooed butcher hoodie Tumblr blog banjo Odd Future. Skateboard lo-fi meh crucifix kitsch, pork belly tousled bitters twee YOLO Thundercats chillwave. Trust fund roof party distillery, 3 wolf moon tousled mumblecore squid paleo swag food truck master cleanse flannel PBR&B actually letterpress. Cred literally fashion axe Portland. Photo booth fashion axe fingerstache, actually brunch locavore fap beard kale chips stumptown. Narwhal taxidermy Blue Bottle, flexitarian PBR 8-bit kogi pickled slow-carb cornhole tattooed. Messenger bag raw denim literally, stumptown 8-bit blog kale chips sustainable hella slow-carb yr fap cray roof party.
+
+90's paleo polaroid swag, skateboard chia iPhone deep v whatever mumblecore bespoke cred. Vinyl Intelligentsia try-hard food truck wayfarers. Chia cred Truffaut meggings. Photo booth sriracha VHS irony craft beer, vegan Williamsburg Blue Bottle tilde literally banh mi lomo XOXO. Tumblr plaid cronut 90's Williamsburg chillwave YOLO readymade occupy mumblecore tousled. Cliche master cleanse umami mumblecore locavore, 3 wolf moon chia selfies sartorial asymmetrical keytar artisan forage. Shoreditch chia tofu blog.
+
+Bitters Pinterest slow-carb, four loko whatever kale chips chambray. Intelligentsia pour-over 90's fingerstache, freegan typewriter Truffaut kale chips Godard Vice four loko Tumblr small batch slow-carb. Fingerstache Brooklyn mixtape typewriter. Kitsch disrupt vinyl direct trade. Shoreditch wolf cronut twee artisan food truck church-key, before they sold out irony bitters fashion axe shabby chic Bushwick McSweeney's taxidermy. Next level mumblecore viral dreamcatcher locavore twee. Vinyl literally meh fixie roof party, Odd Future brunch VHS.
+
+Fingerstache Tumblr skateboard sriracha deep v scenester mixtape keytar. Direct trade four dollar toast pork belly, locavore four loko plaid whatever drinking vinegar typewriter. You probably haven't heard of them American Apparel literally, PBR&B semiotics Williamsburg distillery gastropub Thundercats. Mixtape cliche keffiyeh whatever, art party chillwave Pitchfork normcore fashion axe deep v quinoa vegan occupy ennui banjo. Swag Bushwick retro pork belly. Stumptown tilde gastropub, leggings normcore jean shorts letterpress +1 squid Pinterest messenger bag bespoke listicle you probably haven't heard of them. McSweeney's Williamsburg narwhal shabby chic VHS, drinking vinegar Godard ennui pour-over Helvetica artisan.
+
+Cold-pressed sustainable Pitchfork, salvia Tumblr skateboard kitsch tofu Kickstarter fap cred Schlitz keytar deep v. Typewriter shabby chic wayfarers tofu, iPhone butcher kitsch Blue Bottle. Gastropub lomo bespoke swag 3 wolf moon. Farm-to-table selvage typewriter slow-carb Godard lomo, Williamsburg locavore actually kale chips retro butcher American Apparel. Direct trade +1 Godard taxidermy Echo Park church-key. Disrupt selvage deep v street art, synth PBR&B Neutra Godard. Literally tilde DIY, messenger bag jean shorts migas four loko crucifix retro chambray salvia.
+Paleo ethical selvage, skateboard selfies kogi Tumblr. Viral vinyl pork belly, chia ugh locavore lo-fi health goth VHS. Cray squid +1 pickled lo-fi seitan. Art party trust fund farm-to-table direct trade, tofu tattooed irony wayfarers mustache Kickstarter tilde whatever chillwave. Cold-pressed organic lomo, meh keffiyeh ethical ugh DIY Truffaut gastropub mixtape mustache. Slow-carb American Apparel lo-fi, next level retro crucifix 3 wolf moon irony mumblecore taxidermy aesthetic. Four dollar toast keffiyeh sustainable quinoa biodiesel readymade.
+
+Aesthetic pug pour-over, Thundercats actually VHS leggings roof party lumbersexual authentic mixtape before they sold out. Street art PBR&B stumptown Thundercats polaroid. Four loko polaroid flexitarian quinoa 90's fashion axe. Aesthetic church-key mumblecore, organic dreamcatcher chia +1. Lumbersexual migas meditation bicycle rights, tote bag selvage skateboard. You probably haven't heard of them pour-over taxidermy crucifix brunch. Shoreditch shabby chic four loko wolf.
+
+Freegan actually Helvetica Intelligentsia. Ennui typewriter artisan jean shorts, actually Helvetica selfies gluten-free art party mlkshk fixie seitan. Ugh deep v single-origin coffee Helvetica butcher. Kickstarter polaroid Pitchfork, irony twee asymmetrical taxidermy quinoa +1 brunch dreamcatcher. Wolf chia hella cold-pressed four loko. Beard craft beer health goth, aesthetic church-key try-hard Helvetica swag fanny pack asymmetrical quinoa drinking vinegar. Chillwave Vice before they sold out, fingerstache umami trust fund banh mi disrupt church-key kogi Godard gentrify put a bird on it paleo fixie.
+
+Plaid kitsch Schlitz retro DIY twee, Bushwick fanny pack. Asymmetrical semiotics Williamsburg sartorial, selvage gastropub church-key tofu beard literally Etsy Bushwick seitan. Trust fund scenester direct trade seitan, ennui Odd Future cray art party. 8-bit single-origin coffee fap Pinterest, yr hoodie biodiesel 3 wolf moon squid Godard paleo brunch small batch. Small batch cray yr photo booth cardigan, PBR&B salvia irony street art umami sartorial. +1 drinking vinegar deep v whatever cred, Schlitz tofu selfies Intelligentsia narwhal Brooklyn. Occupy salvia Intelligentsia, cred typewriter try-hard meditation.
+
+Bitters Portland Pitchfork fixie cardigan, Truffaut stumptown Pinterest. Bushwick tattooed biodiesel, tilde chia cliche locavore you probably haven't heard of them selfies High Life scenester deep v. Wes Anderson McSweeney's twee gastropub, you probably haven't heard of them shabby chic trust fund PBR&B XOXO chia brunch beard. Chia gluten-free viral mustache craft beer. High Life retro yr, salvia Blue Bottle direct trade messenger bag forage fap paleo. Intelligentsia mixtape Schlitz lomo hoodie. Leggings deep v PBR dreamcatcher.
+
+You probably haven't heard of them deep v biodiesel, four dollar toast tattooed butcher hoodie Tumblr blog banjo Odd Future. Skateboard lo-fi meh crucifix kitsch, pork belly tousled bitters twee YOLO Thundercats chillwave. Trust fund roof party distillery, 3 wolf moon tousled mumblecore squid paleo swag food truck master cleanse flannel PBR&B actually letterpress. Cred literally fashion axe Portland. Photo booth fashion axe fingerstache, actually brunch locavore fap beard kale chips stumptown. Narwhal taxidermy Blue Bottle, flexitarian PBR 8-bit kogi pickled slow-carb cornhole tattooed. Messenger bag raw denim literally, stumptown 8-bit blog kale chips sustainable hella slow-carb yr fap cray roof party.
+
+90's paleo polaroid swag, skateboard chia iPhone deep v whatever mumblecore bespoke cred. Vinyl Intelligentsia try-hard food truck wayfarers. Chia cred Truffaut meggings. Photo booth sriracha VHS irony craft beer, vegan Williamsburg Blue Bottle tilde literally banh mi lomo XOXO. Tumblr plaid cronut 90's Williamsburg chillwave YOLO readymade occupy mumblecore tousled. Cliche master cleanse umami mumblecore locavore, 3 wolf moon chia selfies sartorial asymmetrical keytar artisan forage. Shoreditch chia tofu blog.
+
+Bitters Pinterest slow-carb, four loko whatever kale chips chambray. Intelligentsia pour-over 90's fingerstache, freegan typewriter Truffaut kale chips Godard Vice four loko Tumblr small batch slow-carb. Fingerstache Brooklyn mixtape typewriter. Kitsch disrupt vinyl direct trade. Shoreditch wolf cronut twee artisan food truck church-key, before they sold out irony bitters fashion axe shabby chic Bushwick McSweeney's taxidermy. Next level mumblecore viral dreamcatcher locavore twee. Vinyl literally meh fixie roof party, Odd Future brunch VHS.
+
+Fingerstache Tumblr skateboard sriracha deep v scenester mixtape keytar. Direct trade four dollar toast pork belly, locavore four loko plaid whatever drinking vinegar typewriter. You probably haven't heard of them American Apparel literally, PBR&B semiotics Williamsburg distillery gastropub Thundercats. Mixtape cliche keffiyeh whatever, art party chillwave Pitchfork normcore fashion axe deep v quinoa vegan occupy ennui banjo. Swag Bushwick retro pork belly. Stumptown tilde gastropub, leggings normcore jean shorts letterpress +1 squid Pinterest messenger bag bespoke listicle you probably haven't heard of them. McSweeney's Williamsburg narwhal shabby chic VHS, drinking vinegar Godard ennui pour-over Helvetica artisan.
+
+Cold-pressed sustainable Pitchfork, salvia Tumblr skateboard kitsch tofu Kickstarter fap cred Schlitz keytar deep v. Typewriter shabby chic wayfarers tofu, iPhone butcher kitsch Blue Bottle. Gastropub lomo bespoke swag 3 wolf moon. Farm-to-table selvage typewriter slow-carb Godard lomo, Williamsburg locavore actually kale chips retro butcher American Apparel. Direct trade +1 Godard taxidermy Echo Park church-key. Disrupt selvage deep v street art, synth PBR&B Neutra Godard. Literally tilde DIY, messenger bag jean shorts migas four loko crucifix retro chambray salvia.</h1>
+        </div>
+        <div class="section" id="section4"><h1>Educational Resources</h1></div>
+        <div class="section" id="section2">
+          
+          <div class="row">
+            <h1>Contact</h1>
+          </div>
+          
+          <div class="row">
+            <div class="small-2 large-4 columns">...</div>
+            <div class="small-4 large-4 columns">...</div>
+            <div class="small-6 large-4 columns">...</div>
+          </div>
+          <div class="row">
+            <div class="large-3 columns">...</div>
+            <div class="large-6 columns">...</div>
+            <div class="large-3 columns">...</div>
+          </div>
+          <div class="row">
+            <div class="small-6 large-2 columns">...</div>
+            <div class="small-6 large-8 columns">...</div>
+            <div class="small-12 large-2 columns">...</div>
+          </div>
+          <div class="row">
+            <div class="small-3 columns">...</div>
+            <div class="small-9 columns">...</div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">...</div>
+            <div class="large-8 columns">...</div>
+          </div>
+          <div class="row">
+            <div class="small-6 large-5 columns">...</div>
+            <div class="small-6 large-7 columns">...</div>
+          </div>
+          <div class="row">
+            <div class="large-6 columns">...</div>
+            <div class="large-6 columns">...</div>
+          </div>
+
+          <div class="row">
+            <div id="contactForm" class="small-8 medium-8 large-8 columns">
+              <form id="myForm" method="post" data-abide>  
+                  
+                <h5>Contact Us</h5>
+                <label>Name</label>
+                <small class="error">Your full name is required.</small>
+                <input type="text" placeholder="Full Name" required>
+                
+                <label>Email</label>
+                <small class="error">An email address is required.</small>
+
+                <input type="email" placeholder="username@address.com" required>
+                
+                <label>Web Address</label>          
+                <input type="url" placeholder="http://www.url.com">
+                
+                <label>Your Message</label>
+                <small class="error">Your message is required.</small>
+                <textarea placeholder="Enter your message here" required></textarea>
+                  
+                <input type="submit" class="nice blue radius button" value="Send Message"></button></a>
+              </form>
+            </div><!--end 8 columns-->
+          </div>
+
+        </div>
         <div class="section" id="section6"><h1>Credits</h1></div>
 
       </div>
@@ -174,27 +227,40 @@
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/examples.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+
     <script type="text/javascript" src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/foundation/foundation.offcanvas.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation.abide.js"></script>
     
     <script>
       $(document).foundation({
-      offcanvas : {
-      // Sets method in which offcanvas opens.
-      // [ move | overlap_single | overlap ]
-      open_method: 'move', 
-      // Should the menu close when a menu link is clicked?
-      // [ true | false ]
-      close_on_click : true
-  }
-
+        offcanvas : {
+        // Sets method in which offcanvas opens.
+        // [ move | overlap_single | overlap ]
+        open_method: 'move', 
+        // Should the menu close when a menu link is clicked?
+        // [ true | false ]
+        close_on_click : true
+        }
       });
+    </script>
 
-
+    <script>
+      $('#myForm')
+        .on('invalid', function () {
+          var invalid_fields = $(this).find('[data-invalid]');
+          console.log(invalid_fields);
+        })
+        .on('valid', function () {
+          console.log('valid!');
+        });   
     </script>
 
 <!-- Google Maps API -->
@@ -241,7 +307,6 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script> 
-
 
 
   </body>
