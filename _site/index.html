@@ -16,7 +16,8 @@
 
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="css/examples.css" />
+  <link rel="stylesheet" type="text/css" href="css/examples.css" /> <!-- fullPage.js examples -->
+  <link rel="stylesheet" type="text/css" href="css/foundation.css" />
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -29,9 +30,10 @@
 
   <body class="ns-background">
     <div >
-      <nav class="navbar navbar-default navbar-fixed-top" style="background:transparent">
+      <!-- Bootstrap Standard top-navbar
+<nav class="navbar navbar-default navbar-fixed-top" style="background:transparent">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+   
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -42,7 +44,7 @@
       <a class="navbar-brand" href="#home">Nikkei Stories</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+   
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#chronology">Chronology</a></li>
@@ -65,10 +67,10 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="#credits">Credits</a></li>                
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
-
+-->
 
 <!--
 <ul id="menu">
@@ -82,38 +84,90 @@
 </ul>
 -->
 
-<div id="fullpage">
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a href="#idOfLeftMenu" role="button" aria-controls="idOfLeftMenu" aria-expanded="false" class="left-off-canvas-toggle menu-icon"><span></span></a>
+      </section>
+<!--
+      <section class="middle tab-bar-section">
+        <h1 class="title">Nikkei Stories</h1>
+      </section>
+-->
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Nikkei Stories</label></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#chronology">Chronology</a></li>
+        <li class="has-submenu"><a href="#">Maps</a>
+          <ul class="left-submenu">
+            <li class="back"><a href="#">Back</a></li>
+            <li><label>Maps</label></li>
+            <li><a href="#maps">Powell Street</a></li>
+            <li><a href="#maps/1">Steveston</a></li>
+          </ul>
+        </li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#credits">Credits</a></li>         
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <!-- content goes here -->
   
-  <div class="section " id="section0">
-    <div class="intro">
-      <h1>NS Landing Page</h1>
-    </div>
-  </div>
-  <div class="section" id="section2">
-    <div class="slide" id="slide1" data-anchor="slide1">
-      <h1>Chrono Period A</h1>
-    </div>
-    <div class="slide" id="slide2" data-anchor="slide2">
-      <h1>Chrono Period B</h1>
-    </div>
-    <div class="slide" id="slide2"><h1>Chrono Period C</h1></div>
-    <div class="slide" id="slide2"><h1>Chrono Period D</h1></div>
-    <div class="slide" id="slide2"><h1>Chrono Period E</h1></div>
-  </div>
-  <div class="section">
-      <div class="slide">
-        <div id="map-canvas"></div>
+
+
+<!-- fullPage.js -->
+      <div id="fullpage">
+        
+        <div class="section " id="section0">
+          <div class="intro">
+            <h1>NS Landing Page</h1>
+          </div>
+        </div>
+        <div class="section" id="section2">
+          <div class="slide" id="slide1" data-anchor="slide1">
+            <h1>Chrono Period A</h1>
+          </div>
+          <div class="slide" id="slide2" data-anchor="slide2">
+            <h1>Chrono Period B</h1>
+          </div>
+          <div class="slide" id="slide2"><h1>Chrono Period C</h1></div>
+          <div class="slide" id="slide2"><h1>Chrono Period D</h1></div>
+          <div class="slide" id="slide2"><h1>Chrono Period E</h1></div>
+        </div>
+        <div class="section">
+            <div class="slide">
+              <div id="map-canvas"></div>
+            </div>
+            <div class="slide">
+              <div id="map-canvas2"></div>
+            </div>
+        </div>
+        <div class="section" id="section3"><h1>Video Index</h1></div>
+        <div class="section" id="section4"><h1>Education<br />for kids</h1></div>
+        <div class="section" id="section5"><h1>Contact</h1></div>
+        <div class="section" id="section6"><h1>Credits</h1></div>
+
       </div>
-      <div class="slide">
-        <div id="map-canvas2"></div>
-      </div>
+
+
+
+<!-- Foundation -->
+
+    </section>
+  <!-- close the off-canvas menu -->
+  <a class="exit-off-canvas"></a>
   </div>
-  <div class="section" id="section3"><h1>Video Index</h1></div>
-  <div class="section" id="section4"><h1>Education<br />for kids</h1></div>
-  <div class="section" id="section5"><h1>Contact</h1></div>
-  <div class="section" id="section6"><h1>Credits</h1></div>
 
 </div>
+
+
 
 
     </div>
@@ -124,6 +178,24 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/examples.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation.offcanvas.js"></script>
+    
+    <script>
+      $(document).foundation({
+      offcanvas : {
+      // Sets method in which offcanvas opens.
+      // [ move | overlap_single | overlap ]
+      open_method: 'move', 
+      // Should the menu close when a menu link is clicked?
+      // [ true | false ]
+      close_on_click : true
+  }
+
+      });
+
+
+    </script>
 
 <!-- Google Maps API -->
     <script type="text/javascript"
