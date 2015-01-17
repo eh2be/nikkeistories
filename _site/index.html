@@ -14,12 +14,16 @@
   <link rel="canonical" href="http://nikkeistories.com/">
   <link rel="alternate" type="application/atom+xml" title="Nikkei Stories 日系物語" href="http://nikkeistories.com/feed.xml" />
 
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/examples.css" /> <!-- fullPage.js examples -->
   <link rel="stylesheet" type="text/css" href="css/foundation.css" />
   <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css" />
   <link rel="stylesheet" type="text/css" href="css/fresco/fresco.css"/>
   <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"> 
+
+ 
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -32,17 +36,18 @@
 
   <body class="ns-background">
     <div >
-      <div class="off-canvas-wrap" data-offcanvas>
+      <!-- 
+<div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
     <nav class="tab-bar">
       <section class="left-small">
         <a href="#idOfLeftMenu" role="button" aria-controls="idOfLeftMenu" aria-expanded="false" class="left-off-canvas-toggle menu-icon"><span></span></a>
       </section>
-<!--
+
       <section class="middle tab-bar-section">
         <h1 class="title">Nikkei Stories</h1>
       </section>
--->
+
     </nav>
 
     <aside class="left-off-canvas-menu">
@@ -66,14 +71,85 @@
     </aside>
 
     <section class="main-section">
-      <!-- content goes here -->
+       content goes here
   
+-->
+
+<!-- Offcanvas Bootstrap navbar
+        <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+          <a class="navmenu-brand" href="#">Brand</a>
+          <ul class="nav navmenu-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbar navbar-default navbar-fixed-top">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+-->
+
+<!-- Bootstrap Menubar -->
+<body class="ns-background">
+  <div >
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home" class="active">Nikkei Stories</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#chronology">Chronology <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#maps">Powell Street</a></li>
+            <li><a href="#maps/1">Steveston</a></li>
+          </ul>
+        </li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#credits">Credits</a></li>                
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!--
++<ul id="menu">
+   <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+   <li data-menuanchor="chronology"><a href="#chronology">Chronology</a></li>
+   <li data-menuanchor="maps"><a href="#maps">Maps</a></li>
+ @@ -126,6 +86,7 @@
+   <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+   <li data-menuanchor="credits"><a href="#credits">Credits</a></li>
+ </ul>
++-->
+
 
 
 <!-- fullPage.js -->
       <div id="fullpage">
-  
-        <div class="section" id="section2">
+      
+  <!-- Home -->
+        <div class="section" id="">
           <div class="row">
             <div class="small-block-grid-1 large-block-grid-3 columns">...</div>
             <div class="small-block-grid-10 large-block-grid-6 columns">
@@ -93,6 +169,8 @@
             <div class="small-1 large-3 columns">...</div>
           </div>
         </div>
+
+<!-- Chronology -->
         <div class="section" id="section2">
           <div class="slide" id="slide1" data-anchor="slide1">
             <h1>Chrono Period A</h1>
@@ -104,14 +182,18 @@
           <div class="slide" id="slide2"><h1>Chrono Period D</h1></div>
           <div class="slide" id="slide2"><h1>Chrono Period E</h1></div>
         </div>
+
+<!-- Maps -->
         <div class="section">
-            <div class="slide">
-              <div id="map-canvas"></div>
+            <div class="slide"> 
+              <div id="map-canvas-PowellSt"></div>
             </div>
             <div class="slide">
-              <div id="map-canvas2"></div>
+              <div id="map-canvas-Steveston"></div>
             </div>
         </div>
+
+<!-- Videos -->
         <div class="section" id="section3">
           <h1>Video Index</h1>
           <!-- Using only the small-block-grid -->
@@ -156,7 +238,13 @@
             </li>
           </ul>
         </div>
-        <div class="section" id="section4"><h1>Educational Resources</h1></div>
+
+<!-- Education -->
+        <div class="section" id="section4">
+          <h1>Educational Resources</h1>
+        </div>
+
+<!-- Contact -->
         <div class="section" id="section2">
           <div class="row">
             <div class="small-2 large-4 columns">
@@ -213,22 +301,25 @@
             <div class="large-6 columns">...</div>
             <div class="large-6 columns">...</div>
           </div>
-
         </div>
-        <div class="section" id="section6"><h1>Credits</h1></div>
+
+<!-- Credits -->
+        <div class="section" id="section6">
+          <h1>Credits</h1>
+        </div>
 
       </div>
 
 
-
-<!-- Foundation -->
+<!-- Foundation
 
     </section>
-  <!-- close the off-canvas menu -->
+  close the off-canvas menu
   <a class="exit-off-canvas"></a>
   </div>
+</div>-->
 
-</div>
+
 
 
 
@@ -238,25 +329,53 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
+<!-- Google Maps API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHhp-J2jqYmGiMNPYd_gX1prDjqoVp2Pc"></script>
+   
+
     <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+<!-- fullpage.js CDN   
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script> -->
+-->
+
+<!-- fullpage.js examples 
     <script type="text/javascript" src="js/examples.js"></script>
+-->
     <script type="text/javascript" src="js/main.js"></script>
 
+<!-- jinvertscroll for horizontal scroll of chrono 
     <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+-->
 
+<!-- Foundation
     <script type="text/javascript" src="js/foundation.min.js"></script>
     <script type="text/javascript" src="js/foundation/foundation.offcanvas.js"></script>
     <script type="text/javascript" src="js/foundation/foundation.abide.js"></script>
+-->
+    
+    <!-- bootstrap vanilla -->
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-    <!-- Fresco lightbox -->
-<!--    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script> -->
+    <!-- jasny bootstrap -->
+    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/offcanvas.js"></script>
+
+<!--
+    <script type="text/javascript" src="js/sfoundation/foundation.abide.js"></script>
+-->
+
+<!-- Fresco lightbox
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/fresco/fresco.js"></script>
+-->
 
-    <script src="js/jquery.magnific-popup.js"></script>
+
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 
 
-    <!-- Foundation off-canvas menu -->
+<!-- Foundation off-canvas menu
     <script>
       $(document).foundation({
         offcanvas : {
@@ -269,6 +388,7 @@
         }
       });
     </script>
+-->
 
     <script>
       $('#myForm')
@@ -281,50 +401,6 @@
         });   
     </script>
 
-<!-- Google Maps API -->
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHhp-J2jqYmGiMNPYd_gX1prDjqoVp2Pc">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var latlng1 = new google.maps.LatLng(49.282748, -123.094365); 
-        var latlng2 = new google.maps.LatLng(49.125735, -123.178775);
-        var mapOptions = {
-          center: latlng1,
-          zoom: 17,
-          disableDefaultUI: true,
-          mapTypeControl: false,
-          zoomControl: true,
-          zoomControlOptions: {
-            style: google.maps.ZoomControlStyle.LARGE,
-            position: google.maps.ControlPosition.LEFT_BOTTOM
-          },
-          scrollwheel: false,
-          scaleControl: true,
-          draggable: false,
-          disableDoubleClickZoom: true
-        };
-        var myOptions2 = {
-          zoom: 15, 
-          center: latlng2,
-          disableDefaultUI: true,
-          mapTypeControl: false,
-          zoomControl: true,
-          zoomControlOptions: {
-            style: google.maps.ZoomControlStyle.LARGE,
-            position: google.maps.ControlPosition.LEFT_BOTTOM
-          },
-          scrollwheel: false,
-          scaleControl: false,
-          draggable: false,
-          disableDoubleClickZoom: true
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-        var map2 = new google.maps.Map(document.getElementById('map-canvas2'), myOptions2);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script> 
 
 
   </body>
