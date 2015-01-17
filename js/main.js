@@ -2,17 +2,20 @@ $(document).ready(function() {
   
 // START fullPage.js plugin
   $('#fullpage').fullpage({
+    // Design
     verticalCentered: false,
     resize: true,
     anchors: ['home', 'chronology', 'maps', 'videos', 'education', 'contact', 'credits'],
     // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
-    touchSensitivity: 1, //test this
+    touchSensitivity: 5, //test this
+    
     // Navigation //
     // menu: '#menu',
     slidesNavigation: true,
     navigation: true,
     navigationTooltips: ['Home', 'Chronology', 'Maps', 'Videos', 'Education', 'Contact', 'Credits'],
     continuousVertical: false,
+
     // Scrolling //
     scrollOverflow: true,
     autoScrolling: true,
@@ -30,7 +33,6 @@ $(document).ready(function() {
   $(".navbar-brand").on("click", function() {
     $(".nav li").removeClass("active");
   });
-
 
 // START Magnific Popup (video lightbox) plugin
   $('.video-link').magnificPopup({
