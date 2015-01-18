@@ -43,14 +43,28 @@ layout: default
   
 -->
 
-<!-- Offcanvas Bootstrap navbar
-        <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
-          <a class="navmenu-brand" href="#">Brand</a>
-          <ul class="nav navmenu-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
+  <!-- jasny Offcanvas Bootstrap navbar
+        <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+          <div class="container-smooth">
+            <a class="navmenu-brand" href="#home">Nikkei Stories</a>
+            <ul class="nav navmenu-nav">
+
+              <li><a href="#chronology">Chronology <span class="sr-only">(current)</span></a></li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+                <ul class="dropdown-menu navmenu-nav" role="menu">
+                  <li><a href="#maps">Powell Street</a></li>
+                  <li><a href="#maps/1">Steveston</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#videos">Videos</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#credits">Credits</a></li>            
+            </ul>
+          </div>
         </nav>
 
         <div class="navbar navbar-default navbar-fixed-top">
@@ -59,21 +73,21 @@ layout: default
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div>
+        </div> 
 -->
 
-<!-- Bootstrap Menubar -->
 
+<!-- Bootstrap Menubar-->
 
   <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Brand and toggle get grouped for better mobile display-->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar" ></span>  <!-- this is the top of hamburger -->
+        <span class="icon-bar"></span>  <!-- this is the middle of the hamburger -->
+        <span class="icon-bar"></span>  <!-- this is the bottom bun of the hamburger-->
       </button>
       <a class="navbar-brand" href="#home" class="active">Nikkei Stories</a>
     </div>
@@ -97,6 +111,7 @@ layout: default
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
+
 
 
  <!-- <ul id="menu">

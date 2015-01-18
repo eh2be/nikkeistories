@@ -92,7 +92,7 @@ html, body {
 }
 
 /*GM Vertical nav dots*/
-@media screen and  (min-width: 768px) {
+@media screen and  (min-width: 900px) {
   #fp-nav {
     position: fixed;
     z-index: 100;

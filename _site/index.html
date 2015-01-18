@@ -14,13 +14,13 @@
   <link rel="canonical" href="http://nikkeistories.com/">
   <link rel="alternate" type="application/atom+xml" title="Nikkei Stories 日系物語" href="http://nikkeistories.com/feed.xml" />
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.css" /> -->
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="css/examples.css" /> <!-- fullPage.js examples -->
-  <link rel="stylesheet" type="text/css" href="css/foundation.css" />
-  <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css" />
-  <link rel="stylesheet" type="text/css" href="css/fresco/fresco.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="css/examples.css" /> fullPage.js examples -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/foundation.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/fresco/fresco.css"/> -->
   <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"> 
 
  
@@ -75,14 +75,28 @@
   
 -->
 
-<!-- Offcanvas Bootstrap navbar
-        <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
-          <a class="navmenu-brand" href="#">Brand</a>
-          <ul class="nav navmenu-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
+  <!-- jasny Offcanvas Bootstrap navbar
+        <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+          <div class="container-smooth">
+            <a class="navmenu-brand" href="#home">Nikkei Stories</a>
+            <ul class="nav navmenu-nav">
+
+              <li><a href="#chronology">Chronology <span class="sr-only">(current)</span></a></li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+                <ul class="dropdown-menu navmenu-nav" role="menu">
+                  <li><a href="#maps">Powell Street</a></li>
+                  <li><a href="#maps/1">Steveston</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#videos">Videos</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#credits">Credits</a></li>            
+            </ul>
+          </div>
         </nav>
 
         <div class="navbar navbar-default navbar-fixed-top">
@@ -91,21 +105,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div>
+        </div> 
 -->
 
-<!-- Bootstrap Menubar -->
 
+<!-- Bootstrap Menubar-->
 
   <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Brand and toggle get grouped for better mobile display-->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar" ></span>  <!-- this is the top of hamburger -->
+        <span class="icon-bar"></span>  <!-- this is the middle of the hamburger -->
+        <span class="icon-bar"></span>  <!-- this is the bottom bun of the hamburger-->
       </button>
       <a class="navbar-brand" href="#home" class="active">Nikkei Stories</a>
     </div>
@@ -129,6 +143,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
+
 
 
  <!-- <ul id="menu">
@@ -350,15 +365,15 @@
     <script type="text/javascript" src="js/foundation/foundation.abide.js"></script>
 -->
     
-    <!-- bootstrap vanilla -->
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- bootstrap  -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <!-- jasny bootstrap -->
-    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+    <!-- jasny bootstrap
+    <script type="text/javascript" src="js/jasny-bootstrap.js"></script>
     <script type="text/javascript" src="js/offcanvas.js"></script>
-
+-->
 <!--
-    <script type="text/javascript" src="js/sfoundation/foundation.abide.js"></script>
+    <script type="text/javascript" src="js/foundation/foundation.abide.js"></script>
 -->
 
 <!-- Fresco lightbox

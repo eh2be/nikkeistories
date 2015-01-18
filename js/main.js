@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     // Design
     verticalCentered: false,
-    resize: true,
+    resize: false,
     anchors: ['home', 'chronology', 'maps', 'videos', 'education', 'contact', 'credits'],
     // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
     touchSensitivity: 5, //test this
