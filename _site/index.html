@@ -121,20 +121,32 @@
         <span class="icon-bar"></span>  <!-- this is the middle of the hamburger -->
         <span class="icon-bar"></span>  <!-- this is the bottom bun of the hamburger-->
       </button>
-      <a class="navbar-brand" href="#home" class="active">Nikkei Stories</a>
+      <a class="navbar-brand" href="#home" class="active"><img src="assets/NS-Logo-76.png"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#chronology">Chronology <span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
-          <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+          <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#maps">Powell Street</a></li>
             <li><a href="#maps/1">Steveston</a></li>
           </ul>
         </li>
+
+        <li class="dropdown">
+          <a href="#chronology"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chronology<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#chronology">18??-1907: First Immigrants</a></li>
+            <li><a href="#chronology/1">1907-1941: Building Community</a></li>
+            <li><a href="#chronology/2">1941-1949: Internment</a></li>
+            <li><a href="#chronology/3">1949-1977: Rebuilding</a></li>
+            <li><a href="#chronology/4">1977-1988: Redress</a></li>
+            <li><a href="#chronology/5">1988-Present: Post-Redress</a></li>
+          </ul>
+        </li>
+        
         <li><a href="#videos">Videos</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -154,7 +166,7 @@
    <li data-menuanchor="credits"><a href="#credits">Credits</li>
  </ul> -->
       
-
+<a href="#home" class="logoPosition"><img src="assets/NS-Logo-200.png"></a>
 <!-- fullPage.js -->
       <div id="fullpage">
       
@@ -163,7 +175,7 @@
           <div class="row">
             <div class="small-block-grid-1 large-block-grid-3 columns">...</div>
             <div class="small-block-grid-10 large-block-grid-6 columns">
-              <h1>NS Landing Page</h1>
+              <h1>Home</h1>
             </div>
             <div class="small-block-grid-1 large-block-grid-3 columns">...</div>
           </div>
@@ -180,19 +192,6 @@
           </div>
         </div>
 
-<!-- Chronology -->
-        <div class="section" id="section2">
-          <div class="slide" id="slide1" data-anchor="slide1">
-            <h1>Chrono Period A</h1>
-          </div>
-          <div class="slide" id="slide2" data-anchor="slide2">
-            <h1>Chrono Period B</h1>
-          </div>
-          <div class="slide" id="slide2"><h1>Chrono Period C</h1></div>
-          <div class="slide" id="slide2"><h1>Chrono Period D</h1></div>
-          <div class="slide" id="slide2"><h1>Chrono Period E</h1></div>
-        </div>
-
 <!-- Maps -->
         <div class="section">
             <div class="slide"> 
@@ -201,6 +200,28 @@
             <div class="slide">
               <div id="map-canvas-Steveston"></div>
             </div>
+        </div>
+
+<!-- Chronology -->
+        <div class="section" id="section2">
+          <div class="slide" id="" data-anchor="slide1">
+            <h1>First Immigrants (18??-1907)</h1>
+          </div>
+          <div class="slide" id="" data-anchor="slide2">
+            <h1>The Building Years (1907-1941)</h1>
+          </div>
+          <div class="slide" id="">
+            <h1>Internment & Dispersal (1941-1949)</h1>
+          </div>
+          <div class="slide" id="">
+            <h1>Rebuilding (1950-1977)</h1>
+          </div>
+          <div class="slide" id="">
+            <h1>Redress (1977-1988)</h1>
+          </div>
+          <div class="slide" id="">
+            <h1>Post Redress (1988-2015)</h1>
+          </div>
         </div>
 
 <!-- Videos -->
@@ -255,13 +276,13 @@
         </div>
 
 <!-- Contact -->
-        <div class="section" id="section2">
+        <div class="section" id="section6">
           <div class="row">
             <div class="small-2 large-4 columns">
               <div id="contactForm">
                 <form id="myForm" method="post" data-abide>  
                     
-                  <h5>Contact</h5>
+                  <h1>Contact</h1>
                   <label>Name</label>
                   <small class="error">Your full name is required.</small>
                   <input type="text" placeholder="Full Name" required>

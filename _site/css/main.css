@@ -601,3 +601,15 @@ h1 {
 * --------------------------------------- */
 #infoMenu li a {
   color: #fff; }
+
+/* Logo Positioning */
+.logoPosition {
+  z-index: 10000;
+  position: fixed;
+  top: 15px;
+  right: 17px;
+  width: 200px; }
+
+@media screen and (max-width: 767px) {
+  .logoPosition {
+    display: none; } }

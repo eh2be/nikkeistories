@@ -5,7 +5,7 @@ $(document).ready(function() {
     // Design
     verticalCentered: false,
     resize: false,
-    anchors: ['home', 'chronology', 'maps', 'videos', 'education', 'contact', 'credits'],
+    anchors: ['home', 'maps', 'chronology', 'videos', 'education', 'contact', 'credits'],
     // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
     touchSensitivity: 5, //test this
     
@@ -13,12 +13,14 @@ $(document).ready(function() {
     // menu: '#menu',
     slidesNavigation: true,
     navigation: true,
-    navigationTooltips: ['Home', 'Chronology', 'Maps', 'Videos', 'Education', 'Contact', 'Credits'],
-    continuousVertical: false,
+    navigationTooltips: ['Home', 'Maps', 'Chronology', 'Videos', 'Education', 'Contact', 'Credits'],
+    
 
     // Scrolling //
     scrollOverflow: true,
     autoScrolling: true,
+    continuousVertical: false,
+    loopHorizontal: false,
     // scrollBar: true, //scrollbar make the pages snap more abruptly; Foundation off-canvas navbar doesn't work either.
     // responsive: 600
     // normalScrollElements: '#map-canvas, #map-canvas2' // swipe/scroll doesn't work over maps on macbook

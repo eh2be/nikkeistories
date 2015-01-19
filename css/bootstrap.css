@@ -6342,4 +6342,13 @@ button.close {
     display: none !important;
   }
 }
+/*
+@media (min-width: 768px) {
+    .logoPosition{
+      z-index: 10000;
+      position: fixed;
+      top: 15px;
+      right: 17px;
+      width: 170px;
+}*/
 /*# sourceMappingURL=bootstrap.css.map */
