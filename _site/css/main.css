@@ -550,39 +550,52 @@ h1 {
 #section4,
 #section5,
 #section6 {
-  background-size: cover; }
+  background-size: cover;
+  font-family: 'Oswald', sans-serif; }
 
+@media screen and (max-width: 767px) {
+  #section0,
+  #section2,
+  #section3,
+  #section4,
+  #section5,
+  #section6 {
+    padding: 10% 0 0 0; } }
+@media screen and (min-width: 768px) {
+  #section0,
+  #section2,
+  #section3,
+  #section4,
+  #section5,
+  #section6 {
+    padding: 10% 180px 0 0; } }
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0 {
-  background-image: url(imgs/bg1.jpg);
-  background-color: #E37882;
-  padding: 30% 0 0 0; }
+  background-image: url("assets/Logo.png"); }
+
+#section1 {
+  padding: 0 0 0 0; }
 
 #section2 {
-  background-image: url(imgs/bg3.jpg);
-  background-color: #F3CEC8;
-  padding: 6% 0 0 0; }
+  background-image: url(assets/Logo.png);
+  background-color: #F3CEC8; }
 
 #section3 {
-  background-image: url(imgs/bg4.jpg);
-  background-color: #DEC575;
-  padding: 6% 0 0 0; }
+  background-image: url(assets/Logo.png);
+  background-color: #DEC575; }
 
 #section4 {
-  background-image: url(imgs/bg4.jpg);
-  background-color: #C70025;
-  padding: 6% 0 0 0; }
+  background-image: url(assets/Logo.png);
+  background-color: #C70025; }
 
 #section5 {
-  background-image: url(imgs/bg4.jpg);
-  background-color: #000005;
-  padding: 6% 0 0 0; }
+  background-image: url(assets/Logo.png);
+  background-color: #000005; }
 
 #section6 {
-  background-image: url(imgs/bg4.jpg);
-  background-color: #68A68A;
-  padding: 6% 0 0 0; }
+  background-image: url(assets/Logo.png);
+  background-color: #68A68A; }
 
 #section3 h1 {
   color: #000; }
@@ -590,12 +603,10 @@ h1 {
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1 {
-  background-image: url(imgs/bg2.jpg);
-  padding: 6% 0 0 0; }
+  background-image: url(imgs/bg2.jpg); }
 
 #slide2 {
-  background-image: url(imgs/bg5.jpg);
-  padding: 6% 0 0 0; }
+  background-image: url(imgs/bg5.jpg); }
 
 /* Bottom menu
 * --------------------------------------- */

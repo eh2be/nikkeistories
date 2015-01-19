@@ -170,7 +170,9 @@ html, body {
   top: -6px;
   color: #000005;
   font-size: 18px;
-  font-family: arial, helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  /*font-family: arial, helvetica, sans-serif;*/
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
