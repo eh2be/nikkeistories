@@ -1,62 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400italic);
 @import url(http://fonts.googleapis.com/css?family=Slabo+13px);
-.carousel {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px 0px;
-  max-width: 600px;
-  min-width: 100px;
-  -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
-  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
-  border-radius: 10px;
-  background-color: transparent; }
-  .carousel .container {
-    background-color: #F3CEC8;
-    border-radius: 10px;
-    opacity: 0.2; }
-  .carousel .text-block {
-    vertical-align: middle;
-    text-align: justify;
-    font-family: 'Slabo 13px', serif; }
-  .carousel .image {
-    display: block;
-    margin: 0px;
-    margin-top: 50px;
-    vertical-align: middle; }
-
-.footer {
-  position: absolute;
-  bottom: 0;
+.ns-background {
   width: 100%;
-  height: 30px;
-  line-height: 30px;
-  border-top: 1px solid #b62633;
-  border-bottom: 5px solid #b62633; }
-  .footer .text {
-    text-align: center;
-    font-size: .8em; }
-
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto; }
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
-.parallax__layer--base {
-  transform: translateZ(0); }
-
-.parallax__layer--back {
-  transform: translateZ(-1px); }
+  height: 100%; }
 
 /**
  * Reset some basic elements
@@ -531,7 +477,6 @@ pre {
 * --------------------------------------- */
 h1 {
   font-size: 5em;
-  font-family: arial,helvetica;
   color: #fff;
   margin: 0;
   padding: 0; }
@@ -550,7 +495,6 @@ h1 {
 #section4,
 #section5,
 #section6 {
-  background-size: cover;
   font-family: 'Oswald', sans-serif; }
 
 @media screen and (max-width: 767px) {
@@ -572,29 +516,30 @@ h1 {
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0 {
-  background-image: url("assets/Logo.png"); }
+  background-image: url(/assets/bg-pattern-07.png);
+  background-color: #73625F; }
 
 #section1 {
   padding: 0 0 0 0; }
 
 #section2 {
-  background-image: url(assets/Logo.png);
-  background-color: #F3CEC8; }
+  background-image: url(/assets/bg-pattern-01.png);
+  background-color: #FFC9C5; }
 
 #section3 {
-  background-image: url(assets/Logo.png);
+  background-image: url(/assets/bg-pattern-02.png);
   background-color: #DEC575; }
 
 #section4 {
-  background-image: url(assets/Logo.png);
-  background-color: #C70025; }
+  background-image: url(/assets/bg-pattern-03.png);
+  background-color: #F59080; }
 
 #section5 {
-  background-image: url(assets/Logo.png);
-  background-color: #000005; }
+  background-image: url(/assets/bg-pattern-05.png);
+  background-color: #8A9DB2; }
 
 #section6 {
-  background-image: url(assets/Logo.png);
+  background-image: url(/assets/bg-pattern-04.png);
   background-color: #68A68A; }
 
 #section3 h1 {
