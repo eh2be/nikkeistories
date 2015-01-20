@@ -499,7 +499,6 @@ h1 {
 
 @media screen and (max-width: 767px) {
   #section0,
-  #section2,
   #section3,
   #section4,
   #section5,
@@ -507,12 +506,19 @@ h1 {
     padding: 10% 0 0 0; } }
 @media screen and (min-width: 768px) {
   #section0,
-  #section2,
   #section3,
   #section4,
   #section5,
   #section6 {
     padding: 10% 180px 0 0; } }
+@media screen and (max-width: 768px) {
+  #slide1,
+  #slide2 {
+    padding: 50px 0 0 0; } }
+@media screen and (min-width: 768px) {
+  #slide1,
+  #slide2 {
+    padding: 50px 180px 0 0; } }
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0 {
@@ -523,7 +529,6 @@ h1 {
   padding: 0 0 0 0; }
 
 #section2 {
-  background-image: url(/assets/bg-pattern-01.png);
   background-color: #FFC9C5; }
 
 #section3 {
@@ -548,10 +553,11 @@ h1 {
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1 {
-  background-image: url(imgs/bg2.jpg); }
+  background-image: url(/assets/bg-pattern-01.png);
+  z-index: -100; }
 
 #slide2 {
-  background-image: url(imgs/bg5.jpg); }
+  background-image: url(/assets/bg-pattern-01.png); }
 
 /* Bottom menu
 * --------------------------------------- */

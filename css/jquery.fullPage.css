@@ -114,12 +114,17 @@ html, body {
     left: 50%;
     opacity: 1;
 }
+
 .fp-slidesNav.bottom {
     bottom: 17px;
+
 }
 .fp-slidesNav.top {
     top: 17px;
+
 }
+
+
 #fp-nav ul,
 .fp-slidesNav ul {
   margin: 0;
