@@ -41,69 +41,48 @@ $on-laptop:        800px;
 }
 
 
-// Greg's class and id experiments
-
-// .carousel {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding: 30px 0px;
-//   max-width: 600px;
-//   min-width: 100px;    
-  
-//   -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
-//   filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
-
-//   border-width: 1px;
-//   border-style: solid;
-//   border-color: transparent;
-//   border-radius: 10px;
-//   background-color: transparent;
-
-
-//   .container {
-//     background-color: #F3CEC8;
-//     border-radius: 10px;
-//     opacity: 0.2;
-
-//   }
-
-//   .text-block {
-//  //   display: block;
-//     vertical-align: middle;
-//     text-align: justify;
-//     font-family: 'Slabo 13px', serif;
-//   }
-
-//   .image {
-//     display: block;
-//     margin: 0px;
-//     margin-top: 50px;
-//     vertical-align: middle;    
-//   }
-
-// }
-
-
-// .footer {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   height: 30px;
-//   line-height: 30px;
-//   border-top: 1px solid $grey-color-dark;
-//   border-bottom: 5px solid $grey-color-dark;
-
-//   .text{
-//     text-align: center;
-//     font-size: .8em;
-//   }
-// }
-
 .ns-background {
   // background-image: url("/assets/2Nrxex6.jpg");
   width: 100%;
   height: 100%;
 }
+
+.ns-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px 0 15px;
+}
+
+.ns-th-video {
+  // height: 240px;
+  // width: 180px;
+  margin: 0 0 10px 0;
+  padding: 4px;
+  // border-style: solid;
+  // border-color: #000005;
+  background-color: #000005;
+  outline: none;
+}
+
+
+// Bootstrap Contact Form
+.header {
+    color: #000005;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.ns-bigicon {
+  font-size: 35px;
+  color: #000005;
+}
+
 
 // parallax
 
@@ -155,13 +134,21 @@ $on-laptop:        800px;
 
 /* Style for our header texts
 * --------------------------------------- */
-h1{
-  font-size: 5em;
-  // font-family: arial,helvetica;
-  color: #fff;
-  margin:0;
-  padding:0;
-}
+// h1{
+//   font-size: 5em;
+//   // font-family: arial,helvetica;
+//   color: #fff;
+//   margin:0;
+//   padding:0;
+// }
+
+// h2{
+//   font-size: 2em;
+//   // font-family: arial,helvetica;
+//   color: #fff;
+//   margin:0;
+//   padding:0;
+// }
 
 /* Centered texts in each section
 * --------------------------------------- */
@@ -187,39 +174,26 @@ h1{
 @media screen and (max-width: 767px) {
   #section0,
   // #section2,
-  // #slide1,
-  // #slide2,
+  #slide1,
+  #slide2,
   #section3,
   #section4,
   #section5,
   #section6{
-    padding: 10% 0 0 0;
+    padding: 40px 0 0 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   #section0,
   // #section2,
-
+  #slide1,
+  #slide2,
   #section3,
   #section4,
   #section5,
   #section6{
-    padding: 10% 180px 0 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #slide1,
-  #slide2{
-    padding: 50px 0 0 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #slide1,
-  #slide2{
-    padding: 50px 180px 0 0;
+    padding: 40px 180px 0 0;
   }
 }
 
@@ -227,22 +201,23 @@ h1{
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0{
-  background-image: url(/assets/bg-pattern-07.png);
-  background-color: #73625F ;
+  background-image: url(/assets/bg-pattern-03.png);
+  background-color: #F59080;
 }
 #section1{
   padding: 0 0 0 0;
+  background-color: #8A9DB2;
 }
 #section2{
   // background-image: url(/assets/bg-pattern-01.png);
   background-color: #FFC9C5;
 }
 #section3{
-  background-image: url(/assets/bg-pattern-02.png);
+  background-image: url(/assets/bg-pattern-06.png);
   background-color: #DEC575;    
 }
 #section4{
-  background-image: url(/assets/bg-pattern-03.png);
+  background-image: url(/assets/bg-pattern-07.png);
   background-color: #F59080;    
 }
 #section5{
@@ -253,15 +228,15 @@ h1{
   background-image: url(/assets/bg-pattern-04.png);
   background-color: #68A68A;    
 }
-#section3 h1{
-  color: #000;
-}
+// #section3 h1{
+//   color: #000;
+// }
 
 
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1{
-  background-image: url(/assets/bg-pattern-01.png);
+  background-image: url(/assets/bg-pattern-02.png);
   z-index: -100;
 }
 #slide2{
@@ -276,7 +251,7 @@ h1{
 
 
 /* Logo Positioning */
-.logoPosition{
+.ns-logoPosition{
   z-index: 10000;
   position: fixed;
   top: 15px;
@@ -285,9 +260,11 @@ h1{
 }
 
 @media screen and (max-width: 767px) {
-  .logoPosition{
+  .ns-logoPosition{
     display: none;
   }
 }
+
+
 
 

@@ -4,6 +4,31 @@
   width: 100%;
   height: 100%; }
 
+.ns-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px 0 15px; }
+
+.ns-th-video {
+  margin: 0 0 10px 0;
+  padding: 4px;
+  background-color: #000005;
+  outline: none; }
+
+.header {
+  color: #000005;
+  font-size: 27px;
+  padding: 10px; }
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF; }
+
+.ns-bigicon {
+  font-size: 35px;
+  color: #000005; }
+
 /**
  * Reset some basic elements
  */
@@ -475,12 +500,6 @@ pre {
 
 /* Style for our header texts
 * --------------------------------------- */
-h1 {
-  font-size: 5em;
-  color: #fff;
-  margin: 0;
-  padding: 0; }
-
 /* Centered texts in each section
 * --------------------------------------- */
 .section {
@@ -499,44 +518,41 @@ h1 {
 
 @media screen and (max-width: 767px) {
   #section0,
+  #slide1,
+  #slide2,
   #section3,
   #section4,
   #section5,
   #section6 {
-    padding: 10% 0 0 0; } }
+    padding: 40px 0 0 0; } }
 @media screen and (min-width: 768px) {
   #section0,
+  #slide1,
+  #slide2,
   #section3,
   #section4,
   #section5,
   #section6 {
-    padding: 10% 180px 0 0; } }
-@media screen and (max-width: 768px) {
-  #slide1,
-  #slide2 {
-    padding: 50px 0 0 0; } }
-@media screen and (min-width: 768px) {
-  #slide1,
-  #slide2 {
-    padding: 50px 180px 0 0; } }
+    padding: 40px 180px 0 0; } }
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0 {
-  background-image: url(/assets/bg-pattern-07.png);
-  background-color: #73625F; }
+  background-image: url(/assets/bg-pattern-03.png);
+  background-color: #F59080; }
 
 #section1 {
-  padding: 0 0 0 0; }
+  padding: 0 0 0 0;
+  background-color: #8A9DB2; }
 
 #section2 {
   background-color: #FFC9C5; }
 
 #section3 {
-  background-image: url(/assets/bg-pattern-02.png);
+  background-image: url(/assets/bg-pattern-06.png);
   background-color: #DEC575; }
 
 #section4 {
-  background-image: url(/assets/bg-pattern-03.png);
+  background-image: url(/assets/bg-pattern-07.png);
   background-color: #F59080; }
 
 #section5 {
@@ -547,13 +563,10 @@ h1 {
   background-image: url(/assets/bg-pattern-04.png);
   background-color: #68A68A; }
 
-#section3 h1 {
-  color: #000; }
-
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1 {
-  background-image: url(/assets/bg-pattern-01.png);
+  background-image: url(/assets/bg-pattern-02.png);
   z-index: -100; }
 
 #slide2 {
@@ -565,7 +578,7 @@ h1 {
   color: #fff; }
 
 /* Logo Positioning */
-.logoPosition {
+.ns-logoPosition {
   z-index: 10000;
   position: fixed;
   top: 15px;
@@ -573,5 +586,5 @@ h1 {
   width: 200px; }
 
 @media screen and (max-width: 767px) {
-  .logoPosition {
+  .ns-logoPosition {
     display: none; } }

@@ -23,7 +23,7 @@ $(document).ready(function() {
     loopHorizontal: false,
     // scrollBar: true, //scrollbar make the pages snap more abruptly; Foundation off-canvas navbar doesn't work either.
     // responsive: 600
-    // normalScrollElements: '#map-canvas, #map-canvas2' // swipe/scroll doesn't work over maps on macbook
+    // normalScrollElements: '#map-canvas-PowellSt, #map-canvas-Steveston' // swipe/scroll doesn't work over maps on macbook
   });
 // END fullpage.js plugin
 
@@ -41,9 +41,9 @@ $(document).ready(function() {
     type:'iframe',
     iframe: {
       markup: '<div class="mfp-iframe-scaler">'+
-              '<div class="mfp-close"></div>'+
-              '<iframe class="mfp-iframe" frameborder="1" allowfullscreen></iframe>'+
-              '<div class="mfp-title">Some caption</div>'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="1" allowfullscreen></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
               '</div>'
     },
   });
@@ -83,13 +83,17 @@ $(document).ready(function() {
       center: centerSteveston,
       disableDefaultUI: true,
       mapTypeControl: false,
+      panControl: true,
+      panControlOptions: {
+        position: google.maps.ControlPosition.LEFT_BOTTOM
+      },
       zoomControl: true,
       zoomControlOptions: {
         style: google.maps.ZoomControlStyle.LARGE,
         position: google.maps.ControlPosition.LEFT_BOTTOM
       },
       scrollwheel: false,
-      scaleControl: false,
+      scaleControl: true,
       draggable: false,
       disableDoubleClickZoom: true
     };
@@ -160,7 +164,7 @@ $(document).ready(function() {
         new google.maps.Point(11,11)),
       shadow: null,
       zIndex: 999,
-      map: map
+      map: mapPowellStreet
     });
 
     if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function(pos) {

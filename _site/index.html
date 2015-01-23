@@ -70,7 +70,7 @@
 
 <!-- Bootstrap Menubar-->
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display-->
     <div class="navbar-header">
@@ -89,8 +89,8 @@
         <li class="dropdown">
           <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#maps">Powell Street</a></li>
-            <li><a href="#maps/1">Steveston</a></li>
+            <li><a href="#maps/1">Powell Street</a></li>
+            <li><a href="#maps/2">Steveston</a></li>
           </ul>
         </li>
 
@@ -113,7 +113,7 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-  </nav>
+</nav>
 
 
 
@@ -125,189 +125,219 @@
    <li data-menuanchor="credits"><a href="#credits">Credits</li>
  </ul> -->
       
-<a href="#home" class="logoPosition"><img src="assets/NS-Logo-200.png"></a>
+<a href="#home" class="ns-logoPosition"><img src="assets/NS-Logo-200.png"></a>
 <!-- fullPage.js -->
-      <div id="fullpage">
+<div id="fullpage">
       
-  <!-- Home -->
-        <div class="section" id="section0">
-          <div class="row">
-            <div class="small-block-grid-1 large-block-grid-3 columns">...</div>
-            <div class="small-block-grid-10 large-block-grid-6 columns">
-              <h1>Home</h1>
-            </div>
-            <div class="small-block-grid-1 large-block-grid-3 columns">...</div>
+<!-- Home -->
+  <div class="section" id="section0">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-8">
+        <h1>Home</h1>
+        <a href="//player.vimeo.com/video/11941540" class="fresco">
+          <div class="flex-video widescreen vimeo">
+            <iframe src="//player.vimeo.com/video/11941540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
-          <div class="row">
-            <div class="small-1 large-3 columns">...</div>
-            <div class="small-10 large-6 columns">
-            <a href="//player.vimeo.com/video/11941540" class="fresco">
-              <div class="flex-video widescreen vimeo">
-                <iframe src="//player.vimeo.com/video/11941540" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              </div>
-            </a>
-            </div>
-            <div class="small-1 large-3 columns">...</div>
-          </div>
-        </div>
+        </a>
+      </div>
+    </div>
+  </div> <!-- close section -->
 
 <!-- Maps -->
-        <div class="section" id="section1">
-            <div class="slide"> 
-              <div id="map-canvas-PowellSt"></div>
-            </div>
-            <div class="slide">
-              <div id="map-canvas-Steveston"></div>
-            </div>
-        </div>
+  <div class="section" id="section1">
+    <div class="slide" id="slide2">
+      <h1>Maps</h1>
+    </div>
+    <div class="slide" id="map-canvas-PowellSt"></div>
+    <div class="slide" id="map-canvas-Steveston"></div>
+  </div>
 
 <!-- Chronology -->
-        <div class="section" id="section2">
-          <div class="slide" id="slide1" data-anchor="slide1">
-            <h1>First Immigrants (18??-1907)</h1>
-          </div>
-          <div class="slide" id="slide1" data-anchor="slide2">
-            <h1>The Building Years (1907-1941)</h1>
-          </div>
-          <div class="slide" id="slide1">
-            <h1>Internment & Dispersal (1941-1949)</h1>
-          </div>
-          <div class="slide" id="slide1">
-            <h1>Rebuilding (1950-1977)</h1>
-          </div>
-          <div class="slide" id="slide1">
-            <h1>Redress (1977-1988)</h1>
-          </div>
-          <div class="slide" id="slide1">
-            <h1>Post Redress (1988-2015)</h1>
-          </div>
-        </div>
+  <div class="section" id="section2">
+    <div class="slide" id="slide1" data-anchor="slide1">
+      <h1>First Immigrants (18??-1907)</h1>
+    </div>
+    <div class="slide" id="slide1" data-anchor="slide2">
+      <h1>The Building Years (1907-1941)</h1>
+    </div>
+    <div class="slide" id="slide1">
+      <h1>Internment & Dispersal (1941-1949)</h1>
+    </div>
+    <div class="slide" id="slide1">
+      <h1>Rebuilding (1950-1977)</h1>
+    </div>
+    <div class="slide" id="slide1">
+      <h1>Redress (1977-1988)</h1>
+    </div>
+    <div class="slide" id="slide1">
+      <h1>Post Redress (1988-2015)</h1>
+    </div>
+  </div> <!-- close section -->
 
 <!-- Videos -->
-        <div class="section" id="section3">
-          <h1>Video Index</h1>
-          <!-- Using only the small-block-grid -->
-          <ul class="small-block-grid-3 medium-block-grid-4 large-block-grid-6">
-            <li>
-              <a href="http://vimeo.com/87734365" class="video-link">
-                <img class="th" src="assets/img_sample01.jpg">
-              </a>          
-            </li>
-            <li>
-              <a href="assets/img_sample02.jpg" class="fresco" data-fresco-type="image">
-                <img class="th" src="assets/img_sample02.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="http://vimeo.com/32071937" class="video-link">
-                <img class="th" src="assets/img_sample03.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="http://vimeo.com/11941540" class="video-link">
-                <img class="th" src="assets/img_sample04.jpg">
-              </a>
-            </li>
-            <li>
-              <img class="th" src="assets/img_sample05.jpg">
-            </li>
-            <li>
-              <img class="th" src="assets/img_sample06.jpg">
-            </li>
-            <li>
-              <img class="th" src="assets/img_sample07.jpg">
-            </li>
-            <li>
-              <img class="th" src="assets/img_sample08.jpg">
-            </li>
-            <li>
-              <img class="th" src="assets/img_sample09.jpg">
-            </li>
-            <li>
-              <img class="th" src="assets/img_sample10.jpg">
-            </li>
-          </ul>
-        </div>
+  <div class="section" id="section3">
+    <h1>Video Index</h1>
+    <div class="ns-container">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">01</h2>
+            </div>
+          </a>
+        </div>          
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">02</h2>
+            </div>
+          </a>
+        </div>  
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">03</h2>
+            </div>
+          </a>
+        </div>  
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">04</h2>
+            </div>
+          </a>
+        </div>  
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">05</h2>
+            </div>
+          </a>
+        </div>  
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">06</h2>
+            </div>
+          </a>
+        </div>          
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">07</h2>
+            </div>
+          </a>
+        </div>  
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">08</h2>
+            </div>
+          </a>
+        </div>  
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">09</h2>
+            </div>
+          </a>
+        </div>  
+        <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+          <a href="http://vimeo.com/32071937" class="video-link" style="outline:none">
+            <div class="ns-th-video">
+              <img src="/assets/ns-thumb-01.jpg">
+              <h2 style="color:white;">10</h2>
+            </div>
+          </a>
+        </div>               
+      </div> <!-- close row -->
+    </div> <!-- close ns-container -->
+  </div> <!-- close section -->
 
 <!-- Education -->
-        <div class="section" id="section4">
-          <h1>Educational Resources</h1>
-        </div>
+  <div class="section" id="section4">
+    <h1>Educational Resources</h1>
+  </div>
 
 <!-- Contact -->
-        <div class="section" id="section5">
-          <div class="row">
-            <div class="small-2 large-4 columns">
-              <div id="contactForm">
-                <form id="myForm" method="post" data-abide>  
-                    
-                  <h1>Contact</h1>
-                  <label>Name</label>
-                  <small class="error">Your full name is required.</small>
-                  <input type="text" placeholder="Full Name" required>
-                  
-                  <label>Email</label>
-                  <small class="error">An email address is required.</small>
+  <div class="section" id="section5">
+    <!-- <h1>Contact</h1> -->
+    <div class="ns-container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <div class="well well-sm"> -->
+            <form class="form-horizontal" method="post">
+              <fieldset>
+                <legend class="text-center header"><h1>Contact Nikkei Stories</h1></legend>
 
-                  <input type="email" placeholder="name@address.com" required>
-                  
-                  <label>Web Address</label>          
-                  <input type="url" placeholder="http://www.url.com">
-                  
-                  <label>Your Message</label>
-                  <small class="error">Your message is required.</small>
-                  <textarea placeholder="Enter your message here" required></textarea>
-                    
-                  <input type="submit" class="nice blue radius button" value="Send Message"></button></a>
-                </form>
-              </div>
-            </div>
-            <div class="small-4 large-4 columns">...</div>
-            <div class="small-6 large-4 columns">...</div>
-          </div>
-          <div class="row">
-            <div class="large-3 columns">...</div>
-            <div class="large-6 columns">...</div>
-            <div class="large-3 columns">...</div>
-          </div>
-          <div class="row">
-            <div class="small-6 large-2 columns">...</div>
-            <div class="small-6 large-8 columns">...</div>
-            <div class="small-12 large-2 columns">...</div>
-          </div>
-          <div class="row">
-            <div class="small-3 columns">...</div>
-            <div class="small-9 columns">...</div>
-          </div>
-          <div class="row">
-            <div class="large-4 columns">...</div>
-            <div class="large-8 columns">...</div>
-          </div>
-          <div class="row">
-            <div class="small-6 large-5 columns">...</div>
-            <div class="small-6 large-7 columns">...</div>
-          </div>
-          <div class="row">
-            <div class="large-6 columns">...</div>
-            <div class="large-6 columns">...</div>
-          </div>
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="ns-bigicon glyphicon glyphicon-user"></i></span>
+                  <div class="col-md-8">
+                    <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="ns-bigicon glyphicon glyphicon-user"></i></span>
+                  <div class="col-md-8">
+                    <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="ns-bigicon glyphicon glyphicon-envelope"></i></span>
+                  <div class="col-md-8">
+                    <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                  </div>
+<!--              <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                    Enter a valid email address
+                  </div> -->
+                </div>
+
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="ns-bigicon glyphicon glyphicon-phone-alt"></i></span>
+                  <div class="col-md-8">
+                    <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <span class="col-md-1 col-md-offset-2 text-center"><i class="ns-bigicon glyphicon glyphicon-pencil"></i></span>
+                  <div class="col-md-8">
+                    <textarea class="form-control" id="message" name="message" placeholder="Enter your message here" rows="7"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          <!-- </div> -->
         </div>
+      </div> <!-- close row -->
+    </div> <!-- close ns-container -->
+  </div> <!-- close section -->
 
 <!-- Credits -->
-        <div class="section" id="section6">
-          <h1>Credits</h1>
-        </div>
-
-      </div>
-
-
-<!-- Foundation
-
-    </section>
-  close the off-canvas menu
-  <a class="exit-off-canvas"></a>
+  <div class="section" id="section6">
+    <h1>Credits</h1>
   </div>
-</div>-->
+
+</div> <!-- close fullpage.js -->
+
 
 
 

@@ -1529,6 +1529,7 @@
 		function addSlidesNavigation(section, numSlides){
 			section.append('<div class="fp-slidesNav"><ul></ul></div>');
 			var nav = section.find('.fp-slidesNav');
+			var docWidth = $(document).width();  // GM assigns the width of the window to a variable to be used below
 
 			//top or bottom
 			nav.addClass(options.slidesNavPosition);
@@ -1537,8 +1538,12 @@
 				nav.find('ul').append('<li><a href="#"><span></span></a></li>');
 			}
 
-			//centering it
-			nav.css('margin-left', '-' + (nav.width()/2) + 'px');
+			//centering it depeding on width of html document
+			if (docWidth >= 768) {																		 			// GM 768 is the threshold for mobile
+				nav.css('margin-left', '-' + ((180+nav.width())/2) + 'px');  	// GM For large screen 180px is the right-side margin
+			} else {
+				nav.css('margin-left', '-' + (nav.width()/2) + 'px');				 	// GM centers it on screen
+			}
 
 			nav.find('li').first().find('a').addClass('active');
 		}
