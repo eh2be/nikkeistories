@@ -50,8 +50,20 @@ $(document).ready(function() {
 // END Magnific Popup
 
 
-// START Google Maps API
+// // START Google Maps API
+
   function initialize() {
+
+  // MAPTILER init START
+    var opts = {
+        streetViewControl: false,
+        center: new google.maps.LatLng(49.283113, -123.095757),
+        zoom: 13
+    };
+    map = new google.maps.Map(document.getElementById("map"), opts);
+    map.setMapTypeId('satellite');
+    map.overlayMapTypes.insertAt(0, maptiler);
+  // MAPTILER init END
 
     var centerPowellStreet = new google.maps.LatLng(49.2827812,-123.0958854); // Powell Street Center
     var centerSteveston = new google.maps.LatLng(49.125735, -123.178775);     // Steveston Center
@@ -101,55 +113,56 @@ $(document).ready(function() {
     var mapPowellStreet = new google.maps.Map(document.getElementById('map-canvas-PowellSt'), optionsPowellSt);   // Powell Street Map
     var mapSteveston = new google.maps.Map(document.getElementById('map-canvas-Steveston'), optionsSteveston); // Steveston Map
 
+
     // Powell Street Marker Settings
-    var marker477PowellSt = new google.maps.Marker({
+    var marker477PowellSt_Pole754 = new google.maps.Marker({
       position: {lat: 49.2831059, lng: -123.0934385},
-      map: mapPowellStreet,
+      map: map, //mapPowellStreet,
       title:"First Immigrants"
     });
-    var marker457PowellSt = new google.maps.Marker({
-      position: {lat: 49.2831114, lng: -123.0939237},
-      map: mapPowellStreet,
+    var marker457PowellSt_Pole554 = new google.maps.Marker({
+      position: {lat: 49.2831113, lng: -123.0939076},
+      map: map, //mapPowellStreet,
       title:"Lives of Women"
     });
-    var marker369PowellSt = new google.maps.Marker({
+    var marker369PowellSt_Pole753 = new google.maps.Marker({
       position: {lat: 49.2831381, lng: -123.0961},
-      map: mapPowellStreet,
-      title:"Maikawa Family"
+      map: map, //mapPowellStreet,
+      title:"Maikawa Brothers"
     });
-    var marker310PowellSt = new google.maps.Marker({
-      position: {lat: 49.2831582, lng: -123.0974325},
-      map: mapPowellStreet,
+    var marker357PowellSt_Pole553 = new google.maps.Marker({
+      position: {lat: 49.2831441, lng: -123.0965021},
+      map: map, //mapPowellStreet,
+      title:"Masumi Mitsui"
+    });        
+    var marker314PowellSt_Pole153 = new google.maps.Marker({
+      position: {lat: 49.283157, lng: -123.097358},
+      map: map, //mapPowellStreet,
       title:"Internment"
     });
-    var marker324PowellSt = new google.maps.Marker({
-      position: {lat: 49.2831542, lng: -123.0971718},
-      map: mapPowellStreet,
-      title:"Masajiro Miyazaki"
-    });
-    var marker382PowellSt = new google.maps.Marker({
-      position: {lat: 49.2830166, lng: -123.0958526},
-      map: mapPowellStreet,
-      title:"Etsuji Moriii"
-    });
-    var marker394PowellSt = new google.maps.Marker({
-      position: {lat: 49.2831294, lng: -123.0955259},
-      map: mapPowellStreet,
+    var marker394PowellSt_Pole1053 = new google.maps.Marker({
+      position: {lat: 49.2831287, lng: -123.0954779},
+      map: map, //mapPowellStreet,
       title:"Tom Shoyama"
     });        
-    var marker213ECordovaSt = new google.maps.Marker({
-      position: {lat: 49.2822899, lng: -123.0997395},
-      map: mapPowellStreet,
-      title:"Soldier Stories"
-    });        
-    var marker487AlexanderSt = new google.maps.Marker({
-      position: {lat: 49.2840703, lng: -123.0937238},
-      map: mapPowellStreet,
+    var markerPowellGrounds_Pole254 = new google.maps.Marker({
+      position: {lat: 49.283124, lng: -123.095049},
+      map: map, //mapPowellStreet,
+      title:"The Asahi"
+    });
+    var marker362AlexanderSt_Pole453 = new google.maps.Marker({
+      position: {lat: 49.284014, lng: -123.09552},
+      map: map, //mapPowellStreet,
+      title:"Etsuji Moriii"
+    });
+    var marker487AlexanderSt_Pole254 = new google.maps.Marker({
+      position: {lat: 49.283978, lng: -123.094065},
+      map: map, //mapPowellStreet,
       title:"Japanese Language School"
     });
-    var markerOppenheimerPark = new google.maps.Marker({
-      position: {lat: 49.282708, lng: -123.094319},
-      map: mapPowellStreet,
+    var markerOppenheimerPark_Pole12 = new google.maps.Marker({
+      position: {lat: 49.282795, lng: -123.093344},
+      map: map, //mapPowellStreet,
       title:"Redress"
     });
 
@@ -176,6 +189,38 @@ $(document).ready(function() {
     // END geolocation
 
   };
+
+// XXXXXXXXXXXXXXXXXXXXXXX MAPTILER START
+  var map;
+  var mapBounds = new google.maps.LatLngBounds(
+      new google.maps.LatLng(49.277847, -123.109790),
+      new google.maps.LatLng(49.288379, -123.081723));
+  var mapMinZoom = 13;
+  var mapMaxZoom = 21;
+  var maptiler = new google.maps.ImageMapType({
+      getTileUrl: function(coord, zoom) { 
+          var proj = map.getProjection();
+          var z2 = Math.pow(2, zoom);
+          var tileXSize = 256 / z2;
+          var tileYSize = 256 / z2;
+          var tileBounds = new google.maps.LatLngBounds(
+              proj.fromPointToLatLng(new google.maps.Point(coord.x * tileXSize, (coord.y + 1) * tileYSize)),
+              proj.fromPointToLatLng(new google.maps.Point((coord.x + 1) * tileXSize, coord.y * tileYSize))
+          );
+          var y = coord.y;
+          var x = coord.x >= 0 ? coord.x : z2 + coord.x
+          if (mapBounds.intersects(tileBounds) && (mapMinZoom <= zoom) && (zoom <= mapMaxZoom))
+              return zoom + "/" + x + "/" + y + ".png";
+          else
+              return "http://www.maptiler.org/img/none.png";
+      },
+      tileSize: new google.maps.Size(256, 256),
+      isPng: true,
+
+      opacity: 1.0
+  });
+// XXXXXXXXXXXXXXXXXXXXXXX MAPTILER END
+
   google.maps.event.addDomListener(window, 'load', initialize);
 
 function drop() {
