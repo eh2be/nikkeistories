@@ -55,14 +55,73 @@ $(document).ready(function() {
   function initialize() {
 
   // MAPTILER init START
+    // var opts = {
+    //     streetViewControl: false,
+    //     center: new google.maps.LatLng(49.283113, -123.095757),
+    //     zoom: 13
+    // };
+    // map = new google.maps.Map(document.getElementById("map"), opts);
+    // map.setMapTypeId('satellite');
+    // map.overlayMapTypes.insertAt(0, maptiler);
+
+
+    var mapBounds = new google.maps.LatLngBounds(
+      new google.maps.LatLng(49.27784668, -123.10978977),
+      new google.maps.LatLng(49.2883785, -123.08172343)
+    );
+    var mapBounds2 = new google.maps.LatLngBounds(
+      new google.maps.LatLng(49.282036, -123.098632),
+      new google.maps.LatLng(49.284374, -123.091508)
+    );
+    var mapMinZoom = 13;
+    var mapMaxZoom = 21;
     var opts = {
-        streetViewControl: false,
-        center: new google.maps.LatLng(49.283113, -123.095757),
-        zoom: 13
-    };
-    map = new google.maps.Map(document.getElementById("map"), opts);
-    map.setMapTypeId('satellite');
-    map.overlayMapTypes.insertAt(0, maptiler);
+      streetViewControl: false,
+      tilt: 0,
+      mapTypeId: google.maps.MapTypeId.HYBRID,
+      zoom: 18,
+      
+      disableDefaultUI: true,
+      mapTypeControl: false,
+      panControl: true,
+      panControlOptions: {
+        position: google.maps.ControlPosition.LEFT_BOTTOM
+      },
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.LARGE,
+        position: google.maps.ControlPosition.LEFT_BOTTOM
+      },
+      scrollwheel: false,
+      scaleControl: true,
+      draggable: false,
+      disableDoubleClickZoom: true
+
+    }
+    var map = new google.maps.Map(document.getElementById("map-canvas"), opts);
+    
+    // https://developers.google.com/maps/documentation/javascript/examples/maptype-image-overlay
+    var imageMapType = new google.maps.ImageMapType({
+        getTileUrl: function(coord, zoom) {
+          var proj = map.getProjection();
+          var z2 = Math.pow(2, zoom);
+          var tileXSize = 256 / z2;
+          var tileYSize = 256 / z2;
+          var tileBounds = new google.maps.LatLngBounds(
+            proj.fromPointToLatLng(new google.maps.Point(coord.x * tileXSize, (coord.y + 1) * tileYSize)),
+            proj.fromPointToLatLng(new google.maps.Point((coord.x + 1) * tileXSize, coord.y * tileYSize))
+          );
+          if (!mapBounds.intersects(tileBounds) || zoom < mapMinZoom || zoom > mapMaxZoom) return null;
+          return "{z}/{x}/{y}.png".replace('{z}',zoom).replace('{x}',coord.x).replace('{y}',coord.y);
+        },
+        tileSize: new google.maps.Size(256, 256),
+        minZoom: mapMinZoom,
+        maxZoom: mapMaxZoom,
+        name: 'Tiles'
+    });
+
+    map.overlayMapTypes.push(imageMapType);
+    map.fitBounds(mapBounds2);
   // MAPTILER init END
 
     var centerPowellStreet = new google.maps.LatLng(49.2827812,-123.0958854); // Powell Street Center
@@ -189,37 +248,6 @@ $(document).ready(function() {
     // END geolocation
 
   };
-
-// XXXXXXXXXXXXXXXXXXXXXXX MAPTILER START
-  var map;
-  var mapBounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(49.277847, -123.109790),
-      new google.maps.LatLng(49.288379, -123.081723));
-  var mapMinZoom = 13;
-  var mapMaxZoom = 21;
-  var maptiler = new google.maps.ImageMapType({
-      getTileUrl: function(coord, zoom) { 
-          var proj = map.getProjection();
-          var z2 = Math.pow(2, zoom);
-          var tileXSize = 256 / z2;
-          var tileYSize = 256 / z2;
-          var tileBounds = new google.maps.LatLngBounds(
-              proj.fromPointToLatLng(new google.maps.Point(coord.x * tileXSize, (coord.y + 1) * tileYSize)),
-              proj.fromPointToLatLng(new google.maps.Point((coord.x + 1) * tileXSize, coord.y * tileYSize))
-          );
-          var y = coord.y;
-          var x = coord.x >= 0 ? coord.x : z2 + coord.x
-          if (mapBounds.intersects(tileBounds) && (mapMinZoom <= zoom) && (zoom <= mapMaxZoom))
-              return zoom + "/" + x + "/" + y + ".png";
-          else
-              return "http://www.maptiler.org/img/none.png";
-      },
-      tileSize: new google.maps.Size(256, 256),
-      isPng: true,
-
-      opacity: 1.0
-  });
-// XXXXXXXXXXXXXXXXXXXXXXX MAPTILER END
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
