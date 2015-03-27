@@ -54,33 +54,20 @@ $(document).ready(function() {
 
   function initialize() {
 
-  // MAPTILER init START
-    // var opts = {
-    //     streetViewControl: false,
-    //     center: new google.maps.LatLng(49.283113, -123.095757),
-    //     zoom: 13
-    // };
-    // map = new google.maps.Map(document.getElementById("map"), opts);
-    // map.setMapTypeId('satellite');
-    // map.overlayMapTypes.insertAt(0, maptiler);
 
+// Powell Street MAP
 
-    var mapBounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(49.27784668, -123.10978977),
-      new google.maps.LatLng(49.2883785, -123.08172343)
-    );
-    var mapBounds2 = new google.maps.LatLngBounds(
-      new google.maps.LatLng(49.282036, -123.098632),
-      new google.maps.LatLng(49.284374, -123.091508)
-    );
-    var mapMinZoom = 13;
-    var mapMaxZoom = 21;
-    var opts = {
+    var map = new google.maps.Map(document.getElementById("map-canvas"), optionsPowellSt);
+
+    var centerPowellStreet = new google.maps.LatLng(49.2827812,-123.0958854); // Powell Street Center
+ 
+    var optionsPowellSt = {
       streetViewControl: false,
       tilt: 0,
-      mapTypeId: google.maps.MapTypeId.HYBRID,
+      // mapTypeId: google.maps.MapTypeId.HYBRID,
       zoom: 18,
-      
+
+      center: centerPowellStreet,
       disableDefaultUI: true,
       mapTypeControl: false,
       panControl: true,
@@ -95,10 +82,30 @@ $(document).ready(function() {
       scrollwheel: false,
       scaleControl: true,
       draggable: false,
-      disableDoubleClickZoom: true
+      disableDoubleClickZoom: true,
+    };
 
-    }
-    var map = new google.maps.Map(document.getElementById("map-canvas"), opts);
+  // MAPTILER init START
+    // var opts = {
+    //     streetViewControl: false,
+    //     center: new google.maps.LatLng(49.283113, -123.095757),
+    //     zoom: 13
+    // };
+    // map = new google.maps.Map(document.getElementById("map"), opts);
+    // map.setMapTypeId('satellite');
+    // map.overlayMapTypes.insertAt(0, maptiler);
+
+    var mapBounds = new google.maps.LatLngBounds(
+      new google.maps.LatLng(49.27784668, -123.10978977),
+      new google.maps.LatLng(49.2883785, -123.08172343)
+    );
+    var mapBounds2 = new google.maps.LatLngBounds(
+      new google.maps.LatLng(49.282036, -123.098632),
+      new google.maps.LatLng(49.284374, -123.091508)
+    );
+    var mapMinZoom = 13;
+    var mapMaxZoom = 21;
+
     
     // https://developers.google.com/maps/documentation/javascript/examples/maptype-image-overlay
     var imageMapType = new google.maps.ImageMapType({
@@ -122,31 +129,11 @@ $(document).ready(function() {
 
     map.overlayMapTypes.push(imageMapType);
     map.fitBounds(mapBounds2);
+
+
   // MAPTILER init END
 
-    var centerPowellStreet = new google.maps.LatLng(49.2827812,-123.0958854); // Powell Street Center
     var centerSteveston = new google.maps.LatLng(49.125735, -123.178775);     // Steveston Center
-
-    // Powell Street Map Settings
-    var optionsPowellSt = {
-      center: centerPowellStreet,
-      zoom: 17,
-      disableDefaultUI: true,
-      mapTypeControl: false,
-      panControl: true,
-      panControlOptions: {
-        position: google.maps.ControlPosition.LEFT_BOTTOM
-      },
-      zoomControl: true,
-      zoomControlOptions: {
-        style: google.maps.ZoomControlStyle.LARGE,
-        position: google.maps.ControlPosition.LEFT_BOTTOM
-      },
-      scrollwheel: false,
-      scaleControl: true,
-      draggable: false,
-      disableDoubleClickZoom: true,
-    };
 
     // Steveston Map Settings
     var optionsSteveston = {
@@ -169,61 +156,136 @@ $(document).ready(function() {
       disableDoubleClickZoom: true
     };
 
-    var mapPowellStreet = new google.maps.Map(document.getElementById('map-canvas-PowellSt'), optionsPowellSt);   // Powell Street Map
+    // var mapPowellStreet = new google.maps.Map(document.getElementById('map-canvas-PowellSt'), optionsPowellSt);   // Powell Street Map
     var mapSteveston = new google.maps.Map(document.getElementById('map-canvas-Steveston'), optionsSteveston); // Steveston Map
 
 
     // Powell Street Marker Settings
     var marker477PowellSt_Pole754 = new google.maps.Marker({
-      position: {lat: 49.2831059, lng: -123.0934385},
+      position: {lat: 49.283170, lng: -123.093410},
       map: map, //mapPowellStreet,
-      title:"First Immigrants"
+      title: "First Immigrants",
+      icon: "/assets/1_FirstImmigrants_32.png"
     });
     var marker457PowellSt_Pole554 = new google.maps.Marker({
       position: {lat: 49.2831113, lng: -123.0939076},
       map: map, //mapPowellStreet,
-      title:"Lives of Women"
+      title: "Lives of Women",
+      icon: "/assets/2_Women_32.png"
     });
     var marker369PowellSt_Pole753 = new google.maps.Marker({
       position: {lat: 49.2831381, lng: -123.0961},
       map: map, //mapPowellStreet,
-      title:"Maikawa Brothers"
+      title: "Maikawa Brothers",
+      icon: "/assets/3_Maikawa_32.png"
     });
     var marker357PowellSt_Pole553 = new google.maps.Marker({
       position: {lat: 49.2831441, lng: -123.0965021},
       map: map, //mapPowellStreet,
-      title:"Masumi Mitsui"
+      title: "Masumi Mitsui",
+      icon: "/assets/4_Mitsui_32.png"
     });        
     var marker314PowellSt_Pole153 = new google.maps.Marker({
-      position: {lat: 49.283157, lng: -123.097358},
+      position: {lat: 49.283215, lng: -123.097358},
       map: map, //mapPowellStreet,
-      title:"Internment"
+      title: "Internment",
+      icon: "/assets/5_Internment_32.png"
     });
     var marker394PowellSt_Pole1053 = new google.maps.Marker({
       position: {lat: 49.2831287, lng: -123.0954779},
       map: map, //mapPowellStreet,
-      title:"Tom Shoyama"
+      title: "Tom Shoyama",
+      icon: "/assets/6_Shoyama_32.png"
     });        
     var markerPowellGrounds_Pole254 = new google.maps.Marker({
       position: {lat: 49.283124, lng: -123.095049},
       map: map, //mapPowellStreet,
-      title:"The Asahi"
+      title: "The Asahi",
+      icon: "/assets/7_Asahi_32.png"
     });
     var marker362AlexanderSt_Pole453 = new google.maps.Marker({
       position: {lat: 49.284014, lng: -123.09552},
       map: map, //mapPowellStreet,
-      title:"Etsuji Moriii"
+      title: "Etsuji Morii",
+      icon: "/assets/8_Morii_32.png"
     });
     var marker487AlexanderSt_Pole254 = new google.maps.Marker({
       position: {lat: 49.283978, lng: -123.094065},
       map: map, //mapPowellStreet,
-      title:"Japanese Language School"
+      title: "Japanese Language School",
+      icon: "/assets/9_JLS_32.png"
     });
     var markerOppenheimerPark_Pole12 = new google.maps.Marker({
       position: {lat: 49.282795, lng: -123.093344},
       map: map, //mapPowellStreet,
-      title:"Redress"
+      title: "Redress",
+      icon: "/assets/10_Redress_32.png"
     });
+
+//    INFOWINDOW START
+
+    // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
+    var contentString1 = '<img src="/assets/1_FirstImmigrants_150.jpg">';
+    var contentString2 = '<img src="/assets/2_Women_150.jpg">';
+    var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
+    var contentString4 = 'MASUMI MITSUI';
+    var contentString5 = 'INTERNMENT';
+    var contentString6 = 'TOM SHOYAMA';
+    var contentString7 = 'THE ASAHI';
+    var contentString8 = 'ETSUJI MORII';
+    var contentString9 = 'JAPANESE LANGUAGE SCHOOL';
+    var contentString10 = 'REDRESS';
+
+    var infowindow1 = new google.maps.InfoWindow({
+      content: contentString1
+    });
+    var infowindow2 = new google.maps.InfoWindow({
+      content: contentString2
+    });
+    var infowindow3 = new google.maps.InfoWindow({
+      content: contentString3
+    });
+    var infowindow4 = new google.maps.InfoWindow({
+      content: contentString4
+    });
+    var infowindow5 = new google.maps.InfoWindow({
+      content: contentString5
+    });
+    var infowindow6 = new google.maps.InfoWindow({
+      content: contentString6
+    });
+    var infowindow7 = new google.maps.InfoWindow({
+      content: contentString7
+    });
+    var infowindow8 = new google.maps.InfoWindow({
+      content: contentString8
+    });    
+    var infowindow9 = new google.maps.InfoWindow({
+      content: contentString9
+    });
+    var infowindow10 = new google.maps.InfoWindow({
+      content: contentString10
+    });
+
+    google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
+      infowindow1.open(map,this);
+    });
+    // google.maps.event.addListener(marker477PowellSt_Pole754, 'mouseout', function() {
+    //   setTimeout(function() {
+    //     infowindow1.close(map, this);
+    //   }, 2000);
+    // });
+    google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
+      infowindow2.open(map,this);
+    });
+    google.maps.event.addListener(marker369PowellSt_Pole753, 'click', function() {
+      infowindow3.open(map,this);
+    });
+    google.maps.event.addListener(marker357PowellSt_Pole553, 'click', function() {
+      infowindow4.open(map,this);
+    });
+
+    //INFOWINDOW END
 
     // START geolocation 
     // Marker for my location (http://stackoverflow.com/questions/9142833/show-my-location-on-google-maps-api-v3) - does this update in realtime on iPhone/iPad?

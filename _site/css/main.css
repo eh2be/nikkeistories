@@ -485,11 +485,6 @@ pre {
   .highlight .il {
     color: #009999; }
 
-#map-canvas-PowellSt {
-  height: 100%;
-  margin: 0;
-  padding: 0; }
-
 #map-canvas-Steveston {
   height: 100%;
   margin: 0;
@@ -501,6 +496,10 @@ pre {
   padding: 0; }
 
 .gmnoprint img {
+  max-width: none; }
+
+/** FIX for Bootstrap and Google Maps Info window styes problem **/
+img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   max-width: none; }
 
 /* Style for our header texts
