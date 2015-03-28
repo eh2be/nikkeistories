@@ -64,7 +64,7 @@ html, body {
   .fp-controlArrow {
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 100px;
     cursor: pointer;
     width: 0;
     height: 0;
@@ -75,12 +75,12 @@ html, body {
 .fp-controlArrow.fp-prev {
     left: 15px;
     width: 0;
-    border-width: 38.5px 34px 38.5px 0;
+    border-width: 20px 20px 20px 0;
     border-color: transparent #000005 transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 165px;
-    border-width: 38.5px 0 38.5px 34px;
+    right: 235px;
+    border-width: 20px 0 20px 20px;
     border-color: transparent transparent transparent #000005;
 }
 .fp-scrollable {

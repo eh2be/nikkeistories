@@ -5,7 +5,7 @@
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   3em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -25,6 +25,9 @@ $content-width:    960px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+p {
+  font-size: 1.5em;
+}
 
 
 // Using media queries with like this:
@@ -200,8 +203,14 @@ max-width: none;
   #section4,
   #section5,
   #section6{
-    padding: 40px 180px 0 0;
+    padding: 40px 220px 40px 0;
   }
+
+  .chrono-wrapper {
+  padding: 0px 75px 250px;
+  text-align: justify;
+  }
+
 }
 
 
@@ -209,32 +218,33 @@ max-width: none;
 * --------------------------------------- */
 #section0{
   background-image: url(/assets/bg-pattern-03.png);
-  background-color: #F59080;
+  background-color: #E3E9E9;
 }
 #section1{
   padding: 0 0 0 0;
-  background-color: #8A9DB2;
+  background-color: #C7C7C7;
 }
 #section2{
   // background-image: url(/assets/bg-pattern-01.png);
-  background-color: #FFC9C5;
+  background-color: #E3E9E9;
 }
 #section3{
   background-image: url(/assets/bg-pattern-06.png);
-  background-color: #DEC575;    
+  background-color: #C7C7C7;    
 }
 #section4{
   background-image: url(/assets/bg-pattern-07.png);
-  background-color: #F59080;    
+  background-color: #E3E9E9;    
 }
 #section5{
   background-image: url(/assets/bg-pattern-05.png);
-  background-color: #8A9DB2;    
+  background-color: #C7C7C7;    
 }
 #section6{
   background-image: url(/assets/bg-pattern-04.png);
-  background-color: #68A68A;    
+  background-color: #E3E9E9;    
 }
+
 // #section3 h1{
 //   color: #000;
 // }
@@ -257,6 +267,41 @@ max-width: none;
 }
 
 
+/* START Infobox */
+.infobox-wrapper {
+    display:none;
+}
+#infobox {
+    border:2px solid black;
+    margin-top: 8px;
+    background:#333;
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    padding: .5em 1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow:0 -1px #000000;
+    -webkit-box-shadow: 0 0  8px #000;
+    box-shadow: 0 0 8px #000;
+}
+/* END Infobox */
+
+/* magnific popup testing in infobox */
+#open-popup {padding:20px}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+
 /* Logo Positioning */
 .ns-logoPosition{
   z-index: 10000;
@@ -272,6 +317,15 @@ max-width: none;
   }
 }
 
+.playIcon {
+  height: 27px;
+  width: 36px;
+}
+.playIcon:hover {
+  height: 27px;
+  width: 36px;
+background-color: white
+}
 
 
 

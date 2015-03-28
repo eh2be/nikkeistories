@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400italic);
 @import url(http://fonts.googleapis.com/css?family=Slabo+13px);
+p {
+  font-size: 1.5em; }
+
 .ns-background {
   width: 100%;
   height: 100%; }
@@ -43,7 +46,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 3em;
   line-height: 1.5;
   font-weight: 300;
   color: #DEC575;
@@ -73,7 +76,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 2.625em; }
 
 /**
  * Lists
@@ -307,7 +310,7 @@ pre {
     margin-bottom: 15px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 2.625em;
   color: #E37882; }
 
 .post-link {
@@ -537,35 +540,39 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   #section4,
   #section5,
   #section6 {
-    padding: 40px 180px 0 0; } }
+    padding: 40px 220px 40px 0; }
+
+  .chrono-wrapper {
+    padding: 0px 75px 250px;
+    text-align: justify; } }
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0 {
   background-image: url(/assets/bg-pattern-03.png);
-  background-color: #F59080; }
+  background-color: #E3E9E9; }
 
 #section1 {
   padding: 0 0 0 0;
-  background-color: #8A9DB2; }
+  background-color: #C7C7C7; }
 
 #section2 {
-  background-color: #FFC9C5; }
+  background-color: #E3E9E9; }
 
 #section3 {
   background-image: url(/assets/bg-pattern-06.png);
-  background-color: #DEC575; }
+  background-color: #C7C7C7; }
 
 #section4 {
   background-image: url(/assets/bg-pattern-07.png);
-  background-color: #F59080; }
+  background-color: #E3E9E9; }
 
 #section5 {
   background-image: url(/assets/bg-pattern-05.png);
-  background-color: #8A9DB2; }
+  background-color: #C7C7C7; }
 
 #section6 {
   background-image: url(/assets/bg-pattern-04.png);
-  background-color: #68A68A; }
+  background-color: #E3E9E9; }
 
 /*Adding background for the slides
 * --------------------------------------- */
@@ -581,6 +588,39 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 #infoMenu li a {
   color: #fff; }
 
+/* START Infobox */
+.infobox-wrapper {
+  display: none; }
+
+#infobox {
+  border: 2px solid black;
+  margin-top: 8px;
+  background: #333;
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: .5em 1em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 -1px #000000;
+  -webkit-box-shadow: 0 0  8px #000;
+  box-shadow: 0 0 8px #000; }
+
+/* END Infobox */
+/* magnific popup testing in infobox */
+#open-popup {
+  padding: 20px; }
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center; }
+
 /* Logo Positioning */
 .ns-logoPosition {
   z-index: 10000;
@@ -592,3 +632,11 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 @media screen and (max-width: 767px) {
   .ns-logoPosition {
     display: none; } }
+.playIcon {
+  height: 27px;
+  width: 36px; }
+
+.playIcon:hover {
+  height: 27px;
+  width: 36px;
+  background-color: white; }

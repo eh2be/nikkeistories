@@ -53,13 +53,8 @@ $(document).ready(function() {
 // // START Google Maps API
 
   function initialize() {
-
-
 // Powell Street MAP
-
-    var map = new google.maps.Map(document.getElementById("map-canvas"), optionsPowellSt);
-
-    var centerPowellStreet = new google.maps.LatLng(49.2827812,-123.0958854); // Powell Street Center
+// var centerPowellStreet = new google.maps.LatLng(49.2827812,-123.0958854); // Powell Street Center
  
     var optionsPowellSt = {
       streetViewControl: false,
@@ -67,7 +62,7 @@ $(document).ready(function() {
       // mapTypeId: google.maps.MapTypeId.HYBRID,
       zoom: 18,
 
-      center: centerPowellStreet,
+      // center: centerPowellStreet,
       disableDefaultUI: true,
       mapTypeControl: false,
       panControl: true,
@@ -106,7 +101,8 @@ $(document).ready(function() {
     var mapMinZoom = 13;
     var mapMaxZoom = 21;
 
-    
+    var map = new google.maps.Map(document.getElementById("map-canvas"), optionsPowellSt);
+
     // https://developers.google.com/maps/documentation/javascript/examples/maptype-image-overlay
     var imageMapType = new google.maps.ImageMapType({
         getTileUrl: function(coord, zoom) {
@@ -224,68 +220,156 @@ $(document).ready(function() {
 
 //    INFOWINDOW START
 
-    // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
-    var contentString1 = '<img src="/assets/1_FirstImmigrants_150.jpg">';
-    var contentString2 = '<img src="/assets/2_Women_150.jpg">';
-    var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
-    var contentString4 = 'MASUMI MITSUI';
-    var contentString5 = 'INTERNMENT';
-    var contentString6 = 'TOM SHOYAMA';
-    var contentString7 = 'THE ASAHI';
-    var contentString8 = 'ETSUJI MORII';
-    var contentString9 = 'JAPANESE LANGUAGE SCHOOL';
-    var contentString10 = 'REDRESS';
+  //   // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
+  //   var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" >' +
+  //                             '<img src="/assets/1_FirstImmigrants_150.jpg">' +
+  //                         '</a>';
+  //   var contentString2 = '<img src="/assets/2_Women_150.jpg">';
+  //   var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
+  //   var contentString4 = 'MASUMI MITSUI';
+  //   var contentString5 = 'INTERNMENT';
+  //   var contentString6 = 'TOM SHOYAMA';
+  //   var contentString7 = 'THE ASAHI';
+  //   var contentString8 = 'ETSUJI MORII';
+  //   var contentString9 = 'JAPANESE LANGUAGE SCHOOL';
+  //   var contentString10 = 'REDRESS';
 
-    var infowindow1 = new google.maps.InfoWindow({
-      content: contentString1
-    });
-    var infowindow2 = new google.maps.InfoWindow({
-      content: contentString2
-    });
-    var infowindow3 = new google.maps.InfoWindow({
-      content: contentString3
-    });
-    var infowindow4 = new google.maps.InfoWindow({
-      content: contentString4
-    });
-    var infowindow5 = new google.maps.InfoWindow({
-      content: contentString5
-    });
-    var infowindow6 = new google.maps.InfoWindow({
-      content: contentString6
-    });
-    var infowindow7 = new google.maps.InfoWindow({
-      content: contentString7
-    });
-    var infowindow8 = new google.maps.InfoWindow({
-      content: contentString8
-    });    
-    var infowindow9 = new google.maps.InfoWindow({
-      content: contentString9
-    });
-    var infowindow10 = new google.maps.InfoWindow({
-      content: contentString10
-    });
+  //   var infowindow1 = new google.maps.InfoWindow({
+  //     content: contentString1
+  //   });
+  //   var infowindow2 = new google.maps.InfoWindow({
+  //     content: contentString2
+  //   });
+  //   var infowindow3 = new google.maps.InfoWindow({
+  //     content: contentString3
+  //   });
+  //   var infowindow4 = new google.maps.InfoWindow({
+  //     content: contentString4
+  //   });
+  //   var infowindow5 = new google.maps.InfoWindow({
+  //     content: contentString5
+  //   });
+  //   var infowindow6 = new google.maps.InfoWindow({
+  //     content: contentString6
+  //   });
+  //   var infowindow7 = new google.maps.InfoWindow({
+  //     content: contentString7
+  //   });
+  //   var infowindow8 = new google.maps.InfoWindow({
+  //     content: contentString8
+  //   });    
+  //   var infowindow9 = new google.maps.InfoWindow({
+  //     content: contentString9
+  //   });
+  //   var infowindow10 = new google.maps.InfoWindow({
+  //     content: contentString10
+  //   });
 
-    google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
-      infowindow1.open(map,this);
-    });
-    // google.maps.event.addListener(marker477PowellSt_Pole754, 'mouseout', function() {
-    //   setTimeout(function() {
-    //     infowindow1.close(map, this);
-    //   }, 2000);
-    // });
-    google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
-      infowindow2.open(map,this);
-    });
-    google.maps.event.addListener(marker369PowellSt_Pole753, 'click', function() {
-      infowindow3.open(map,this);
-    });
-    google.maps.event.addListener(marker357PowellSt_Pole553, 'click', function() {
-      infowindow4.open(map,this);
-    });
+  //   google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
+  //     infowindow1.open(map,this);
+  //   });
+  //   // google.maps.event.addListener(marker477PowellSt_Pole754, 'mouseout', function() {
+  //   //   setTimeout(function() {
+  //   //     infowindow1.close(map, this);
+  //   //   }, 2000);
+  //   // });
+  //   google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
+  //     infowindow2.open(map,this);
+  //   });
+
+  //   google.maps.event.addListener(infowindow2, 'click', function() {
+  //     magnificPopup.open({
+  //       items: {
+  //         src: "http://vimeo.com/32071937"
+  //       },
+  //       type: 'iframe'
+  // // You may add options here, they're exactly the same as for $.fn.magnificPopup call
+  // // Note that some settings that rely on click event (like disableOn or midClick) will not work here
+  //     }, 0);
+  //   });
+
+
+
+  //   google.maps.event.addListener(marker369PowellSt_Pole753, 'click', function() {
+  //     infowindow3.open(map,this);
+  //   });
+  //   google.maps.event.addListener(marker357PowellSt_Pole553, 'click', function() {
+  //     infowindow4.open(map,this);
+  //   });
 
     //INFOWINDOW END
+
+// START Infobox (THIS WORKS KINDA)
+ var boxText = document.createElement("div");
+        boxText.style.cssText = "border: 1px solid black; margin-top: 8px; background: yellow; padding: 5px;";
+        boxText.innerHTML = '<button>HELLO</button><a href="http://vimeo.com/32071937">'+
+              '<img src="/assets/ns-thumb-01.jpg">'+
+          '</a>';
+    
+  var myOptions = {
+     content: boxText
+    ,disableAutoPan: false
+    ,maxWidth: 0
+    ,pixelOffset: new google.maps.Size(-140, 0)
+    ,zIndex: null
+    ,boxStyle: { 
+      background: "url('tipbox.gif') no-repeat"
+      ,opacity: 0.75
+      ,width: "280px"
+     }
+    ,closeBoxMargin: "10px 2px 2px 2px"
+    ,closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif"
+    ,infoBoxClearance: new google.maps.Size(1, 1)
+    ,isHidden: false
+    ,pane: "floatPane"
+    ,enableEventPropagation: false
+  };
+
+  var ib = new InfoBox(myOptions);
+  
+  google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
+        ib.open(map, this);
+        map.panTo(this);
+    });
+
+    // var ib;   
+
+    // ib = new InfoBox({
+    //      content: document.getElementById("infobox"),
+    //      disableAutoPan: false,
+    //      maxWidth: 150,
+    //      pixelOffset: new google.maps.Size(-140, 0),
+    //      zIndex: 1000,
+    //      boxStyle: {
+    //         background: "url('http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/examples/tipbox.gif') no-repeat",
+    //         opacity: 0.75,
+    //         width: "280px"
+    //     },
+    //     closeBoxMargin: "12px 4px 2px 2px",
+    //     closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
+    //     infoBoxClearance: new google.maps.Size(1, 1)
+    // });
+    
+    // google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
+    //     ib.open(map, this);
+    //     map.panTo(this);
+    // });
+
+
+
+window.google.maps.event.addListener(ib, "domready", function () {
+    $('.open-popup').on('click', function () {
+        // Open magnificPopup through API
+        // See http://dimsemenov.com/plugins/magnific-popup/documentation.html#inline_type
+        $.magnificPopup.open({
+            items: {
+                src: $('<div class="video-link">Dynamically created element</div>'), // Dynamically created element
+                type: 'inline'
+            }
+        });
+    });
+});
+// END Infobox
 
     // START geolocation 
     // Marker for my location (http://stackoverflow.com/questions/9142833/show-my-location-on-google-maps-api-v3) - does this update in realtime on iPhone/iPad?
@@ -298,7 +382,7 @@ $(document).ready(function() {
         new google.maps.Point(11,11)),
       shadow: null,
       zIndex: 999,
-      map: mapPowellStreet
+      map: map
     });
 
     if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function(pos) {
@@ -310,6 +394,10 @@ $(document).ready(function() {
     // END geolocation
 
   };
+
+
+
+
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
