@@ -18,7 +18,7 @@
 			'navigationColor': '#000',
 			'navigationTooltips': [],
 			'slidesNavigation': false,
-			'slidesNavPosition': 'bottom',
+			'slidesNavPosition': 'top',
 			'scrollBar': false,
 
 			//scrolling
