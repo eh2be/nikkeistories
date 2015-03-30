@@ -1539,8 +1539,8 @@
 			}
 
 			//centering it depeding on width of html document
-			if (docWidth >= 768) {																		 			// GM 768 is the threshold for mobile
-				nav.css('margin-left', '-' + ((180+nav.width())/2) + 'px');  	// GM For large screen 180px is the right-side margin
+			if (docWidth >= 992) {																		 			// GM 768 is the threshold for mobile
+				nav.css('margin-left', '-' + ((220+nav.width())/2) + 'px');  	// GM For large screen 220px is the right-side margin
 			} else {
 				nav.css('margin-left', '-' + (nav.width()/2) + 'px');				 	// GM centers it on screen
 			}

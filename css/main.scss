@@ -181,7 +181,7 @@ max-width: none;
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992) { /* GM: } 767px) {   */
   #section0,
   // #section2,
   #slide1,
@@ -190,11 +190,11 @@ max-width: none;
   #section4,
   #section5,
   #section6{
-    padding: 40px 0 0 0;
+    padding: 40px 0 40px 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #section0,
   // #section2,
   #slide1,
@@ -327,5 +327,13 @@ max-width: none;
   background-color: white;
 }
 
+.canvas.canvas-sliding {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
 
-
+// @media (min-width: 992px) {
+//   body {
+//     padding-right: 300px;
+//   }
+// }

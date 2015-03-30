@@ -13,8 +13,9 @@ $(document).ready(function() {
     // menu: '#menu',
     slidesNavigation: true,
     navigation: true,
-    navigationTooltips: ['Home', 'Maps', 'Chronology', 'Videos', 'Education', 'Contact', 'Credits'],
-    
+    // navigationTooltips: ['Home', 'Maps', 'Chronology', 'Videos', 'Education', 'Contact', 'Credits'],
+    navigationPosition: 'left',
+    slidesNavPosition: 'top',
 
     // Scrolling //
     scrollOverflow: true,

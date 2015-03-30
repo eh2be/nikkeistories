@@ -523,7 +523,8 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 #section6 {
   font-family: 'Oswald', sans-serif; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992) {
+  /* GM: } 767px) {   */
   #section0,
   #slide1,
   #slide2,
@@ -531,8 +532,8 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   #section4,
   #section5,
   #section6 {
-    padding: 40px 0 0 0; } }
-@media screen and (min-width: 768px) {
+    padding: 40px 0 40px 0; } }
+@media screen and (min-width: 992px) {
   #section0,
   #slide1,
   #slide2,
@@ -640,3 +641,7 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   height: 27px;
   width: 36px;
   background-color: white; }
+
+.canvas.canvas-sliding {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0); }
