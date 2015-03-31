@@ -5,7 +5,7 @@ $(document).ready(function() {
     // Design
     verticalCentered: false,
     resize: false,
-    anchors: ['home', 'maps', 'chronology', 'videos', 'education', 'contact', 'credits'],
+    anchors: ['home', 'maps', 'chronology', 'education', 'contact', 'credits'],
     // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
     touchSensitivity: 5, //test this
     
@@ -15,7 +15,7 @@ $(document).ready(function() {
     navigation: true,
     // navigationTooltips: ['Home', 'Maps', 'Chronology', 'Videos', 'Education', 'Contact', 'Credits'],
     navigationPosition: 'left',
-    slidesNavPosition: 'top',
+    slidesNavPosition: 'bottom',
 
     // Scrolling //
     scrollOverflow: true,

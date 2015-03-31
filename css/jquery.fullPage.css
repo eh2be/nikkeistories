@@ -133,7 +133,7 @@ html, body {
 .fp-slidesNav ul li {
     display: block;
     width: 14px;
-    height: 15px; /* GM vertical spacing of the dots */
+    height: 10px; /* GM vertical spacing of the dots */
     margin: 7px;
     position:relative;
 }
