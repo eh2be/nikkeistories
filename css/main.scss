@@ -54,7 +54,7 @@ p {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 0;
 }
 
 .ns-th-video {
@@ -181,7 +181,7 @@ max-width: none;
 }
 
 
-@media screen and (max-width: 992) { /* GM: } 767px) {   */
+@media screen and (max-width: 991) { /* GM: } 767px) {   */
   #section0,
   // #section2,
   #slide1,
@@ -192,6 +192,11 @@ max-width: none;
   #section6{
     padding: 40px 0 40px 0;
   }
+
+  .chrono-wrapper {
+    padding: 0px 15px 250px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -207,12 +212,14 @@ max-width: none;
   }
 
   .chrono-wrapper {
-  padding: 0px 75px 250px;
-  text-align: justify;
+    padding: 0px 75px 250px;
   }
 
 }
 
+.chrono-wrapper {
+  text-align: justify;
+}
 
 /* Defining each section background and styles
 * --------------------------------------- */

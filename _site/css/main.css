@@ -11,7 +11,7 @@ p {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px 0 15px; }
+  padding: 0 15px 0; }
 
 .ns-th-video {
   margin: 0 0 10px 0;
@@ -523,7 +523,7 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 #section6 {
   font-family: 'Oswald', sans-serif; }
 
-@media screen and (max-width: 992) {
+@media screen and (max-width: 991) {
   /* GM: } 767px) {   */
   #section0,
   #slide1,
@@ -532,7 +532,10 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   #section4,
   #section5,
   #section6 {
-    padding: 40px 0 40px 0; } }
+    padding: 40px 0 40px 0; }
+
+  .chrono-wrapper {
+    padding: 0px 15px 250px; } }
 @media screen and (min-width: 992px) {
   #section0,
   #slide1,
@@ -544,8 +547,10 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
     padding: 40px 220px 40px 0; }
 
   .chrono-wrapper {
-    padding: 0px 75px 250px;
-    text-align: justify; } }
+    padding: 0px 75px 250px; } }
+.chrono-wrapper {
+  text-align: justify; }
+
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0 {
