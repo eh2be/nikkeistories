@@ -60,7 +60,7 @@ html, body {
     float: left;
     position: relative;
 }
-@media screen and  (min-width: 768px) {
+@media screen and  (min-width: 992px) {
   .fp-controlArrow {
     position: absolute;
     z-index: 4;

@@ -43,7 +43,6 @@ p {
     }
 }
 
-
 .ns-background {
   // background-image: url("/assets/2Nrxex6.jpg");
   width: 100%;
@@ -54,7 +53,7 @@ p {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px 0;
+  padding: 10px 45px 0;
 }
 
 .ns-th-video {
@@ -181,6 +180,7 @@ max-width: none;
 }
 
 
+/* for small screens (smaller than 992px) */
 @media screen and (max-width: 991) { /* GM: } 767px) {   */
   #section0,
   // #section2,
@@ -190,15 +190,19 @@ max-width: none;
   #section4,
   #section5,
   #section6{
-    padding: 40px 0 40px 0;
+    padding: 0;
   }
 
-  .chrono-wrapper {
-    padding: 0px 15px 250px;
+  .ns-home-wrapper {
+    padding: 15px;
+  }
+  .ns-chrono-wrapper {
+    padding: 10px 15px 0;
   }
 
 }
 
+/* GM for larger screens (larger than 992 px wide) */
 @media screen and (min-width: 992px) {
   #section0,
   // #section2,
@@ -208,18 +212,35 @@ max-width: none;
   #section4,
   #section5,
   #section6{
-    padding: 40px 220px 40px 0;
+    padding: 0px 220px 0px 0;
   }
-
-  .chrono-wrapper {
-    padding: 0px 75px 250px;
+  
+  .ns-home-wrapper {
+    padding-top: 50px;
   }
 
 }
 
-.chrono-wrapper {
+.ns-home-wrapper {
+  text-align: none;
+  font-size: 0.8em;
+}
+
+#ns-home-col-wrapper {
   text-align: justify;
+  padding: 0 15px 0;
 }
+
+.ns-chrono-wrapper {
+  text-align: justify;
+  padding-bottom: 250px;
+}
+
+.ns-wrapper {
+  text-align: justify;
+  padding-bottom: 15px;
+}
+
 
 /* Defining each section background and styles
 * --------------------------------------- */

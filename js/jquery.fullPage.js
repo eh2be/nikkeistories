@@ -333,6 +333,7 @@
 			//if no active section is defined, the 1st one will be the default one
 			if(!index && $('.fp-section.active').length === 0) {
 				$(this).addClass('active');
+			//	$('.navmenu-default.navmenu-nav.li').addClass('active'); // GM trying to get active menu to show up
 			}
 
 			$(this).css('height', windowsHeight + 'px');
