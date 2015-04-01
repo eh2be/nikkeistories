@@ -3931,7 +3931,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-bottom {
   position: fixed;
   right: 0;
-  left: 0;
+  /*left: 0;  GM so nav bar doesn't get in the way of clicks */
   z-index: 1030;
   height: 1px; /* GM added but doesn't seem to work */
 }

@@ -657,13 +657,68 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
     display: none; } }
 .playIcon {
   height: 27px;
-  width: 36px; }
+  width: 36px;
+  transition: all 0.5s ease; }
 
 .playIcon:hover {
   height: 27px;
   width: 36px;
-  background-color: white; }
+  background-color: white;
+  border-radius: 3px; }
 
 .canvas.canvas-sliding {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0); }
+
+#Powell-01,
+#Powell-02,
+#Powell-03,
+#Powell-04,
+#Powell-05,
+#Powell-06,
+#Powell-07,
+#Powell-08,
+#Powell-09,
+#Powell-10,
+#Steveston-01,
+#Steveston-02,
+#Steveston-03,
+#Steveston-04,
+#Steveston-05,
+#Steveston-06,
+#Steveston-07,
+#Steveston-08,
+#Steveston-09,
+#Steveston-10 {
+  opacity: 0.75;
+  transition: all 0.5s ease;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  -ms-transform: scale(0.98);
+  /* IE 9 */
+  -webkit-transform: scale(0.98);
+  /* Safari */
+  transform: scale(0.98); }
+
+#Powell-01.highlight,
+#Powell-02.highlight,
+#Powell-03.highlight,
+#Powell-04.highlight,
+#Powell-05.highlight,
+#Powell-06.highlight,
+#Powell-07.highlight,
+#Powell-08.highlight,
+#Powell-09.highlight,
+#Powell-10.highlight
+ {
+  opacity: 1;
+  background-color: transparent;
+  -ms-transform: scale(1);
+  /* IE 9 */
+  -webkit-transform: scale(1);
+  /* Safari */
+  transform: scale(1); }
+
+.ns-chrono-title {
+  text-align: center; }

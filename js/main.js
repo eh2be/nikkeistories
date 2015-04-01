@@ -221,117 +221,137 @@ $(document).ready(function() {
 
 //    INFOWINDOW START
 
-  //   // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
-  //   var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" >' +
-  //                             '<img src="/assets/1_FirstImmigrants_150.jpg">' +
-  //                         '</a>';
-  //   var contentString2 = '<img src="/assets/2_Women_150.jpg">';
-  //   var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
-  //   var contentString4 = 'MASUMI MITSUI';
-  //   var contentString5 = 'INTERNMENT';
-  //   var contentString6 = 'TOM SHOYAMA';
-  //   var contentString7 = 'THE ASAHI';
-  //   var contentString8 = 'ETSUJI MORII';
-  //   var contentString9 = 'JAPANESE LANGUAGE SCHOOL';
-  //   var contentString10 = 'REDRESS';
+    // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
+    var contentString1 = '<a href="https://vimeo.com/123755992" class="video-link" >' +
+                              '<img src="/assets/1_FirstImmigrants_150.jpg">' +
+                          '</a>';
+    var contentString2 = '<img src="/assets/2_Women_150.jpg">';
+    var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
+    var contentString4 = '<img src="/assets/4_Mitsui_150.jpg">';
+    var contentString5 = '<img src="/assets/5_Internment_150.jpg">';
+    var contentString6 = '<img src="/assets/6_Shoyama_150.jpg">';
+    var contentString7 = '<img src="/assets/7_Asahi_150.jpg">';
+    var contentString8 = '<img src="/assets/8_Morii_150.jpg">';
+    var contentString9 = '<img src="/assets/9_JLS_150.jpg">';
+    var contentString10 = '<img src="/assets/10_Redress_150.jpg">';
 
-  //   var infowindow1 = new google.maps.InfoWindow({
-  //     content: contentString1
-  //   });
-  //   var infowindow2 = new google.maps.InfoWindow({
-  //     content: contentString2
-  //   });
-  //   var infowindow3 = new google.maps.InfoWindow({
-  //     content: contentString3
-  //   });
-  //   var infowindow4 = new google.maps.InfoWindow({
-  //     content: contentString4
-  //   });
-  //   var infowindow5 = new google.maps.InfoWindow({
-  //     content: contentString5
-  //   });
-  //   var infowindow6 = new google.maps.InfoWindow({
-  //     content: contentString6
-  //   });
-  //   var infowindow7 = new google.maps.InfoWindow({
-  //     content: contentString7
-  //   });
-  //   var infowindow8 = new google.maps.InfoWindow({
-  //     content: contentString8
-  //   });    
-  //   var infowindow9 = new google.maps.InfoWindow({
-  //     content: contentString9
-  //   });
-  //   var infowindow10 = new google.maps.InfoWindow({
-  //     content: contentString10
-  //   });
+    var infowindow1 = new google.maps.InfoWindow({
+      content: contentString1
+    });
+    var infowindow2 = new google.maps.InfoWindow({
+      content: contentString2
+    });
+    var infowindow3 = new google.maps.InfoWindow({
+      content: contentString3
+    });
+    var infowindow4 = new google.maps.InfoWindow({
+      content: contentString4
+    });
+    var infowindow5 = new google.maps.InfoWindow({
+      content: contentString5
+    });
+    var infowindow6 = new google.maps.InfoWindow({
+      content: contentString6
+    });
+    var infowindow7 = new google.maps.InfoWindow({
+      content: contentString7
+    });
+    var infowindow8 = new google.maps.InfoWindow({
+      content: contentString8
+    });    
+    var infowindow9 = new google.maps.InfoWindow({
+      content: contentString9
+    });
+    var infowindow10 = new google.maps.InfoWindow({
+      content: contentString10
+    });
 
-  //   google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
-  //     infowindow1.open(map,this);
-  //   });
-  //   // google.maps.event.addListener(marker477PowellSt_Pole754, 'mouseout', function() {
-  //   //   setTimeout(function() {
-  //   //     infowindow1.close(map, this);
-  //   //   }, 2000);
-  //   // });
-  //   google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
-  //     infowindow2.open(map,this);
-  //   });
+    google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
+      infowindow1.open(map,this);
+    });
+    // google.maps.event.addListener(marker477PowellSt_Pole754, 'mouseout', function() {
+    //   setTimeout(function() {
+    //     infowindow1.close(map, this);
+    //   }, 2000);
+    // });
+    google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
+      infowindow2.open(map,this);
+    });
 
-  //   google.maps.event.addListener(infowindow2, 'click', function() {
-  //     magnificPopup.open({
-  //       items: {
-  //         src: "http://vimeo.com/32071937"
-  //       },
-  //       type: 'iframe'
-  // // You may add options here, they're exactly the same as for $.fn.magnificPopup call
-  // // Note that some settings that rely on click event (like disableOn or midClick) will not work here
-  //     }, 0);
-  //   });
+    google.maps.event.addListener(infowindow2, 'click', function() {
+      magnificPopup.open({
+        items: {
+          src: "http://vimeo.com/32071937"
+        },
+        type: 'iframe'
+  // You may add options here, they're exactly the same as for $.fn.magnificPopup call
+  // Note that some settings that rely on click event (like disableOn or midClick) will not work here
+      }, 0);
+    });
 
 
 
-  //   google.maps.event.addListener(marker369PowellSt_Pole753, 'click', function() {
-  //     infowindow3.open(map,this);
-  //   });
-  //   google.maps.event.addListener(marker357PowellSt_Pole553, 'click', function() {
-  //     infowindow4.open(map,this);
-  //   });
+    google.maps.event.addListener(marker369PowellSt_Pole753, 'click', function() {
+      infowindow3.open(map,this);
+    });
+    google.maps.event.addListener(marker357PowellSt_Pole553, 'click', function() {
+      infowindow4.open(map,this);
+    });
+
+    google.maps.event.addListener(marker314PowellSt_Pole153, 'click', function() {
+      infowindow5.open(map,this);
+    });
+    google.maps.event.addListener(marker394PowellSt_Pole1053, 'click', function() {
+      infowindow6.open(map,this);
+    });
+    google.maps.event.addListener(markerPowellGrounds_Pole254, 'click', function() {
+      infowindow7.open(map,this);
+    });
+    google.maps.event.addListener(marker362AlexanderSt_Pole453, 'click', function() {
+      infowindow8.open(map,this);
+    });
+    google.maps.event.addListener(marker487AlexanderSt_Pole254, 'click', function() {
+      infowindow9.open(map,this);
+    });
+    google.maps.event.addListener(markerOppenheimerPark_Pole12, 'click', function() {
+      infowindow10.open(map,this);
+    });    
 
     //INFOWINDOW END
 
 // START Infobox (THIS WORKS KINDA)
- var boxText = document.createElement("div");
-        boxText.style.cssText = "border: 1px solid black; margin-top: 8px; background: yellow; padding: 5px;";
-        boxText.innerHTML = '<button>HELLO</button><a href="http://vimeo.com/32071937">'+
-              '<img src="/assets/ns-thumb-01.jpg">'+
-          '</a>';
+ // var boxText = document.createElement("div");
+ //        boxText.style.cssText = "border: 1px solid black; background: black; padding: 0px;";
+ //        boxText.innerHTML = '<a href="http://vimeo.com/32071937">'+
+ //              '<img src="/assets/1_FirstImmigrants_150.jpg">'+
+ //          '</a>';
     
-  var myOptions = {
-     content: boxText
-    ,disableAutoPan: false
-    ,maxWidth: 0
-    ,pixelOffset: new google.maps.Size(-140, 0)
-    ,zIndex: null
-    ,boxStyle: { 
-      background: "url('tipbox.gif') no-repeat"
-      ,opacity: 0.75
-      ,width: "280px"
-     }
-    ,closeBoxMargin: "10px 2px 2px 2px"
-    ,closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif"
-    ,infoBoxClearance: new google.maps.Size(1, 1)
-    ,isHidden: false
-    ,pane: "floatPane"
-    ,enableEventPropagation: false
-  };
+ //  var myOptions = {
+ //     content: boxText
+ //    ,disableAutoPan: false
+ //    ,maxWidth: 0
+ //    ,pixelOffset: new google.maps.Size(-140, 0)
+ //    ,zIndex: null
+ //    ,boxStyle: { 
+ //      background: "url('tipbox.gif') no-repeat"
+ //      ,opacity: 1
+ //      ,width: "auto"
+ //     }
+ //    ,closeBoxMargin: "2px 2px 2px 2px"
+ //    ,closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif"
+ //    ,infoBoxClearance: new google.maps.Size(1, 1)
+ //    ,isHidden: false
+ //    ,pane: "floatPane"
+ //    ,enableEventPropagation: false
+ //  };
 
-  var ib = new InfoBox(myOptions);
+ //  var ib = new InfoBox(myOptions);
   
-  google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
-        ib.open(map, this);
-        map.panTo(this);
-    });
+ //  google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
+ //        ib.open(map, this);
+ //        map.panTo(this);
+ //    });
+// INFOBOX end
 
     // var ib;   
 
@@ -414,8 +434,24 @@ function drop() {
 // END Google Maps API
 
 
+  $("#Powell-01,#Powell-02,#Powell-03,#Powell-04,#Powell-05,#Powell-06,#Powell-07,#Powell-08,#Powell-09,#Powell-10,#Steveston-01,#Steveston-02,#Steveston-03,#Steveston-04,#Steveston-05,#Steveston-06,#Steveston-07,#Steveston-08,#Steveston-09,#Steveston-10").on({
+      mouseover: function(){
+        var box = $(this).addClass('highlight');
+      },  
+      mouseleave: function(){
+        var box = $(this).removeClass('highlight');
+      }
+  });
 
 
+  $("playIcon").on({
+      mouseover: function(){
+        var box = $(this).addClass('highlight');
+      },  
+      mouseleave: function(){
+        var box = $(this).removeClass('highlight');
+      }
+  });
 
 });
 
