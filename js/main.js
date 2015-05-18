@@ -38,16 +38,16 @@ $(document).ready(function() {
   });
 
 // START Magnific Popup (video lightbox) plugin
-  $('.video-link').magnificPopup({
-    type:'iframe',
-    iframe: {
-      markup: '<div class="mfp-iframe-scaler">'+
-                '<div class="mfp-close"></div>'+
-                '<iframe class="mfp-iframe" frameborder="1" allowfullscreen></iframe>'+
-                '<div class="mfp-title">Some caption</div>'+
-              '</div>'
-    },
-  });
+  // $('.video-link').magnificPopup({
+  //   type:'iframe',
+  //   iframe: {
+  //     markup: '<div class="mfp-iframe-scaler">'+
+  //               '<div class="mfp-close"></div>'+
+  //               '<iframe class="mfp-iframe" frameborder="1" allowfullscreen></iframe>'+
+  //               '<div class="mfp-title">Some caption</div>'+
+  //             '</div>'
+  //   },
+  // });
 // END Magnific Popup
 
 
@@ -373,9 +373,7 @@ $(document).ready(function() {
 //    INFOWINDOW START
 
     // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
-    var contentString1 = '<a href="https://vimeo.com/123755992" class="freso" >' +
-                              '<img src="/assets/1_FirstImmigrants_150.jpg">' +
-                          '</a>';
+    var contentString1 = '<img src="/assets/1_FirstImmigrants_150.jpg">';
     var contentString2 = '<img src="/assets/2_Women_150.jpg">';
     var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
     var contentString4 = '<img src="/assets/4_Mitsui_150.jpg">';
@@ -390,7 +388,7 @@ $(document).ready(function() {
       content: contentString1
     });
     var infowindow2 = new google.maps.InfoWindow({
-      content: contentString2
+      content: contentString2 
     });
     var infowindow3 = new google.maps.InfoWindow({
       content: contentString3
@@ -420,28 +418,9 @@ $(document).ready(function() {
     google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
       infowindow1.open(map,this);
     });
-    // google.maps.event.addListener(marker477PowellSt_Pole754, 'mouseout', function() {
-    //   setTimeout(function() {
-    //     infowindow1.close(map, this);
-    //   }, 2000);
-    // });
     google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
       infowindow2.open(map,this);
     });
-
-    google.maps.event.addListener(infowindow2, 'click', function() {
-      magnificPopup.open({
-        items: {
-          src: "http://vimeo.com/32071937"
-        },
-        type: 'iframe'
-  // You may add options here, they're exactly the same as for $.fn.magnificPopup call
-  // Note that some settings that rely on click event (like disableOn or midClick) will not work here
-      }, 0);
-    });
-
-
-
     google.maps.event.addListener(marker369PowellSt_Pole753, 'click', function() {
       infowindow3.open(map,this);
     });
@@ -466,6 +445,19 @@ $(document).ready(function() {
     google.maps.event.addListener(markerOppenheimerPark_Pole12, 'click', function() {
       infowindow10.open(map,this);
     });    
+
+
+    // google.maps.event.addListener(infowindow2, 'click', function() {
+    //   Fresco.show({
+    //   url: 'http://www.youtube.com/watch?v=c0KYU2j0TM4',
+    //   options: {
+    //     width: 853,
+    //     height: 480,
+    //     youtube: { autoplay: 0 }
+    //     }
+    //   });
+    // });
+
 
     //INFOWINDOW END
 
@@ -528,18 +520,18 @@ $(document).ready(function() {
 
 
 
-window.google.maps.event.addListener(ib, "domready", function () {
-    $('.open-popup').on('click', function () {
-        // Open magnificPopup through API
-        // See http://dimsemenov.com/plugins/magnific-popup/documentation.html#inline_type
-        $.magnificPopup.open({
-            items: {
-                src: $('<div class="video-link">Dynamically created element</div>'), // Dynamically created element
-                type: 'inline'
-            }
-        });
-    });
-});
+// window.google.maps.event.addListener(ib, "domready", function () {
+//     $('.open-popup').on('click', function () {
+//         // Open magnificPopup through API
+//         // See http://dimsemenov.com/plugins/magnific-popup/documentation.html#inline_type
+//         $.magnificPopup.open({
+//             items: {
+//                 src: $('<div class="video-link">Dynamically created element</div>'), // Dynamically created element
+//                 type: 'inline'
+//             }
+//         });
+//     });
+// });
 // END Infobox
 
     // START geolocation 
@@ -592,6 +584,18 @@ function drop() {
         var box = $(this).removeClass('highlight');
       }
   });
+
+  $("#Powell-01").on( "click", function(){
+        Fresco.show({
+          // url: '/assets/2_Women_150.jpg'
+          url: 'https://vimeo.com/126504239',
+          options: {
+            width: 853,
+            height: 480,
+            vimeo: { autoplay: 1 }
+          }
+        });
+      });
 
 
   $("playIcon").on({
