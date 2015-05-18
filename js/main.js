@@ -5,7 +5,7 @@ $(document).ready(function() {
     // Design
     verticalCentered: false,
     resize: false,
-    anchors: ['home', 'maps', 'chronology', 'education', 'contact', 'credits'],
+    anchors: ['home', 'videos', 'maps', 'chronology', 'education', 'contact', 'credits'],
     // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
     touchSensitivity: 5, //test this
     
@@ -130,12 +130,33 @@ $(document).ready(function() {
 
   // MAPTILER init END
 
-    var centerSteveston = new google.maps.LatLng(49.125735, -123.178775);     // Steveston Center
+    var centerSteveston = new google.maps.LatLng(49.125292, -123.186321);     // Steveston Center
+    var centerStevestonB = new google.maps.LatLng(49.124303, -123.177491);     // Steveston B Center
 
     // Steveston Map Settings
     var optionsSteveston = {
-      zoom: 15, 
+      zoom: 16, 
       center: centerSteveston,
+      disableDefaultUI: true,
+      mapTypeControl: false,
+      panControl: true,
+      panControlOptions: {
+        position: google.maps.ControlPosition.LEFT_BOTTOM
+      },
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.LARGE,
+        position: google.maps.ControlPosition.LEFT_BOTTOM
+      },
+      scrollwheel: false,
+      scaleControl: true,
+      draggable: false,
+      disableDoubleClickZoom: true
+    };
+
+    var optionsStevestonB = {
+      zoom: 16, 
+      center: centerStevestonB,
       disableDefaultUI: true,
       mapTypeControl: false,
       panControl: true,
@@ -156,6 +177,7 @@ $(document).ready(function() {
     // var mapPowellStreet = new google.maps.Map(document.getElementById('map-canvas-PowellSt'), optionsPowellSt);   // Powell Street Map
     var mapSteveston = new google.maps.Map(document.getElementById('map-canvas-Steveston'), optionsSteveston); // Steveston Map
 
+    var mapStevestonB = new google.maps.Map(document.getElementById('map-canvas-StevestonB'), optionsStevestonB); // Steveston Map
 
     // Powell Street Marker Settings
     var marker477PowellSt_Pole754 = new google.maps.Marker({
@@ -219,10 +241,139 @@ $(document).ready(function() {
       icon: "/assets/10_Redress_32.png"
     });
 
+    // Steveston Marker Settings
+    var markerSteveston01Homma = new google.maps.Marker({
+      position: {lat: 49.1252888, lng: -123.18320},
+      map: mapSteveston,
+      title: "Tomekichi Homma",
+      icon: "/assets/01SE_32.png"
+    });
+    var markerSteveston02FirstImmigrants = new google.maps.Marker({
+      position: {lat: 49.124208, lng: -123.18410},
+      map: mapSteveston,
+      title: "First Immigrants",
+      icon: "/assets/2_Women_32.png"
+    });
+    var markerSteveston03RintaroHayashi = new google.maps.Marker({
+      position: {lat: 49.124572, lng: -123.18530},
+      map: mapSteveston,
+      title: "Rintaro Hayashi",
+      icon: "/assets/03SW_32.png"
+    });
+    var markerSteveston04WomenAtWork = new google.maps.Marker({
+      position: {lat: 49.125129, lng: -123.1861},
+      map: mapSteveston,
+      title: "Women at Work",
+      icon: "/assets/04SE_32.png"
+    });
+    var markerSteveston05BoatBuilders = new google.maps.Marker({
+      position: {lat: 49.125398, lng: -123.193096},
+      map: mapSteveston,
+      title: "Boat Builders",
+      icon: "/assets/5_Internment_32.png"
+    });
+    var markerSteveston06CreatingCommunity = new google.maps.Marker({
+      position: {lat: 49.126630, lng: -123.18075},
+      map: mapSteveston,
+      title: "Creating Community",
+      icon: "/assets/6_Shoyama_32.png"
+    });
+    var markerSteveston07HideHyodoShimizu = new google.maps.Marker({
+      position: {lat: 49.126630, lng: -123.179855},
+      map: mapSteveston,
+      title: "Hide Hyodo Shimizu",
+      icon: "/assets/07SW_32.png"
+    });
+    var markerSteveston08MartialArts = new google.maps.Marker({
+      position: {lat: 49.1252888, lng: -123.177086},
+      map: mapSteveston,
+      title: "Martial Arts",
+      icon: "/assets/8_Morii_32.png"
+    });
+    var markerSteveston09Internment = new google.maps.Marker({
+      position: {lat: 49.1252888, lng: -123.18063},
+      map: mapSteveston,
+      title: "Internment",
+      icon: "/assets/9_JLS_32.png"
+    });
+    var markerSteveston10BackToSteveston = new google.maps.Marker({
+      position: {lat: 49.1252888, lng: -123.18225},
+      map: mapSteveston,
+      title: "Back to Steveston",
+      icon: "/assets/10_Redress_32.png"
+    });
+
+
+
+    // Steveston Option B Marker Settings
+    var markerSteveston01HommaB = new google.maps.Marker({
+      position: {lat: 49.1252888, lng: -123.18320},
+      map: mapStevestonB,
+      title: "Tomekichi Homma",
+      icon: "/assets/01SE_32.png"
+    });
+    var markerSteveston02FirstImmigrantsB = new google.maps.Marker({
+      position: {lat: 49.124208, lng: -123.18410},
+      map: mapStevestonB,
+      title: "First Immigrants",
+      icon: "/assets/2_Women_32.png"
+    });
+    var markerSteveston03RintaroHayashiB = new google.maps.Marker({
+      position: {lat: 49.124572, lng: -123.18530},
+      map: mapStevestonB,
+      title: "Rintaro Hayashi",
+      icon: "/assets/03SW_32.png"
+    });
+    var markerSteveston04WomenAtWorkB = new google.maps.Marker({
+      position: {lat: 49.125129, lng: -123.1861},
+      map: mapStevestonB,
+      title: "Women at Work",
+      icon: "/assets/04SE_32.png"
+    });
+    var markerSteveston05BoatBuildersB = new google.maps.Marker({
+      position: {lat: 49.120806, lng: -123.169433},
+      map: mapStevestonB,
+      title: "Boat Builders",
+      icon: "/assets/8_Morii_32.png"
+    });
+    var markerSteveston06CreatingCommunityB = new google.maps.Marker({
+      position: {lat: 49.126630, lng: -123.18075},
+      map: mapStevestonB,
+      title: "Creating Community",
+      icon: "/assets/5_Internment_32.png"
+    });
+    var markerSteveston07HideHyodoShimizuB = new google.maps.Marker({
+      position: {lat: 49.126630, lng: -123.179855},
+      map: mapStevestonB,
+      title: "Hide Hyodo Shimizu",
+      icon: "/assets/6_Shoyama_32.png"
+    });
+    var markerSteveston08MartialArtsB = new google.maps.Marker({
+      position: {lat: 49.1252888, lng: -123.177086},
+      map: mapStevestonB,
+      title: "Martial Arts",
+      icon: "/assets/07SW_32.png"
+    });
+    var markerSteveston09InternmentB = new google.maps.Marker({
+      position: {lat: 49.1252888, lng: -123.18063},
+      map: mapStevestonB,
+      title: "Internment",
+      icon: "/assets/9_JLS_32.png"
+    });
+    var markerSteveston10BackToStevestonB = new google.maps.Marker({
+      position: {lat: 49.1252888, lng: -123.18225},
+      map: mapStevestonB,
+      title: "Back to Steveston",
+      icon: "/assets/10_Redress_32.png"
+    });
+
+
+
+
 //    INFOWINDOW START
 
     // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
-    var contentString1 = '<a href="https://vimeo.com/123755992" class="video-link" >' +
+    var contentString1 = '<a href="https://vimeo.com/123755992" class="freso" >' +
                               '<img src="/assets/1_FirstImmigrants_150.jpg">' +
                           '</a>';
     var contentString2 = '<img src="/assets/2_Women_150.jpg">';
@@ -297,7 +448,6 @@ $(document).ready(function() {
     google.maps.event.addListener(marker357PowellSt_Pole553, 'click', function() {
       infowindow4.open(map,this);
     });
-
     google.maps.event.addListener(marker314PowellSt_Pole153, 'click', function() {
       infowindow5.open(map,this);
     });
