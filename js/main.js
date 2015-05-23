@@ -678,6 +678,21 @@ function drop() {
       }
   });
 
+// vegas plugin slideshow
+  $('#landing').vegas({
+    delay: 12000,
+    slides: [
+        { src: '/assets/Photos/BG_2010-80-2-64.jpg' },
+        { src: '/assets/Photos/BG_1993-40-1.jpg' },
+        { src: '/assets/Photos/CRA_2009-16-111_Launch-Day-at-Atagi-Boatworks_1918.jpg' },
+        { src: '/assets/Photos/BG_2010-30-14.jpg' },
+        { src: '/assets/Photos/BG_VPL_1368.jpg' },
+        { src: '/assets/Photos/BG_1994-64-7-165.jpg' }
+    ],
+    overlay: "/assets/vegas/overlays/01.png"
+  });
+
+
 });
 
 

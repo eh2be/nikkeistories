@@ -85,6 +85,14 @@ p {
   color: #000005;
 }
 
+.centered {
+  position: absolute; /* or fixed */
+  // top: 50%;
+  left: 50%;
+  // margin-top: -112px;
+  // margin-left: -225px;
+  transform: translate(-50%, 0%);
+}
 
 // parallax
 
@@ -244,9 +252,14 @@ max-width: none;
 
 /* Defining each section background and styles
 * --------------------------------------- */
+#landing{ }
 #section0{
   background-image: url(/assets/bg-pattern-03.png);
-  background-color: #D9DBDD;
+  background-color: #D9DBDD;.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
 }
 #section1{
   padding: 0 0 0 0;
