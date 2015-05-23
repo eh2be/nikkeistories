@@ -373,7 +373,7 @@ $(document).ready(function() {
 //    INFOWINDOW START
 
     // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
-    var contentString1 = '<img src="/assets/1_FirstImmigrants_150.jpg">';
+    var contentString1 = '<img src="/assets/1_FirstImmigrants_150.jpg" id="Powell-01">';
     var contentString2 = '<img src="/assets/2_Women_150.jpg">';
     var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
     var contentString4 = '<img src="/assets/4_Mitsui_150.jpg">';
@@ -416,7 +416,13 @@ $(document).ready(function() {
     });
 
     google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
-      infowindow1.open(map,this);
+      // infowindow1.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504239',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
       infowindow2.open(map,this);
@@ -445,18 +451,6 @@ $(document).ready(function() {
     google.maps.event.addListener(markerOppenheimerPark_Pole12, 'click', function() {
       infowindow10.open(map,this);
     });    
-
-
-    // google.maps.event.addListener(infowindow2, 'click', function() {
-    //   Fresco.show({
-    //   url: 'http://www.youtube.com/watch?v=c0KYU2j0TM4',
-    //   options: {
-    //     width: 853,
-    //     height: 480,
-    //     youtube: { autoplay: 0 }
-    //     }
-    //   });
-    // });
 
 
     //INFOWINDOW END
@@ -585,18 +579,97 @@ function drop() {
       }
   });
 
-  $("#Powell-01").on( "click", function(){
-        Fresco.show({
-          // url: '/assets/2_Women_150.jpg'
-          url: 'https://vimeo.com/126504239',
-          options: {
-            width: 853,
-            height: 480,
-            vimeo: { autoplay: 1 }
-          }
-        });
-      });
 
+
+  $("#Powell-01").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504239',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+  $("#Powell-02").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504315',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+    $("#Powell-03").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504240',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+  $("#Powell-04").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504241',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+  $("#Powell-05").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504189',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+  $("#Powell-06").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504316',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+  $("#Powell-07").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504187',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+  $("#Powell-08").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504186',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+  $("#Powell-09").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504188',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
+
+  $("#Powell-10").on( "click", function(){
+    Fresco.show({
+      url: 'https://vimeo.com/126504242',
+      options: {
+        vimeo: { autoplay: 1 }
+      }
+    });
+  });
 
   $("playIcon").on({
       mouseover: function(){
