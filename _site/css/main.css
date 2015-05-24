@@ -34,8 +34,9 @@ p {
 .centered {
   position: absolute;
   /* or fixed */
+  top: 1%;
   left: 50%;
-  transform: translate(-50%, 0%); }
+  margin-left: -195px; }
 
 /**
  * Reset some basic elements
@@ -547,15 +548,6 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
     padding: 10px 15px 0; } }
 /* GM for larger screens (larger than 992 px wide) */
 @media screen and (min-width: 992px) {
-  #section0,
-  #slide1,
-  #slide2,
-  #section3,
-  #section4,
-  #section5,
-  #section6 {
-    padding: 0px 220px 0px 0; }
-
   .ns-home-wrapper {
     padding-top: 50px; } }
 .ns-home-wrapper {
@@ -574,16 +566,23 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   text-align: justify;
   padding-bottom: 15px; }
 
+.ns-navopen {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1500;
+  width: 30px;
+  height: 30px;
+  background-color: transparent; }
+
+.clickElement {
+  cursor: pointer; }
+
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0 {
   background-image: url(/assets/bg-pattern-03.png);
   background-color: #D9DBDD; }
-  #section0 .centered {
-    position: fixed;
-    /* or absolute */
-    top: 50%;
-    left: 50%; }
 
 #section1 {
   padding: 0 0 0 0;
@@ -656,16 +655,6 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   text-align: center; }
 
 /* Logo Positioning */
-.ns-logoPosition {
-  z-index: 10000;
-  position: fixed;
-  top: 15px;
-  right: 17px;
-  width: 200px; }
-
-@media screen and (max-width: 767px) {
-  .ns-logoPosition {
-    display: none; } }
 .playIcon {
   height: 27px;
   width: 36px;
@@ -733,3 +722,6 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 
 .ns-chrono-title {
   text-align: center; }
+
+#scotch-panel {
+  background-color: #000005; }

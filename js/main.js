@@ -697,14 +697,28 @@ function drop() {
   });
 
 // Slidebars
-  var mySlidebars = new $.slidebars();
-  $('.my-button').on('click', function() {
-    mySlidebars.slidebars.open('left');
+  // var mySlidebars = new $.slidebars();
+  // $('.ns-navopen').on('touchend click', function() {
+  //   mySlidebars.slidebars.open('right');
+  // });
+  // $('.ns-navclose').on('touchend click', function() {
+  //   mySlidebars.slidebars.close();
+  // });
+
+
+
+  $('#scotch-panel').scotchPanel({
+      containerSelector: 'body',
+      direction: 'right',
+      duration: 300,
+      transition: 'ease',
+      clickSelector: '.toggle-panel',
+      distanceX: '200px',
+      enableEscapeKey: true
   });
-  $('.my-other-button').on('click', function() {
-    mySlidebars.slidebars.toggle('right');
-  });
-  $('.my-third-button').click(mySlidebars.slidebars.close);
+
+
+
 
 });
 

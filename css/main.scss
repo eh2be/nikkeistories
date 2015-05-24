@@ -87,11 +87,11 @@ p {
 
 .centered {
   position: absolute; /* or fixed */
-  // top: 50%;
+  top: 1%;
   left: 50%;
   // margin-top: -112px;
-  // margin-left: -225px;
-  transform: translate(-50%, 0%);
+  margin-left: -195px;
+  // transform: translate(-50%, 0%);
 }
 
 // parallax
@@ -212,17 +212,6 @@ max-width: none;
 
 /* GM for larger screens (larger than 992 px wide) */
 @media screen and (min-width: 992px) {
-  #section0,
-  // #section2,
-  #slide1,
-  #slide2,
-  #section3,
-  #section4,
-  #section5,
-  #section6{
-    padding: 0px 220px 0px 0;
-  }
-  
   .ns-home-wrapper {
     padding-top: 50px;
   }
@@ -249,17 +238,26 @@ max-width: none;
   padding-bottom: 15px;
 }
 
+.ns-navopen {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1500;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.ns-navclose {}
+
+.clickElement { cursor:pointer }
 
 /* Defining each section background and styles
 * --------------------------------------- */
 #landing{ }
 #section0{
   background-image: url(/assets/bg-pattern-03.png);
-  background-color: #D9DBDD;.centered {
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
-}
+  background-color: #D9DBDD;
 }
 #section1{
   padding: 0 0 0 0;
@@ -344,19 +342,19 @@ max-width: none;
 
 
 /* Logo Positioning */
-.ns-logoPosition{
-  z-index: 10000;
-  position: fixed;
-  top: 15px;
-  right: 17px;
-  width: 200px;
-}
+// .ns-logoPosition{
+//   z-index: 10000;
+//   position: fixed;
+//   top: 15px;
+//   right: 17px;
+//   width: 200px;
+// }
 
-@media screen and (max-width: 767px) {
-  .ns-logoPosition{
-    display: none;
-  }
-}
+// @media screen and (max-width: 767px) {
+//   .ns-logoPosition{
+//     display: none;
+//   }
+// }
 
 .playIcon {
   height: 27px;
@@ -455,3 +453,7 @@ max-width: none;
 // }
 
 
+#scotch-panel {
+  background-color: #000005;
+
+}

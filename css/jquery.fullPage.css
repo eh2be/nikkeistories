@@ -79,7 +79,7 @@ html, body {
     border-color: transparent #000005 transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 235px;
+    right: 15px;
     border-width: 20px 0 20px 20px;
     border-color: transparent transparent transparent #000005;
 }
@@ -104,7 +104,7 @@ html, body {
 }
 
 #fp-nav.right {
-    right: 34px;
+    right: 17px;
 }
 #fp-nav.left {
     left: 17px;
@@ -176,7 +176,6 @@ html, body {
   font-size: 18px;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  /*font-family: arial, helvetica, sans-serif;*/
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
