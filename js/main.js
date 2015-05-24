@@ -1,5 +1,9 @@
 $(document).ready(function() {
   
+// START Slidebars
+    // $.slidebars();
+// END Slidebars
+
 // START fullPage.js plugin
   $('#fullpage').fullpage({
     // Design
@@ -692,6 +696,15 @@ function drop() {
     overlay: "/assets/vegas/overlays/01.png"
   });
 
+// Slidebars
+  var mySlidebars = new $.slidebars();
+  $('.my-button').on('click', function() {
+    mySlidebars.slidebars.open('left');
+  });
+  $('.my-other-button').on('click', function() {
+    mySlidebars.slidebars.toggle('right');
+  });
+  $('.my-third-button').click(mySlidebars.slidebars.close);
 
 });
 

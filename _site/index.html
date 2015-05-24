@@ -4,7 +4,9 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width initial-scale=1">
+   -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <title>Nikkei Stories 日系物語</title>
   <meta name="description" content="Nikkei Stories is an interactive film project that chronicles the history of the Japanese diaspora around the world. The first two phases will be about Nikkei in Vancouver and Steveston, Canada and will be launching in Spring 2015. Stay tuned. 
@@ -25,6 +27,8 @@
   <link rel="stylesheet" type="text/css" href="css/fresco/fresco.css">
   <link rel="stylesheet" type="text/css" href="css/vegas/vegas.min.css">
 
+  <link rel="stylesheet" type="text/css" href="css/slidebars.css">
+
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -40,10 +44,11 @@
 
   <body class="ns-background">
     <div >
-         <!-- jasny Offcanvas Bootstrap navbar -->
+      <!--
+   <!-- jasny Offcanvas Bootstrap navbar 
         <nav class="navmenu navmenu-default navmenu-fixed-right offcanvas-sm" role="navigation">
-        <!-- <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation"> -->
-        <!-- <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation"> -->
+        <!-- <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation"> 
+        <!-- <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation"> 
           <div class="container-smooth">
             <a class="navmenu-brand" href="#home"><img src="assets/NS_Logo_DarkGray_200.png"></a>
             <ul class="nav navmenu-nav">
@@ -51,9 +56,9 @@
               <li class="dropdown">
                 <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">INTERACTIVITY<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <!-- <li><a href="#maps">Intructions</a></li>                 -->
+                  <!-- <li><a href="#maps">Intructions</a></li>                 
                   <li><a href="#maps">Powell Street</a></li>
-                  <!-- <li><a href="#maps/2">Steveston OptA</a></li> -->
+                  <!-- <li><a href="#maps/2">Steveston OptA</a></li> 
                   <li><a href="#maps/1">Steveston</a></li>
                 </ul>
               </li>
@@ -71,30 +76,14 @@
                 </ul>
               </li>
               
-              <!-- <li><a href="#education">FOR EDUCATION</a></li> -->
+              <!-- <li><a href="#education">FOR EDUCATION</a></li> 
               <li><a href="#contact">CONTACT</a></li>
               <li><a href="#credits">CREDITS</a></li>                
             </ul>
-            <!-- <ul class="nav navmenu-nav">
-
-              <li><a href="#chronology">Chronology <span class="sr-only">(current)</span></a></li>
-              
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
-                <ul class="dropdown-menu navmenu-nav" role="menu">
-                  <li><a href="#maps/1">Powell Street</a></li>
-                  <li><a href="#maps/2">Steveston</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#videos">Videos</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#credits">Credits</a></li>            
-            </ul> -->
           </div>
         </nav>
-
+-->
+<!-- bootstrap sidebar pt2
         <div class="navbar navbar-default navbar-fixed-top">
           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
             <span class="icon-bar"></span>
@@ -103,75 +92,19 @@
           </button>
         </div> 
 
+-->
 
+<div id="sb-site">  
 
-<!-- Bootstrap Menubar (TOP)-->
-
-<!-- <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid"> -->
-    <!-- Brand and toggle get grouped for better mobile display-->
-   <!--  <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar" ></span>  --> <!-- this is the top of hamburger -->
-        <!-- <span class="icon-bar"></span> -->  <!-- this is the middle of the hamburger -->
-   <!--      <span class="icon-bar"></span>  --> <!-- this is the bottom bun of the hamburger-->
-    <!--   </button>
-      <a class="navbar-brand" href="#home" class="active"><img src="assets/NS-Logo-76.png"></a>
-    </div> -->
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#maps/1">Powell Street</a></li>
-            <li><a href="#maps/2">Steveston</a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#chronology"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chronology<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#chronology">18??-1907: First Immigrants</a></li>
-            <li><a href="#chronology/1">1907-1941: Building Community</a></li>
-            <li><a href="#chronology/2">1941-1949: Internment</a></li>
-            <li><a href="#chronology/3">1949-1977: Rebuilding</a></li>
-            <li><a href="#chronology/4">1977-1988: Redress</a></li>
-            <li><a href="#chronology/5">1988-Present: Post-Redress</a></li>
-          </ul>
-        </li>
-        
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#credits">Credits</a></li>                
-      </ul> -->
-  <!--   </div> <! /.navbar-collapse
-  </div> <! /.container-fluid
-</nav> -->
-
-
-
- <!-- <ul id="menu">
-   <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-   <li data-menuanchor="chronology"><a href="#chronology">Chronology</a></li>
-   <li data-menuanchor="maps"><a href="#maps">Maps</a></li>
-   <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-   <li data-menuanchor="credits"><a href="#credits">Credits</li>
- </ul> -->
-      
-<!-- <a href="#home" class="ns-logoPosition"><img src="assets/NS_logo_Mar11.png"></a> -->
-<!-- fullPage.js -->
 <div id="fullpage">
+
 <div class="canvas">
 
 <!-- Landing Page -->
   <div class="section" id="landing">
     <div class="slide">
     <div class="ns-container ns-wrapper centered">
-          <p><img src="/assets/NS_landingLogo_red_300.png"></p>
+          <p><img src="/assets/NS_landingLogo_red_300.png" class="my-other-button"></p>
           <!-- <p><img src="/assets/Tagline_450.png"></p> -->
       </div>
     </div>
@@ -1065,8 +998,41 @@
 
 
 </div> <!-- close canvas -->
-</div> <!-- close fullpage.js -->
+</div> <!-- close Fullpage.js -->  
+</div> <!-- close Slidebars -->
 
+
+<div class="sb-slidebar sb-right">
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="#videos">VIDEOS</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+    <li><a href="#credits">CREDITS</a></li>                
+  </ul>
+</div>
+
+<!-- <nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
+  <div class="sb-toggle-right navbar-right">
+    <div class="navicon-line"></div>
+    <div class="navicon-line"></div>
+    <div class="navicon-line"></div>
+  </div>
+  <div class="container">
+    <ul class="sb-menu">
+      <li><a href="#videos">VIDEOS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#credits">CREDITS</a></li>                
+    </ul>
+  </div>
+</nav> -->
+<!-- <div class="sb-slidebar sb-right">
+  <nav>
+    <ul class="sb-menu">
+      <li><a href="#videos">VIDEOS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#credits">CREDITS</a></li>                
+    </ul>
+  </nav>
+</div> -->
 
 
 
@@ -1108,7 +1074,10 @@
 <!-- END Fresco -->
 
 <!-- vegas plugin slideshow for landing page -->
-    <script src="/js/vegas/vegas.min.js"></script>
+    <script type="text/javascript" src="/js/vegas/vegas.min.js"></script>
+
+<!-- Slidebars plugin -->
+    <script type="text/javascript" src="/js/slidebars.js"></script>
 
 <!--    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script> -->
 
@@ -1135,7 +1104,6 @@
 <!-- Infobox
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
     <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
-
 
 
 
