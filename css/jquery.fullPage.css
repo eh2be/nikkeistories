@@ -64,7 +64,6 @@ html, body {
   .fp-controlArrow {
     position: absolute;
     z-index: 4;
-    top: 100px;
     cursor: pointer;
     width: 0;
     height: 0;
@@ -72,16 +71,18 @@ html, body {
     margin-top: -38px;
   }
 }
+.fp-controlArrow.fp-next {
+    right: 25px;
+    top: 160px;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #fff;
+}
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    right: 25px;
+    top: 210px;
     width: 0;
     border-width: 20px 20px 20px 0;
-    border-color: transparent #000005 transparent transparent;
-}
-.fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 20px 0 20px 20px;
-    border-color: transparent transparent transparent #000005;
+    border-color: transparent #fff transparent transparent;
 }
 .fp-scrollable {
     overflow: scroll;
@@ -152,7 +153,7 @@ html, body {
 }
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span {
-  background: #333;
+  background: #C70025;
 }
 
 /*GM this is the dots for nav both horizontal and vertical */
@@ -160,9 +161,9 @@ html, body {
 .fp-slidesNav ul li a span {
   top: 2px;
   left: 2px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #000;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #C70025;
   background: rgba(0, 0, 0, 0);
   border-radius: 50%;
   position: absolute;

@@ -4,10 +4,10 @@ layout: default
 
 
 <!--
-   <!-- jasny Offcanvas Bootstrap navbar 
+   <! jasny Offcanvas Bootstrap navbar 
         <nav class="navmenu navmenu-default navmenu-fixed-right offcanvas-sm" role="navigation">
-        <!-- <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation"> 
-        <!-- <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation"> 
+        <! <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation"> 
+        <! <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation"> 
           <div class="container-smooth">
             <a class="navmenu-brand" href="#home"><img src="assets/NS_Logo_DarkGray_200.png"></a>
             <ul class="nav navmenu-nav">
@@ -15,9 +15,9 @@ layout: default
               <li class="dropdown">
                 <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">INTERACTIVITY<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <!-- <li><a href="#maps">Intructions</a></li>                 
+                  <!<li><a href="#maps">Intructions</a></li>                 
                   <li><a href="#maps">Powell Street</a></li>
-                  <!-- <li><a href="#maps/2">Steveston OptA</a></li> 
+                  <! <li><a href="#maps/2">Steveston OptA</a></li> 
                   <li><a href="#maps/1">Steveston</a></li>
                 </ul>
               </li>
@@ -35,7 +35,7 @@ layout: default
                 </ul>
               </li>
               
-              <!-- <li><a href="#education">FOR EDUCATION</a></li> 
+               <li><a href="#education">FOR EDUCATION</a></li> 
               <li><a href="#contact">CONTACT</a></li>
               <li><a href="#credits">CREDITS</a></li>                
             </ul>
@@ -58,7 +58,12 @@ layout: default
 
 <div class="ns-navopen">
   <a href="#" class="toggle-panel">
-    <img src="assets/NavIcon_30.png">
+    <img src="assets/button_nav_30.png">
+  </a>
+</div>
+<div class="ns-info">
+  <a href="/assets/Photos/CRA_2012-3-8.jpg" class="fresco">
+    <img src="assets/button_info_30.png">
   </a>
 </div>
 
@@ -71,7 +76,7 @@ layout: default
     <!-- Landing Page -->
       <div class="section" id="landing">
         <div class="slide">
-        <div class="ns-container ns-wrapper centered">
+        <div class="ns-container ns-wrapper logo-centered">
               <p><img src="/assets/NS_LOGO.png"></p>
               <!-- <p><img src="/assets/Tagline_450.png"></p> -->
           </div>
@@ -93,7 +98,11 @@ layout: default
               <div class="row">
                 <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
                   <div class="ns-label">
-                    <img src="/assets/PowellStreetMap_400.png">
+                    <p>
+                      <strong>POWELL STREET</strong> The Powell Street area in Vancouver, BC, once a thriving community of over 8,000 Nikkei, was decimated during WW II and never returned to its pre-war heyday.
+
+                      Nikkei Stories of Powell Street reanimates the people, places and events that created the largest and most vibrant Japanese Canadian centre in Canada.
+                    </p>
                   </div>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
@@ -150,7 +159,11 @@ layout: default
               <div class="row">
                 <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
                   <div id="ns-label">
-                    <img src="/assets/StevestonMap_400.png">
+                    <p class="text">
+                      <strong>STEVESTON</strong> Prior to WW II, the fishing village of Steveston, BC, was dominated by over 2,000 Nikkei. Unlike Vancouver, many returned after internment to rebuild and contribute to the Canadian mosaic. 
+
+                      Nikkei Stories of Steveston pays tribute to the struggles and successes of Japanese Canadian pioneers and their descendants.
+                    </p>
                   </div>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
@@ -240,10 +253,11 @@ layout: default
             </div>
           </div>
         </div> -->
-        <div class="slide" id="map-canvas">POWELL STREET</div>
-        <!-- <div class="slide" id="map-canvas-PowellSt"></div> -->
-    <!--     <div class="slide" id="map-canvas-Steveston"></div> -->
+        <div class="slide" id="slideTEMP"></div>
+        <div class="slide" id="map-canvas"></div>
         <div class="slide" id="map-canvas-StevestonB"></div>
+            <!-- <div class="slide" id="map-canvas-PowellSt"></div> NG-->
+            <!-- <div class="slide" id="map-canvas-Steveston"></div> NG-->
       </div>
 
 
@@ -867,7 +881,7 @@ layout: default
 
     <!-- Credits -->
     <div class="section" id="section6">
-        <div class="slide">
+        <!-- <div class="slide"> -->
           <div class="ns-container ns-wrapper">
             <h1><strong>CREDITS</strong></h1>
             <p>
@@ -961,7 +975,7 @@ layout: default
               Orbit Films Inc.
             </p>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
 
 
@@ -973,8 +987,8 @@ layout: default
 <div id="scotch-panel">
   <nav role="navigation"> 
     <div class="">
-      <a class="navmenu-brand" href="#home"><img src="assets/NS_Logo_DarkGray_200.png"></a>
-      <ul class="nav navmenu-nav">
+      <a class="" href="#home"><img src="assets/NS_Logo_Gray_200.png"></a>
+      <ul class="nav">
         <li><a href="#videos">VIDEOS</a></li>
         <li class="dropdown">
           <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">INTERACTIVITY<span class="caret"></span></a>

@@ -687,11 +687,14 @@ function drop() {
     delay: 12000,
     slides: [
         { src: '/assets/Photos/BG_2010-80-2-64.jpg' },
-        { src: '/assets/Photos/BG_1993-40-1.jpg' },
-        { src: '/assets/Photos/CRA_2009-16-111_Launch-Day-at-Atagi-Boatworks_1918.jpg' },
+        { src: '/assets/Photos/BG_CRA_2009-16-111.jpg' },
         { src: '/assets/Photos/BG_2010-30-14.jpg' },
-        { src: '/assets/Photos/BG_VPL_1368.jpg' },
-        { src: '/assets/Photos/BG_1994-64-7-165.jpg' }
+        { src: '/assets/Photos/BG_CRA_1977-22-7.jpg' },
+        { src: '/assets/Photos/BG_2010-23-2-4-550.jpg' },
+        { src: '/assets/Photos/BG_CRA_1978-34-42.jpg' },
+        { src: '/assets/Photos/BG_CRA_2006-39-80.jpg' },
+        { src: '/assets/Photos/BG_CRA_1978-34-41.jpg' },        
+        { src: '/assets/Photos/BG_VPL_1368.jpg' }
     ],
     overlay: "/assets/vegas/overlays/01.png"
   });
@@ -711,7 +714,8 @@ function drop() {
       containerSelector: 'body',
       direction: 'right',
       duration: 300,
-      transition: 'ease',
+      transition: 'ease', //'cubic-bezier(.76,-0.52,.33,1.02)'
+      closeAfter: 1000,
       clickSelector: '.toggle-panel',
       distanceX: '200px',
       enableEscapeKey: true
