@@ -42,7 +42,7 @@
 
 			//design
 			'controlArrows': true,
-			'controlArrowColor': '#C70025',
+			// 'controlArrowColor': '#C70025',
 			"verticalCentered": true,
 			'resize': true,
 			'sectionsColor' : [],

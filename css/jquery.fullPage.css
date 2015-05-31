@@ -60,8 +60,7 @@ html, body {
     float: left;
     position: relative;
 }
-@media screen and  (min-width: 992px) {
-  .fp-controlArrow {
+.fp-controlArrow {
     position: absolute;
     z-index: 4;
     cursor: pointer;
@@ -69,20 +68,37 @@ html, body {
     height: 0;
     border-style: solid;
     margin-top: -38px;
-  }
+    transition: all 0.5s ease;
 }
 .fp-controlArrow.fp-next {
-    right: 25px;
-    top: 160px;
-    border-width: 20px 0 20px 20px;
-    border-color: transparent transparent transparent #fff;
+    right: 15px;
+    top: 150px;
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #C70025;
 }
 .fp-controlArrow.fp-prev {
-    right: 25px;
-    top: 210px;
+    right: 15px;
+    top: 200px;
     width: 0;
-    border-width: 20px 20px 20px 0;
-    border-color: transparent #fff transparent transparent;
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #C70025 transparent transparent;
+}
+.fp-controlArrow.fp-up {
+    right: 15px;
+    top: 250px;
+    width: 0;
+    border-width: 0px 15px 15px 20px;
+    border-color: transparent #C70025 transparent transparent;
+}
+.fp-controlArrow.fp-down {
+    right: 15px;
+    top: 250px;
+    width: 0;
+    border-width: 20px 15px 0px 15px;
+    border-color: transparent #C70025 transparent transparent;
+}
+.fp-controlArrow:hover {
+    background-color: #CACACC;
 }
 .fp-scrollable {
     overflow: scroll;
@@ -94,14 +110,14 @@ html, body {
 }
 
 /*GM Vertical nav dots*/
-@media screen and  (min-width: 992px) {
+/*@media screen and  (min-width: 992px) {*/
   #fp-nav {
     position: fixed;
     z-index: 1000; /* GM */
     margin-top: -32px;
     top: 50%;
     opacity: 1;
-  }
+  /*}*/
 }
 
 #fp-nav.right {

@@ -29,9 +29,12 @@ p {
   font-size: 1.5em;
 }
 
+a {
+  color: #C70025
+}
 a:hover,
 a:focus {
-  color: #C70025;
+  color: #CACACC;
   // text-decoration: underline;
 }
 
@@ -58,8 +61,14 @@ a:focus {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 70px 10px 10px;
+  padding: 10px 50px 10px 10px;
   // padding: 0px 45px 0px;
+}
+
+.ns-logo-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 .ns-th-video {
@@ -97,33 +106,9 @@ a:focus {
   left: 50%;
   background-color: transparent;
   // margin-top: -112px;
-  margin-left: -195px;
+  margin-left: -150px;
   // transform: translate(-50%, 0%);
 }
-
-// parallax
-
-// .parallax {
-//   perspective: 1px;
-//   height: 100vh;
-//   overflow-x: hidden;
-//   overflow-y: auto;
-// }
-// .parallax__layer {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-// }
-// .parallax__layer--base {
-//   transform: translateZ(0);
-// }
-// .parallax__layer--back {
-//   transform: translateZ(-1px);
-// }
-
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -176,7 +161,7 @@ max-width: none;
 
 /* Centered texts in each section
 * --------------------------------------- */
-.section{
+.section {
   text-align:center;
   background-color: #2B2B2B; // #4B4B4C;
   color: #CACACC;
@@ -210,35 +195,29 @@ max-width: none;
   #section6{
     padding: 0;
   }
-
-  // #ns-home-wrapper,
-  // #ns-chrono-wrapper {
-  //   padding: 15px;
-  //   padding-right: 80px;
-  // }
-  // #ns-chrono-wrapper {
-  //   padding: 10px 15px 0;
-  // }
-
 }
 
 /* GM for larger screens (larger than 992 px wide) */
 @media screen and (min-width: 1230px) {
   #ns-home-wrapper,
-  #ns-chrono-wrapper {
+  .ns-chrono-wrapper {
     padding-top: 50px;
     padding-right: 45px;
     padding-left: 45px;
     padding-bottom: 300px
   }
-
 }
-
+@media screen and (max-width: 400px) {
+  .logo-centered {
+    width: 230px;
+    margin-left: -115px;
+  }
+}
 #ns-home-wrapper {
   text-align: none;
   font-size: 0.8em;
   padding-left: 25px;
-  padding-right: 85px;
+  padding-right: 70px;
 }
 
 #ns-home-col-wrapper {
@@ -246,7 +225,7 @@ max-width: none;
   padding: 0 15px 0;
 }
 
-#ns-chrono-wrapper {
+.ns-chrono-wrapper {
   text-align: justify;
   padding-bottom: 250px;
 }
@@ -256,27 +235,52 @@ max-width: none;
   padding-bottom: 15px;
 }
 
-.ns-navopen {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 1500;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-}
-
+.ns-navopen,
 .ns-info {
   position: absolute;
-  right: 20px;
-  top: 70px;
+  right: 10px;
   z-index: 1500;
   width: 30px;
   height: 30px;
   background-color: transparent;
+  transition: all 0.5s ease;
 }
-
-.ns-navclose {}
+.ns-navopen {
+  top: 10px;
+  border-radius: 3px;
+}
+.ns-navopen:hover {
+  height: 30px;
+  width: 30px;
+  background-color: #CACACC;
+  border-radius: 3px;
+}
+.ns-info {
+  top: 60px;
+  border-radius: 50%;
+}
+.ns-info:hover {
+  height: 30px;
+  width: 30px;
+  background-color: #CACACC;
+  border-radius: 50%;
+}
+.ns-navclose {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+  left: 10px;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+.ns-navclose:hover {
+  height: 30px;
+  width: 30px;
+  background-color: #CACACC;
+  border-radius: 3px;
+}
 
 .clickElement { cursor:pointer }
 
@@ -312,11 +316,6 @@ max-width: none;
   // background-color: #4B4B4C; // `#D9DBDD;    
 }
 
-// #section3 h1{
-//   color: #000;
-// }
-
-
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1{
@@ -336,7 +335,6 @@ max-width: none;
 #infoMenu li a {
   color: #fff;
 }
-
 
 /* START Infobox */
 .infobox-wrapper {
@@ -371,23 +369,6 @@ max-width: none;
   text-align: center;
 }
 
-
-
-/* Logo Positioning */
-// .ns-logoPosition{
-//   z-index: 10000;
-//   position: fixed;
-//   top: 15px;
-//   right: 17px;
-//   width: 200px;
-// }
-
-// @media screen and (max-width: 767px) {
-//   .ns-logoPosition{
-//     display: none;
-//   }
-// }
-
 .playIcon {
   height: 27px;
   width: 36px;
@@ -404,14 +385,6 @@ max-width: none;
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
 }
-
-// @media (min-width: 992px) {
-//   body {
-//     padding-right: 300px;
-//   }
-// }
-
-
 
 #Powell-01,
 #Powell-02,
@@ -471,7 +444,6 @@ max-width: none;
   transform: scale(1);
 
 }
-
 
 .ns-chrono-title {
   text-align: center;

@@ -3,9 +3,12 @@
 p {
   font-size: 1.5em; }
 
+a {
+  color: #C70025; }
+
 a:hover,
 a:focus {
-  color: #C70025; }
+  color: #CACACC; }
 
 .ns-background {
   width: 100%;
@@ -15,7 +18,12 @@ a:focus {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 70px 10px 10px; }
+  padding: 10px 50px 10px 10px; }
+
+.ns-logo-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; }
 
 .ns-th-video {
   margin: 0 0 0px 0;
@@ -41,7 +49,7 @@ a:focus {
   top: 1%;
   left: 50%;
   background-color: transparent;
-  margin-left: -195px; }
+  margin-left: -150px; }
 
 /**
  * Reset some basic elements
@@ -551,22 +559,26 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 /* GM for larger screens (larger than 992 px wide) */
 @media screen and (min-width: 1230px) {
   #ns-home-wrapper,
-  #ns-chrono-wrapper {
+  .ns-chrono-wrapper {
     padding-top: 50px;
     padding-right: 45px;
     padding-left: 45px;
     padding-bottom: 300px; } }
+@media screen and (max-width: 400px) {
+  .logo-centered {
+    width: 230px;
+    margin-left: -115px; } }
 #ns-home-wrapper {
   text-align: none;
   font-size: 0.8em;
   padding-left: 25px;
-  padding-right: 85px; }
+  padding-right: 70px; }
 
 #ns-home-col-wrapper {
   text-align: justify;
   padding: 0 15px 0; }
 
-#ns-chrono-wrapper {
+.ns-chrono-wrapper {
   text-align: justify;
   padding-bottom: 250px; }
 
@@ -574,23 +586,51 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   text-align: justify;
   padding-bottom: 15px; }
 
-.ns-navopen {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 1500;
-  width: 30px;
-  height: 30px;
-  background-color: transparent; }
-
+.ns-navopen,
 .ns-info {
   position: absolute;
-  right: 20px;
-  top: 70px;
+  right: 10px;
   z-index: 1500;
   width: 30px;
   height: 30px;
-  background-color: transparent; }
+  background-color: transparent;
+  transition: all 0.5s ease; }
+
+.ns-navopen {
+  top: 10px;
+  border-radius: 3px; }
+
+.ns-navopen:hover {
+  height: 30px;
+  width: 30px;
+  background-color: #CACACC;
+  border-radius: 3px; }
+
+.ns-info {
+  top: 60px;
+  border-radius: 50%; }
+
+.ns-info:hover {
+  height: 30px;
+  width: 30px;
+  background-color: #CACACC;
+  border-radius: 50%; }
+
+.ns-navclose {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+  left: 10px;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: all 0.5s ease; }
+
+.ns-navclose:hover {
+  height: 30px;
+  width: 30px;
+  background-color: #CACACC;
+  border-radius: 3px; }
 
 .clickElement {
   cursor: pointer; }
@@ -666,7 +706,6 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   margin: 20px auto;
   text-align: center; }
 
-/* Logo Positioning */
 .playIcon {
   height: 27px;
   width: 36px;
