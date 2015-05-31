@@ -48,18 +48,6 @@ a:focus {
     }
 }
 
-/* Mixin */
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.text p {
-  @include vertical-align;
-}
 .ns-background {
   // background-image: url("/assets/2Nrxex6.jpg");
   width: 100%;
@@ -436,7 +424,7 @@ max-width: none;
 #Steveston-08,
 #Steveston-09,
 #Steveston-10 {
-  opacity: 0.75;
+  opacity: 1;
   transition: all 0.5s ease;
   margin: 0;
   padding: 0;
@@ -480,13 +468,11 @@ max-width: none;
   text-align: center;
 }
 
-// #ns-label {
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-//   vertical-align: middle;
-// }
-
+.ns-label {
+  // padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #scotch-panel {
   background-color: #000005; // #C70025;
@@ -494,5 +480,6 @@ max-width: none;
   border-color: #C70025;
   border-style: solid;
   border-width: 0 0 0 4px;
+  font-family: 'Oswald', sans-serif;
 }
 

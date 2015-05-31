@@ -713,16 +713,13 @@ function drop() {
   $('#scotch-panel').scotchPanel({
       containerSelector: 'body',
       direction: 'right',
-      duration: 300,
+      duration: 500,
       transition: 'ease', //'cubic-bezier(.76,-0.52,.33,1.02)'
-      closeAfter: 1000,
+      closeAfter: 5000,
       clickSelector: '.toggle-panel',
-      distanceX: '200px',
+      distanceX: '210px',
       enableEscapeKey: true
   });
-
-
-
 
 });
 
