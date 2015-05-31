@@ -58,7 +58,8 @@ a:focus {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 45px 0;
+  padding: 10px 70px 10px 10px;
+  // padding: 0px 45px 0px;
 }
 
 .ns-th-video {
@@ -198,7 +199,7 @@ max-width: none;
 
 
 /* for small screens (smaller than 992px) */
-@media screen and (max-width: 991) { /* GM: } 767px) {   */
+@media screen and (max-width: 1229) { /* GM: } 767px) {   */
   #section0,
   // #section2,
   #slide1,
@@ -210,26 +211,34 @@ max-width: none;
     padding: 0;
   }
 
-  .ns-home-wrapper {
-    padding: 15px;
-  }
-  .ns-chrono-wrapper {
-    padding: 10px 15px 0;
-  }
+  // #ns-home-wrapper,
+  // #ns-chrono-wrapper {
+  //   padding: 15px;
+  //   padding-right: 80px;
+  // }
+  // #ns-chrono-wrapper {
+  //   padding: 10px 15px 0;
+  // }
 
 }
 
 /* GM for larger screens (larger than 992 px wide) */
-@media screen and (min-width: 992px) {
-  .ns-home-wrapper {
+@media screen and (min-width: 1230px) {
+  #ns-home-wrapper,
+  #ns-chrono-wrapper {
     padding-top: 50px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 300px
   }
 
 }
 
-.ns-home-wrapper {
+#ns-home-wrapper {
   text-align: none;
   font-size: 0.8em;
+  padding-left: 25px;
+  padding-right: 85px;
 }
 
 #ns-home-col-wrapper {
@@ -237,7 +246,7 @@ max-width: none;
   padding: 0 15px 0;
 }
 
-.ns-chrono-wrapper {
+#ns-chrono-wrapper {
   text-align: justify;
   padding-bottom: 250px;
 }
