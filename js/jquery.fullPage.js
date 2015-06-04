@@ -17,9 +17,10 @@
 			'navigationPosition': 'right',
 			'navigationColor': '#C70025',
 			'navigationTooltips': [],
-			'slidesNavigation': false,
+			'slidesNavigation': true,
 			'slidesNavPosition': 'top',
 			'scrollBar': false,
+			'recordHistory': true,
 
 			//scrolling
 			'css3': true,

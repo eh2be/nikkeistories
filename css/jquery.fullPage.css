@@ -83,7 +83,23 @@ html, body {
     border-width: 15px 20px 15px 0;
     border-color: transparent #C70025 transparent transparent;
 }
+/*GM* START */
 .fp-controlArrow.fp-up {
+    right: 15px;
+    top: 250px;
+    width: 0;
+    border-width: 0px 15px 15px 20px;
+    border-color: transparent #C70025 transparent transparent;
+}
+.fp-upArrow {
+    position: absolute;
+    z-index: 10000;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    transition: all 0.5s ease;
     right: 15px;
     top: 250px;
     width: 0;
@@ -97,6 +113,7 @@ html, body {
     border-width: 20px 15px 0px 15px;
     border-color: transparent #C70025 transparent transparent;
 }
+/*GM END*/
 .fp-controlArrow:hover {
     background-color: #CACACC;
 }

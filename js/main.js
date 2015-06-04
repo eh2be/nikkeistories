@@ -26,8 +26,8 @@ $(document).ready(function() {
     autoScrolling: true,
     continuousVertical: false,
     loopHorizontal: false,
-    // scrollBar: true, //scrollbar make the pages snap more abruptly; Foundation off-canvas navbar doesn't work either.
-    // responsive: 600
+    // scrollBar: true, //scrollbar make the pages snap more abruptly. Nav menu and info menu buttons disappear
+    responsive: 0,
     // normalScrollElements: '#map-canvas-PowellSt, #map-canvas-Steveston' // swipe/scroll doesn't work over maps on macbook
   });
 // END fullpage.js plugin
