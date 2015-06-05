@@ -429,32 +429,86 @@ $(document).ready(function() {
       });
     });
     google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
-      infowindow2.open(map,this);
+      // infowindow2.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504315',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(marker369PowellSt_Pole753, 'click', function() {
-      infowindow3.open(map,this);
+      // infowindow3.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504240',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(marker357PowellSt_Pole553, 'click', function() {
-      infowindow4.open(map,this);
+      // infowindow4.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504241',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(marker314PowellSt_Pole153, 'click', function() {
-      infowindow5.open(map,this);
+      // infowindow5.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504189',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(marker394PowellSt_Pole1053, 'click', function() {
-      infowindow6.open(map,this);
+      // infowindow6.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504316',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(markerPowellGrounds_Pole254, 'click', function() {
-      infowindow7.open(map,this);
+      // infowindow7.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504187',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(marker362AlexanderSt_Pole453, 'click', function() {
-      infowindow8.open(map,this);
+      // infowindow8.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504186',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(marker487AlexanderSt_Pole254, 'click', function() {
-      infowindow9.open(map,this);
+      // infowindow9.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504188',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
     });
     google.maps.event.addListener(markerOppenheimerPark_Pole12, 'click', function() {
-      infowindow10.open(map,this);
-    });    
+      // infowindow10.open(map,this);
+      Fresco.show({
+        url: 'https://vimeo.com/126504242',
+        options: {
+          vimeo: { autoplay: 1 }
+        }
+      });
+    });  
 
 
     //INFOWINDOW END
@@ -592,6 +646,8 @@ function drop() {
     });
   });
 
+  $("#" + "a.link").click();
+
   $("#Powell-02").on( "click", function(){
     Fresco.show({
       url: 'https://vimeo.com/126504315',
@@ -689,12 +745,11 @@ function drop() {
         { src: '/assets/Photos/BG_2010-80-2-64.jpg' },
         { src: '/assets/Photos/BG_CRA_2009-16-111.jpg' },
         { src: '/assets/Photos/BG_2010-30-14.jpg' },
-        { src: '/assets/Photos/BG_CRA_1977-22-7.jpg' },
         { src: '/assets/Photos/BG_2010-23-2-4-550.jpg' },
+        { src: '/assets/Photos/BG_VPL_1368.jpg' },
         { src: '/assets/Photos/BG_CRA_1978-34-42.jpg' },
-        { src: '/assets/Photos/BG_CRA_2006-39-80.jpg' },
-        { src: '/assets/Photos/BG_CRA_1978-34-41.jpg' },        
-        { src: '/assets/Photos/BG_VPL_1368.jpg' }
+        { src: '/assets/Photos/BG_2010-23-2-4-236.jpg' },
+        { src: '/assets/Photos/BG_CRA_1978-34-41.jpg' }
     ],
     overlay: "/assets/vegas/overlays/01.png"
   });

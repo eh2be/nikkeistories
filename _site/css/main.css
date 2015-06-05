@@ -585,9 +585,6 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
 #ns-video-header {
   margin: 5px; }
 
-#ns-chrono-header {
-  margin: 0; }
-
 #ns-video-text {
   margin: 15px 0 15px 0; }
 
