@@ -761,6 +761,42 @@ function drop() {
   //   mySlidebars.slidebars.close();
   // });
 
+$( "#ns-chrono-header-1" ).click(function() {
+  $( "#ns-chrono-image-1" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
+$( "#ns-chrono-header-2" ).click(function() {
+  $( "#ns-chrono-image-2" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
+$( "#ns-chrono-header-3" ).click(function() {
+  $( "#ns-chrono-image-3" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
+$( "#ns-chrono-header-4" ).click(function() {
+  $( "#ns-chrono-image-4" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
+$( "#ns-chrono-header-5" ).click(function() {
+  $( "#ns-chrono-image-5" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
+$( "#ns-chrono-header-6" ).click(function() {
+  $( "#ns-chrono-image-6" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
 
 
   $('#scotch-panel').scotchPanel({

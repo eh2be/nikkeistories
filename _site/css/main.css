@@ -576,17 +576,37 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   padding: 0 15px 0; }
 
 #ns-video-header,
-#ns-chrono-header {
+#ns-chrono-header-1,
+#ns-chrono-header-2,
+#ns-chrono-header-3,
+#ns-chrono-header-4,
+#ns-chrono-header-5,
+#ns-chrono-header-6 {
+  margin: 0;
   border-color: #C70025;
   border-width: 2px 0 7px 0;
   border-style: solid;
   text-align: center; }
 
+#ns-chrono-image-1,
+#ns-chrono-image-2,
+#ns-chrono-image-3,
+#ns-chrono-image-4,
+#ns-chrono-image-5,
+#ns-chrono-image-6 {
+  margin: 0; }
+
 #ns-video-header {
   margin: 5px; }
 
 #ns-video-text {
-  margin: 15px 0 15px 0; }
+  margin: 15px 0 -150px 0;
+  font-size: 1.5em; }
+
+#ns-message {
+  margin: 0;
+  font-size: 3em;
+  padding: 100px; }
 
 .ns-chrono-wrapper {
   text-align: justify;

@@ -39,11 +39,9 @@ layout: default
                       <img src="assets/title_PowellStreet.png">
                     </div>
                     <div class="row" id="ns-video-text">
-                      <p>
                         The Powell Street area in Vancouver, BC, once a thriving community of over 8,000 Nikkei, was decimated during WW II and never returned to its pre-war heyday.
 
                         Nikkei Stories of Powell Street reanimates the people, places of the largest and most vibrant Japanese Canadian centre in Canada.
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -104,12 +102,10 @@ layout: default
                     <div class="row" id="ns-video-header">
                       <img src="assets/title_Steveston.png">
                     </div>
-                    <div class="row" id="ns-video-text">
-                      <p>
-                        Prior to WW II, the fishing village of Steveston, BC, had over 2,000 Nikkei. Unlike Vancouver, many returned after internment to rebuild and contribute to the Canadian mosaic. 
+                    <div class="row" id="ns-video-text">                    
+                      Prior to WW II, the fishing village of Steveston, BC, had over 2,000 Nikkei. Unlike Vancouver, many returned after internment to rebuild and contribute to the Canadian mosaic. 
 
-                        Nikkei Stories of Steveston pays tribute to the struggles and successes of Japanese Canadian pioneers and their descendants.
-                      </p>
+                      Nikkei Stories of Steveston pays tribute to the struggles and successes of Japanese Canadian pioneers and their descendants.
                     </div>
                   </div>
                 </div>
@@ -171,12 +167,14 @@ layout: default
 
     <!-- Maps -->
       <div class="section" id="section2">
-        <div class="slide" id="slideTEMP"></div>
         <div class="slide" id="map-canvas"></div>
-        <div class="slide" id="map-canvas-StevestonB"></div>
-            <!-- <div class="slide" id="map-canvas-PowellSt"></div> NG-->
-            <!-- <div class="slide" id="map-canvas-Steveston"></div> NG-->
-      </div>
+        <div class="slide">
+          <div class="row" id="ns-message">
+            COMING SOON
+          </div>
+        </div>
+<!--         <div class="slide" id="map-canvas-StevestonB"></div>
+ -->      </div>
 
 
 
@@ -186,10 +184,10 @@ layout: default
 
         <div class="slide" id="slide1" data-anchor="slide1">
           <div class="ns-container ns-chrono-wrapper">
-            <div class="row" id="ns-chrono-header">
+            <div class="row" id="ns-chrono-header-1">
               <img src="assets/title_chrono_EarlyYears.png">
             </div>
-            <div class="row">
+            <div class="row" id="ns-chrono-image-1">
               <img src="/assets/2009-15-4-4.jpg">
             </div>
             <p>
@@ -336,10 +334,10 @@ layout: default
 
         <div class="slide" id="slide1" data-anchor="slide2">
           <div class="ns-container ns-chrono-wrapper">
-            <div class="row" id="ns-chrono-header">
+            <div class="row" id="ns-chrono-header-2">
               <img src="assets/title_chrono_Building.png">
             </div>
-            <div class="row">
+            <div class="row" id="ns-chrono-image-2">
               <img src="/assets/1994-64-7-201.jpg">
             </div>
             <p>
@@ -459,10 +457,10 @@ layout: default
 
         <div class="slide" id="slide1">
           <div class="ns-container ns-chrono-wrapper">
-            <div class="row" id="ns-chrono-header">
+            <div class="row" id="ns-chrono-header-3">
               <img src="assets/title_chrono_Internment.png">
             </div>
-            <div class="row">
+            <div class="row" id="ns-chrono-image-3">
               <img src="/assets/2012-29-2-2-52.jpg">
             </div>
             <p>
@@ -574,10 +572,10 @@ layout: default
 
         <div class="slide" id="slide1">
           <div class="ns-container ns-chrono-wrapper">
-            <div class="row" id="ns-chrono-header">
+            <div class="row" id="ns-chrono-header-4">
               <img src="assets/title_chrono_Rebuilding.png">
             </div>
-            <div class="row">
+            <div class="row" id="ns-chrono-image-4">
               <img src="/assets/2010-23-2-4-617.jpg">
             </div>
             <p>
@@ -632,10 +630,10 @@ layout: default
 
         <div class="slide" id="slide1"> 
           <div class="ns-container ns-chrono-wrapper">
-            <div class="row" id="ns-chrono-header">
+            <div class="row" id="ns-chrono-header-5">
               <img src="assets/title_chrono_Redress.png">
             </div>
-            <div class="row">
+            <div class="row" id="ns-chrono-image-5">
               <img src="/assets/2010-32-124.jpg">
             </div>
             <p>
@@ -688,10 +686,10 @@ layout: default
 
         <div class="slide" id="slide1">
           <div class="ns-container ns-chrono-wrapper">
-            <div class="row" id="ns-chrono-header">
+            <div class="row" id="ns-chrono-header-6">
               <img src="assets/title_chrono_PostRedress.png">
             </div>
-            <div class="row">
+            <div class="row" id="ns-chrono-image-6">
               <img src="assets/Photos/PSF_2009.jpg">
             </div>
             <p>
@@ -941,14 +939,12 @@ layout: default
       <ul class="nav">
         <li><a href="#home"><h2>NIKKEI STORIES</h2></a></li>
         <li><a href="#videos">VIDEOS</a></li>
-        <div id="Powell-01"></div>
 
         <li class="dropdown">
           <a href="#maps" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">INTERACTIVITY<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#maps">Powell Street</a></li>               
-            <li><a href="#maps/1">Powell Street</a></li>
-            <li><a href="#maps/2">Steveston</a></li>
+          <ul class="dropdown-menu" role="menu">          
+            <li><a href="#maps">Powell Street</a></li>
+            <li><a href="#maps/1">Steveston</a></li>
           </ul>
         </li>
 
