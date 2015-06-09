@@ -626,106 +626,26 @@ function drop() {
 
 
 // END Google Maps API
+    
+  $('.video-thumb').on({
+    mouseover: function(){
+        $(this).addClass('highlight');
+    },
+    mouseleave: function(){
+        $(this).removeClass('highlight');
+    },
+    click: function(){
+        var vimeoId = $(this).data('video');
+        Fresco.show({
+            url: 'https://vimeo.com/' + vimeoId,
+            options: {
+                vimeo: {autoplay: 1}
+            }
+        });
 
-
-  $("#Powell-01,#Powell-02,#Powell-03,#Powell-04,#Powell-05,#Powell-06,#Powell-07,#Powell-08,#Powell-09,#Powell-10,#Steveston-01,#Steveston-02,#Steveston-03,#Steveston-04,#Steveston-05,#Steveston-06,#Steveston-07,#Steveston-08,#Steveston-09,#Steveston-10").on({
-      mouseover: function(){
-        var box = $(this).addClass('highlight');
-      },  
-      mouseleave: function(){
-        var box = $(this).removeClass('highlight');
-      }
+    }
   });
 
-  $("#Powell-01").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504239',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-  $("#Powell-02").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504315',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-    $("#Powell-03").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504240',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-  $("#Powell-04").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504241',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-  $("#Powell-05").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504189',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-  $("#Powell-06").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504316',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-  $("#Powell-07").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504187',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-  $("#Powell-08").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504186',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-  $("#Powell-09").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504188',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
-
-  $("#Powell-10").on( "click", function(){
-    Fresco.show({
-      url: 'https://vimeo.com/126504242',
-      options: {
-        vimeo: { autoplay: 1 }
-      }
-    });
-  });
 
   $("playIcon").on({
       mouseover: function(){
@@ -814,6 +734,22 @@ $( "#ns-chrono-header-6" ).click(function() {
   });
 
 });
+
+//Had to move it to onLoad event cause otherwise Fresco didn't initialize properly and put background on foreground
+$(window).load(function(){
+
+    //Checking if there's anything in the hash at all
+    if (window.location.hash) {
+      var hash = window.location.hash;
+
+      //Checking if the hash starts with #video-
+      if (hash.substr(0,7) === '#video-') {
+
+        //Clicking a video thumb with this ID
+        $(hash).eq(0).click();
+      };
+    }
+})
 
 
 
