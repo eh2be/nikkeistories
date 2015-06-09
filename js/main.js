@@ -646,8 +646,6 @@ function drop() {
     });
   });
 
-  $("#" + "a.link").click();
-
   $("#Powell-02").on( "click", function(){
     Fresco.show({
       url: 'https://vimeo.com/126504315',
