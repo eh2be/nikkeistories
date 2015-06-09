@@ -627,6 +627,7 @@ function drop() {
 
 // END Google Maps API
 
+
 //IGOR
   $('.video-thumb').on({
     mouseover: function(){
@@ -645,6 +646,15 @@ function drop() {
         });
 
     }
+  });
+
+  $("playIcon").on({
+      mouseover: function(){
+        var box = $(this).addClass('highlight');
+      },  
+      mouseleave: function(){
+        var box = $(this).removeClass('highlight');
+      }
   });
 
 
@@ -719,10 +729,10 @@ function drop() {
 
 });
 
+
 //IGOR
 //Had to move it to onLoad event cause otherwise Fresco didn't initialize properly and put background on foreground
 $(window).load(function(){
-
     //Checking if there's anything in the hash at all
     if (window.location.hash) {
       var hash = window.location.hash;
