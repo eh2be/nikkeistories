@@ -246,7 +246,7 @@ max-width: none;
 #ns-chrono-header-6 {
   margin: 0;
   border-color: #C70025;
-  border-width: 2px 0 7px 0;
+  border-width: 2px 0 3px 0;
   border-style: solid;
   text-align: center;
 }
@@ -257,7 +257,7 @@ max-width: none;
 #ns-chrono-image-4,
 #ns-chrono-image-5,
 #ns-chrono-image-6 {
-  margin: 0;
+  margin: 15px 0 15px 0;
 }
 
 #ns-video-header {
@@ -283,6 +283,12 @@ max-width: none;
 .ns-wrapper {
   text-align: justify;
   padding-bottom: 15px;
+}
+
+.ns-credit-wrapper {
+  text-align: center;
+  padding-bottom: 15px;
+  max-width: 660px;
 }
 
 .ns-navopen,
