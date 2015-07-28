@@ -30,6 +30,13 @@ a:focus {
   padding: 4px;
   outline: none; }
 
+.ns-sponsor-logo {
+  position: absolute;
+  /* or fixed */
+  left: 50%;
+  background-color: transparent;
+  margin-left: -216px; }
+
 .header {
   color: #000005;
   font-size: 27px;
@@ -600,7 +607,7 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   margin: 5px; }
 
 #ns-video-text {
-  margin: 15px 0 -150px 0;
+  margin: 15px 0 -5px 0;
   font-size: 1.5em; }
 
 #ns-message {
@@ -617,7 +624,10 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   padding-bottom: 15px; }
 
 .ns-navopen,
-.ns-info {
+.ns-info,
+.ns-twitter,
+.ns-facebook,
+.ns-instagram {
   position: absolute;
   right: 10px;
   z-index: 1500;
@@ -637,13 +647,26 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   border-radius: 3px; }
 
 .ns-info {
-  top: 60px;
+  top: 55px;
   border-radius: 50%; }
 
 .ns-info:hover {
   height: 30px;
   width: 30px;
   background-color: #CACACC;
+  border-radius: 50%; }
+
+.ns-twitter {
+  top: 220px;
+  border-radius: 50%; }
+
+.ns-facebook {
+  top: 275px;
+  border-radius: 50%; }
+
+.ns-instagram {
+  top: 330px;
+  z-index: 10000;
   border-radius: 50%; }
 
 .ns-navclose {
@@ -847,13 +870,13 @@ html, body {
 
 .fp-controlArrow.fp-next {
   right: 15px;
-  top: 150px;
+  top: 145px;
   border-width: 15px 0 15px 20px;
   border-color: transparent transparent transparent #C70025; }
 
 .fp-controlArrow.fp-prev {
   right: 15px;
-  top: 200px;
+  top: 195px;
   width: 0;
   border-width: 15px 20px 15px 0;
   border-color: transparent #C70025 transparent transparent; }

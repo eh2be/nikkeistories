@@ -82,6 +82,12 @@ a:focus {
   outline: none;
 }
 
+.ns-sponsor-logo {
+  position: absolute; /* or fixed */
+  left: 50%;
+  background-color: transparent;
+  margin-left: -216px;
+}
 
 // Bootstrap Contact Form
 .header {
@@ -109,6 +115,7 @@ a:focus {
   margin-left: -150px;
   // transform: translate(-50%, 0%);
 }
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -258,7 +265,7 @@ max-width: none;
 }
 
 #ns-video-text {
-  margin: 15px 0 -150px 0;
+  margin: 15px 0 -5px 0;
   font-size: 1.5em;
 }
 
@@ -279,7 +286,10 @@ max-width: none;
 }
 
 .ns-navopen,
-.ns-info {
+.ns-info,
+.ns-twitter,
+.ns-facebook,
+.ns-instagram {
   position: absolute;
   right: 10px;
   z-index: 1500;
@@ -299,13 +309,28 @@ max-width: none;
   border-radius: 3px;
 }
 .ns-info {
-  top: 60px;
+  top: 55px;
   border-radius: 50%;
 }
 .ns-info:hover {
   height: 30px;
   width: 30px;
   background-color: #CACACC;
+  border-radius: 50%;
+}
+.ns-twitter {
+  top: 220px;
+  // z-index: 4000;
+  border-radius: 50%;
+}
+.ns-facebook {
+  top: 275px;
+  border-radius: 50%;
+}
+.ns-instagram {
+  top: 330px;
+  // bottom: 30px; // bottom is hidden for some reason.
+  z-index: 10000;
   border-radius: 50%;
 }
 .ns-navclose {
@@ -529,13 +554,13 @@ html, body {
 }
 .fp-controlArrow.fp-next {
     right: 15px;
-    top: 150px;
+    top: 145px;
     border-width: 15px 0 15px 20px;
     border-color: transparent transparent transparent #C70025;
 }
 .fp-controlArrow.fp-prev {
     right: 15px;
-    top: 200px;
+    top: 195px;
     width: 0;
     border-width: 15px 20px 15px 0;
     border-color: transparent #C70025 transparent transparent;

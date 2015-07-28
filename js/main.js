@@ -9,7 +9,7 @@ $(document).ready(function() {
     // Design
     verticalCentered: false,
     resize: false,
-    anchors: ['home', 'videos', 'maps', 'chronology', 'contact', 'credits'],
+    anchors: ['home', 'videos', 'maps', 'chronology', 'credits'],
     // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
     touchSensitivity: 5, //test this
     
@@ -660,7 +660,7 @@ function drop() {
 
 // vegas plugin slideshow
   $('#landing').vegas({
-    delay: 12000,
+    delay: 6000,
     slides: [
         { src: '/assets/Photos/BG_2010-80-2-64.jpg' },
         { src: '/assets/Photos/BG_CRA_2009-16-111.jpg' },
@@ -745,4 +745,5 @@ $(window).load(function(){
       };
     }
 });
+
 
