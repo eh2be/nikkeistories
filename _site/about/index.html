@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <title>About</title>
   <meta name="description" content="Nikkei Stories is an interactive film project that chronicles the history of the Japanese diaspora around the world. The first two phases will be about Nikkei in Vancouver and Steveston, Canada and will be launching in Spring 2015. Stay tuned. 
@@ -13,98 +13,9 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://nikkeistories.com/about/">
   <link rel="alternate" type="application/atom+xml" title="Nikkei Stories 日系物語" href="http://nikkeistories.com/feed.xml" />
-<!--
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.css"/>
--->
 
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="css/examples.css" />
-  <style>
-
-  /* Style for our header texts
-  * --------------------------------------- */
-  h1{
-    font-size: 5em;
-    font-family: arial,helvetica;
-    color: #fff;
-    margin:0;
-    padding:0;
-  }
-
-  /* Centered texts in each section
-  * --------------------------------------- */
-  .section{
-    text-align:center;
-  }
-
-
-  /* Backgrounds will cover all the section
-  * --------------------------------------- */
-  #section0,
-  #section1,
-  #section2,
-  #section3,
-  #section4,
-  #section5,
-  #section6{
-    background-size: cover;
-  }
-
-  /* Defining each section background and styles
-  * --------------------------------------- */
-  #section0{
-    background-image: url(imgs/bg1.jpg);
-    background-color: #E37882;
-    padding: 30% 0 0 0;
-  }
-  #section2{
-    background-image: url(imgs/bg3.jpg);
-    background-color: #F3CEC8;
-    padding: 6% 0 0 0;
-  }
-  #section3{
-    background-image: url(imgs/bg4.jpg);
-    background-color: #DEC575;    
-    padding: 6% 0 0 0;
-  }
-  #section4{
-    background-image: url(imgs/bg4.jpg);
-    background-color: #C70025;    
-    padding: 6% 0 0 0;
-  }
-  #section5{
-    background-image: url(imgs/bg4.jpg);
-    background-color: #000005;    
-    padding: 6% 0 0 0;
-  }
-  #section6{
-    background-image: url(imgs/bg4.jpg);
-    background-color: #68A68A;    
-    padding: 6% 0 0 0;
-  }
-  #section3 h1{
-    color: #000;
-  }
-
-
-  /*Adding background for the slides
-  * --------------------------------------- */
-  #slide1{
-    background-image: url(imgs/bg2.jpg);
-    padding: 6% 0 0 0;
-  }
-  #slide2{
-    background-image: url(imgs/bg5.jpg);
-    padding: 6% 0 0 0;
-  }
-
-
-  /* Bottom menu
-  * --------------------------------------- */
-  #infoMenu li a {
-    color: #fff;
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -112,10 +23,12 @@
     </script>
   <![endif]-->
 
+
 </head>
 
 
   <body class="ns-background">
+    <div class="se-pre-con"></div> <!-- preloader -->
     <div >
       <div class="post">
 
@@ -136,11 +49,43 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 
     </div>
 
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.fullpage/2.5.0/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="js/examples.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHhp-J2jqYmGiMNPYd_gX1prDjqoVp2Pc"></script>
+    <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/fresco/fresco.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/vegas/vegas.min.js"></script>
+    <script type="text/javascript" src="js/scotchPanels.js"></script>
+    <script type="text/javascript" src="js/main.js" async></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+    <script>
+      $('#myForm')
+        .on('invalid', function () {
+          var invalid_fields = $(this).find('[data-invalid]');
+          console.log(invalid_fields);
+        })
+        .on('valid', function () {
+          console.log('valid!');
+        });   
+    </script>
+
+<!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-63956820-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
 
   </body>
 

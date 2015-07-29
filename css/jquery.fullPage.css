@@ -13,6 +13,7 @@ html, body {
     /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
 #superContainer {
     height: 100%;
     position: relative;
@@ -62,23 +63,59 @@ html, body {
 .fp-controlArrow {
     position: absolute;
     z-index: 4;
-    top: 50%;
     cursor: pointer;
     width: 0;
     height: 0;
     border-style: solid;
     margin-top: -38px;
-}
-.fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    transition: all 0.5s ease;
 }
 .fp-controlArrow.fp-next {
-    right: 50px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    right: 15px;
+    top: 150px;
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #C70025;
+}
+.fp-controlArrow.fp-prev {
+    right: 15px;
+    top: 200px;
+    width: 0;
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #C70025 transparent transparent;
+}
+/*GM* START */
+.fp-controlArrow.fp-up {
+    right: 15px;
+    top: 250px;
+    width: 0;
+    border-width: 0px 15px 15px 20px;
+    border-color: transparent #C70025 transparent transparent;
+}
+.fp-upArrow {
+    position: absolute;
+    z-index: 10000;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    transition: all 0.5s ease;
+    right: 15px;
+    top: 250px;
+    width: 0;
+    border-width: 0px 15px 15px 20px;
+    border-color: transparent #C70025 transparent transparent;
+}
+.fp-controlArrow.fp-down {
+    right: 15px;
+    top: 250px;
+    width: 0;
+    border-width: 20px 15px 0px 15px;
+    border-color: transparent #C70025 transparent transparent;
+}
+/*GM END*/
+.fp-controlArrow:hover {
+    background-color: #CACACC;
 }
 .fp-scrollable {
     overflow: scroll;
@@ -88,13 +125,18 @@ html, body {
     -webkit-transition: none !important;
     transition: none !important;
 }
-#fp-nav {
+
+/*GM Vertical nav dots*/
+/*@media screen and  (min-width: 992px) {*/
+  #fp-nav {
     position: fixed;
-    z-index: 100;
+    z-index: 1000; /* GM */
     margin-top: -32px;
     top: 50%;
     opacity: 1;
+  /*}*/
 }
+
 #fp-nav.right {
     right: 17px;
 }
@@ -103,16 +145,19 @@ html, body {
 }
 .fp-slidesNav{
     position: absolute;
-    z-index: 4;
+    z-index: 1000; /* GM */
     left: 50%;
     opacity: 1;
 }
+
 .fp-slidesNav.bottom {
     bottom: 17px;
 }
 .fp-slidesNav.top {
     top: 17px;
 }
+
+
 #fp-nav ul,
 .fp-slidesNav ul {
   margin: 0;
@@ -122,7 +167,7 @@ html, body {
 .fp-slidesNav ul li {
     display: block;
     width: 14px;
-    height: 13px;
+    height: 10px; /* GM vertical spacing of the dots */
     margin: 7px;
     position:relative;
 }
@@ -131,52 +176,73 @@ html, body {
 }
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
-    display: block;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    text-decoration: none;
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
 }
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span {
-    background: #333;
+  background: #C70025;
 }
+
+/*GM this is the dots for nav both horizontal and vertical */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    top: 2px;
-    left: 2px;
-    width: 8px;
-    height: 8px;
-    border: 1px solid #000;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #C70025;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
 }
+
 #fp-nav ul li .fp-tooltip {
-    position: absolute;
-    top: -2px;
-    color: #fff;
-    font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
-    white-space: nowrap;
-    max-width: 220px;
-    overflow: hidden;
-    display: block;
-    opacity: 0;
-    width: 0;
+  position: absolute;
+  top: -6px;
+  color: #000005;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  width: 0;
 }
-#fp-nav ul li:hover .fp-tooltip {
+
+/* GM this is to show tooltips on hover only*/
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
     -webkit-transition: opacity 0.2s ease-in;
     transition: opacity 0.2s ease-in;
     width: auto;
     opacity: 1;
 }
+
+
+#fp-nav ul li .fp-tooltip {
+  width: auto;
+  opacity: 1;
+}
+
 #fp-nav ul li .fp-tooltip.right {
-    right: 20px;
+  right: 20px;
 }
 #fp-nav ul li .fp-tooltip.left {
-    left: 20px;
+  left: 20px;
 }
+
+
+
+
+
+
+

@@ -1,2 +1,5 @@
 _site
 .sass-cache
+feed.xml
+fullpage.js
+jInvertScroll
