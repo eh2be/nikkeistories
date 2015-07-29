@@ -248,67 +248,67 @@ $(document).ready(function() {
       icon: "/assets/10_Redress_32.png"
     });
 
-    // Steveston Option B Marker Settings
-    var markerSteveston01HommaB = new google.maps.Marker({
-      position: {lat: 49.1252888, lng: -123.18320},
-      map: mapStevestonB,
-      title: "Tomekichi Homma",
-      icon: "/assets/01SE_32.png"
-    });
-    var markerSteveston02FirstImmigrantsB = new google.maps.Marker({
-      position: {lat: 49.124208, lng: -123.18410},
-      map: mapStevestonB,
-      title: "First Immigrants",
-      icon: "/assets/2_Women_32.png"
-    });
-    var markerSteveston03RintaroHayashiB = new google.maps.Marker({
-      position: {lat: 49.124572, lng: -123.18530},
-      map: mapStevestonB,
-      title: "Rintaro Hayashi",
-      icon: "/assets/03SW_32.png"
-    });
-    var markerSteveston04WomenAtWorkB = new google.maps.Marker({
-      position: {lat: 49.125129, lng: -123.1861},
-      map: mapStevestonB,
-      title: "Women at Work",
-      icon: "/assets/04SE_32.png"
-    });
-    var markerSteveston05BoatBuildersB = new google.maps.Marker({
-      position: {lat: 49.120806, lng: -123.169433},
-      map: mapStevestonB,
-      title: "Boat Builders",
-      icon: "/assets/8_Morii_32.png"
-    });
-    var markerSteveston06CreatingCommunityB = new google.maps.Marker({
-      position: {lat: 49.126630, lng: -123.18075},
-      map: mapStevestonB,
-      title: "Creating Community",
-      icon: "/assets/5_Internment_32.png"
-    });
-    var markerSteveston07HideHyodoShimizuB = new google.maps.Marker({
-      position: {lat: 49.126630, lng: -123.179855},
-      map: mapStevestonB,
-      title: "Hide Hyodo Shimizu",
-      icon: "/assets/6_Shoyama_32.png"
-    });
-    var markerSteveston08MartialArtsB = new google.maps.Marker({
-      position: {lat: 49.1252888, lng: -123.177086},
-      map: mapStevestonB,
-      title: "Martial Arts",
-      icon: "/assets/07SW_32.png"
-    });
-    var markerSteveston09InternmentB = new google.maps.Marker({
-      position: {lat: 49.1252888, lng: -123.18063},
-      map: mapStevestonB,
-      title: "Internment",
-      icon: "/assets/9_JLS_32.png"
-    });
-    var markerSteveston10BackToStevestonB = new google.maps.Marker({
-      position: {lat: 49.1252888, lng: -123.18225},
-      map: mapStevestonB,
-      title: "Back to Steveston",
-      icon: "/assets/10_Redress_32.png"
-    });
+    // Steveston Option B Marker Settings UNCOMMENT FOR STEVESTON
+    // var markerSteveston01HommaB = new google.maps.Marker({
+    //   position: {lat: 49.1252888, lng: -123.18320},
+    //   map: mapStevestonB,
+    //   title: "Tomekichi Homma",
+    //   icon: "/assets/01SE_32.png"
+    // });
+    // var markerSteveston02FirstImmigrantsB = new google.maps.Marker({
+    //   position: {lat: 49.124208, lng: -123.18410},
+    //   map: mapStevestonB,
+    //   title: "First Immigrants",
+    //   icon: "/assets/2_Women_32.png"
+    // });
+    // var markerSteveston03RintaroHayashiB = new google.maps.Marker({
+    //   position: {lat: 49.124572, lng: -123.18530},
+    //   map: mapStevestonB,
+    //   title: "Rintaro Hayashi",
+    //   icon: "/assets/03SW_32.png"
+    // });
+    // var markerSteveston04WomenAtWorkB = new google.maps.Marker({
+    //   position: {lat: 49.125129, lng: -123.1861},
+    //   map: mapStevestonB,
+    //   title: "Women at Work",
+    //   icon: "/assets/04SE_32.png"
+    // });
+    // var markerSteveston05BoatBuildersB = new google.maps.Marker({
+    //   position: {lat: 49.120806, lng: -123.169433},
+    //   map: mapStevestonB,
+    //   title: "Boat Builders",
+    //   icon: "/assets/8_Morii_32.png"
+    // });
+    // var markerSteveston06CreatingCommunityB = new google.maps.Marker({
+    //   position: {lat: 49.126630, lng: -123.18075},
+    //   map: mapStevestonB,
+    //   title: "Creating Community",
+    //   icon: "/assets/5_Internment_32.png"
+    // });
+    // var markerSteveston07HideHyodoShimizuB = new google.maps.Marker({
+    //   position: {lat: 49.126630, lng: -123.179855},
+    //   map: mapStevestonB,
+    //   title: "Hide Hyodo Shimizu",
+    //   icon: "/assets/6_Shoyama_32.png"
+    // });
+    // var markerSteveston08MartialArtsB = new google.maps.Marker({
+    //   position: {lat: 49.1252888, lng: -123.177086},
+    //   map: mapStevestonB,
+    //   title: "Martial Arts",
+    //   icon: "/assets/07SW_32.png"
+    // });
+    // var markerSteveston09InternmentB = new google.maps.Marker({
+    //   position: {lat: 49.1252888, lng: -123.18063},
+    //   map: mapStevestonB,
+    //   title: "Internment",
+    //   icon: "/assets/9_JLS_32.png"
+    // });
+    // var markerSteveston10BackToStevestonB = new google.maps.Marker({
+    //   position: {lat: 49.1252888, lng: -123.18225},
+    //   map: mapStevestonB,
+    //   title: "Back to Steveston",
+    //   icon: "/assets/10_Redress_32.png"
+    // });
 
 
 
@@ -316,50 +316,50 @@ $(document).ready(function() {
 //    INFOWINDOW START
 
     // var contentString1 = '<a href="http://vimeo.com/32071937" class="video-link" style="outline:none"><div class="ns-th-video"><img src="/assets/ns-thumb-01.jpg"><h2 style="color:white;">01</h2></div></a>';
-    var contentString1 = '<img src="/assets/1_FirstImmigrants_150.jpg" id="Powell-01">';
-    var contentString2 = '<img src="/assets/2_Women_150.jpg">';
-    var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
-    var contentString4 = '<img src="/assets/4_Mitsui_150.jpg">';
-    var contentString5 = '<img src="/assets/5_Internment_150.jpg">';
-    var contentString6 = '<img src="/assets/6_Shoyama_150.jpg">';
-    var contentString7 = '<img src="/assets/7_Asahi_150.jpg">';
-    var contentString8 = '<img src="/assets/8_Morii_150.jpg">';
-    var contentString9 = '<img src="/assets/9_JLS_150.jpg">';
-    var contentString10 = '<img src="/assets/10_Redress_150.jpg">';
+    // var contentString1 = '<img src="/assets/1_FirstImmigrants_150.jpg" id="Powell-01">';
+    // var contentString2 = '<img src="/assets/2_Women_150.jpg">';
+    // var contentString3 = '<img src="/assets/3_Maikawa_150.jpg">';
+    // var contentString4 = '<img src="/assets/4_Mitsui_150.jpg">';
+    // var contentString5 = '<img src="/assets/5_Internment_150.jpg">';
+    // var contentString6 = '<img src="/assets/6_Shoyama_150.jpg">';
+    // var contentString7 = '<img src="/assets/7_Asahi_150.jpg">';
+    // var contentString8 = '<img src="/assets/8_Morii_150.jpg">';
+    // var contentString9 = '<img src="/assets/9_JLS_150.jpg">';
+    // var contentString10 = '<img src="/assets/10_Redress_150.jpg">';
 
-    var infowindow1 = new google.maps.InfoWindow({
-      content: contentString1
-    });
-    var infowindow2 = new google.maps.InfoWindow({
-      content: contentString2 
-    });
-    var infowindow3 = new google.maps.InfoWindow({
-      content: contentString3
-    });
-    var infowindow4 = new google.maps.InfoWindow({
-      content: contentString4
-    });
-    var infowindow5 = new google.maps.InfoWindow({
-      content: contentString5
-    });
-    var infowindow6 = new google.maps.InfoWindow({
-      content: contentString6
-    });
-    var infowindow7 = new google.maps.InfoWindow({
-      content: contentString7
-    });
-    var infowindow8 = new google.maps.InfoWindow({
-      content: contentString8
-    });    
-    var infowindow9 = new google.maps.InfoWindow({
-      content: contentString9
-    });
-    var infowindow10 = new google.maps.InfoWindow({
-      content: contentString10
-    });
+    // var infowindow1 = new google.maps.InfoWindow({
+    //   content: contentString1
+    // });
+    // var infowindow2 = new google.maps.InfoWindow({
+    //   content: contentString2 
+    // });
+    // var infowindow3 = new google.maps.InfoWindow({
+    //   content: contentString3
+    // });
+    // var infowindow4 = new google.maps.InfoWindow({
+    //   content: contentString4
+    // });
+    // var infowindow5 = new google.maps.InfoWindow({
+    //   content: contentString5
+    // });
+    // var infowindow6 = new google.maps.InfoWindow({
+    //   content: contentString6
+    // });
+    // var infowindow7 = new google.maps.InfoWindow({
+    //   content: contentString7
+    // });
+    // var infowindow8 = new google.maps.InfoWindow({
+    //   content: contentString8
+    // });    
+    // var infowindow9 = new google.maps.InfoWindow({
+    //   content: contentString9
+    // });
+    // var infowindow10 = new google.maps.InfoWindow({
+    //   content: contentString10
+    // });
 
     google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
-      // infowindow1.open(map,this);
+      // infowindow1.open(mapPowellStreet,this);
       Fresco.show({
         url: 'https://vimeo.com/126504239',
         options: {
@@ -449,7 +449,6 @@ $(document).ready(function() {
       });
     });  
 
-
     //INFOWINDOW END
 
 
@@ -475,13 +474,10 @@ $(document).ready(function() {
     });
     // END geolocation
 
-  };
-
-
-
-
-
+  }; // end intialize
   google.maps.event.addDomListener(window, 'load', initialize);
+
+
 
 // function drop() {
 //   for (var i = 0; i < neighborhoods.length; i++) {
