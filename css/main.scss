@@ -83,10 +83,14 @@ a:focus {
 }
 
 .ns-sponsor-logo {
-  position: absolute; /* or fixed */
-  left: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: transparent;
-  margin-left: -216px;
+}
+
+.ns-acknowledgement {
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 // Bootstrap Contact Form
@@ -287,9 +291,15 @@ max-width: none;
 
 .ns-credit-wrapper {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 150px;
   max-width: 660px;
 }
+
+.ns-credit {
+  padding-top: 10 px;
+  padding-bottom: 15px;
+}
+
 
 .ns-navopen,
 .ns-info,
@@ -336,7 +346,6 @@ max-width: none;
 .ns-instagram {
   top: 330px;
   // bottom: 30px; // bottom is hidden for some reason.
-  z-index: 10000;
   border-radius: 50%;
 }
 .ns-navclose {
@@ -2442,5 +2451,21 @@ body.vegas-container {
     }
 }
 
+
+// PRELOADER http://smallenvelop.com/display-loading-icon-page-loads-completely/
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(/assets/preloader.gif) center no-repeat #000;
+}
 
 

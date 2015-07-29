@@ -483,13 +483,13 @@ $(document).ready(function() {
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
-function drop() {
-  for (var i = 0; i < neighborhoods.length; i++) {
-    setTimeout(function() {
-      addMarker();
-    }, i * 200);
-  }
-}
+// function drop() {
+//   for (var i = 0; i < neighborhoods.length; i++) {
+//     setTimeout(function() {
+//       addMarker();
+//     }, i * 200);
+//   }
+// }
 
 
 // END Google Maps API
@@ -600,6 +600,10 @@ function drop() {
 //IGOR
 //Had to move it to onLoad event cause otherwise Fresco didn't initialize properly and put background on foreground
 $(window).load(function(){
+
+    // PRELOADER Animate loader off screen  
+    $(".se-pre-con").fadeOut("slow");
+
     //Checking if there's anything in the hash at all
     if (window.location.hash) {
       var hash = window.location.hash;
@@ -612,5 +616,7 @@ $(window).load(function(){
       };
     }
 });
+
+
 
 
