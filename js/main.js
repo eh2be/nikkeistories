@@ -7,7 +7,7 @@ $(document).ready(function() {
     resize: false,
     anchors: ['home', 'videos', 'maps', 'chronology', 'credits'],
     // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
-    touchSensitivity: 5, //test this
+    touchSensitivity: 20, //test this
     
     // Navigation //
     // menu: '#menu',
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
   function initialize() {
 // Powell Street MAP
-// var centerPowellStreet = new google.maps.LatLng(49.2827812,-123.0958854); // Powell Street Center
+    // var centerPowellStreet = new google.maps.LatLng(49.2827812,-123.0958854); // Powell Street Center
  
     var optionsPowellSt = {
       streetViewControl: false,
@@ -49,10 +49,12 @@ $(document).ready(function() {
       // mapTypeId: google.maps.MapTypeId.HYBRID,
       zoom: 18,
 
+      // turn off points of interest on underlying map
+      styles: [{ featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }]}], 
       // center: centerPowellStreet,
       disableDefaultUI: true,
       mapTypeControl: false,
-      panControl: true,
+      panControl: false,
       panControlOptions: {
         position: google.maps.ControlPosition.LEFT_BOTTOM
       },
@@ -62,8 +64,8 @@ $(document).ready(function() {
         position: google.maps.ControlPosition.LEFT_BOTTOM
       },
       scrollwheel: false,
-      scaleControl: true,
-      draggable: false,
+      scaleControl: false,
+      draggable: true,
       disableDoubleClickZoom: true,
     };
 
@@ -356,6 +358,10 @@ $(document).ready(function() {
     // });
     // var infowindow10 = new google.maps.InfoWindow({
     //   content: contentString10
+    // });
+
+    // google.maps.event.addListener('#map-canvas', 'click', function() {
+    //   map.panTo({lat: 15, lng: -15});
     // });
 
     google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {

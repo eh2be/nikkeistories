@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400italic);
-@import url(http://fonts.googleapis.com/css?family=Slabo+13px);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 p {
   font-size: 1.5em; }
 
@@ -630,9 +629,16 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
   padding-bottom: 150px;
   max-width: 660px; }
 
+#ns-lower-credit-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px; }
+
 .ns-credit {
-  padding-top: 10 px;
-  padding-bottom: 15px; }
+  padding: 10px 0 10px 0; }
+
+.ns-credit2 {
+  padding: 70px 0 10px 0; }
 
 .ns-navopen,
 .ns-info,

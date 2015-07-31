@@ -12,10 +12,10 @@
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://nikkeistories.com/">
-  <link rel="alternate" type="application/atom+xml" title="Nikkei Stories 日系物語" href="http://nikkeistories.com/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Nikkei Stories 日系物語" href="http://nikkeistories.com/feed.xml">
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -800,7 +800,7 @@
         <div class="row" id="ns-chrono-header-5">
           <h1><strong>CREDITS</strong></h1>
         </div>
-        <div class="row ns-credit">
+        <div class="row ns-credit2">
           <p>
             <h2>Writer / Director</h2>
           </p>
@@ -867,20 +867,56 @@
             Jeff Yellen
           </p>
         </div>
+        <div class="row ns-credit">
+          <h2>Social Media Consultant</h2>
+          <p>
+            Lisa Uyeda
+          </p>
+        </div>
+        <div class="row ns-credit">
+          <h2>Study Guide</h2>
+          <p>
+            Naomi Horii
+          </p>
+        </div>
         <div class="row ns-credit">            
           <h2>Archival Film and Photographs</h2>
           <p>
-            Tamio Wakayama / 
+            Bazil Izumi / 
             BC Archives / 
+            BC Sports Hall of Fame / 
             City of Vancouver Archives / 
             City of Richmond Archives / 
-            Cumberland Museum / 
+            Clive Cocking / 
+            Cumberland Museum /
+            Dave Mitsui / 
+            Glenbow Archives / 
+            Greg Masuda / 
+            Gulf of Georgia Cannery Society Archives / 
+            Hayashi Family / 
+            Homma Family / 
+            John Flanders / 
             Langham Cultural Society &
             Kootenay Lake Historical Society / 
+            Kishi Family / 
             Library and Archives Canada / 
+            Maikawa Family / 
+            Michael Bedford / 
+            Miki Family / 
+            Mukai Family / 
+            New Westminster Archives / 
+            Nikkei National Museum / 
+            Rumi Sasaki / 
+            Saskatchewan Archives Board / 
+            Tamio Wakayama / 
+            Tomio Baba Family / 
+            The Canadian Press / 
+            The Thomas Fisher Rare Book Library, University of Toronto / 
+            UBC Library-Rare Books and Special Collections / 
+            UBC-University Archives / 
+            Vancouver Maritime Museum / 
             Vancouver Public Library / 
-            Vancouver Sun /
-            Greg Masuda
+            Vancouver Sun
           </p>
         </div>
         <div class="row ns-credit">            
@@ -888,17 +924,31 @@
           <p>
             Wendy Au / 
             Linda Barnes / 
+            Connie Baxter / 
             Beth Carter / 
+            Owen Cameron / 
             Keith Fedoruk / 
+            Robin Folvik / 
             Ian Fraser / 
-            Paul Hedren / 
-            Kelvin Higo / 
+            Linda Hay / 
+            Paul Hendren / 
+            Kelvin and Kay Higo / 
+            Sheila Hill /  
             Tenney Homma / 
+            Grant Ikuta / 
             Leslie Irie / 
+            Glenn Kishi / 
             Kristen Lambertson / 
+            Krisztina Laszlo / 
+            Brooke Lees / 
+            Bill McMichael / 
+            Don Mukai / 
+            Bill McNulty / 
+            Emiko Morita / 
             Consul General Seiji Okada / 
             Bill Purver / 
             Heidi Rampfl / 
+            Kate Russell / 
             Alan Sakai / 
             Loren Slye / 
             Harold Steeves / 
@@ -906,23 +956,32 @@
             Mitsuo Yesaki
           </p>
         </div>
-        <div class="row ns-credit">
-          <h2>Produced by</h2>
-          <p>
-            Orbit Films Inc.
-          </p>
-        </div>
-        <div class="row ns-credit">
-          <p>with the support of</p>
-          <div class="ns-sponsor-logo">
-            <img src="/assets/Logo-Telus_216.png">
-            <img src="/assets/Logo-CoV_216.png">
+        
+        <div id="ns-lower-credit-container">
+          <div class="row ns-credit2">
+            <p>Nikkei Stories is made possible with a grant from the TELUS Optik Local Community Programming and is available for free on demand on TELUS Optik TV</p>
+            <div class="ns-sponsor-logo">
+              <img src="/assets/Logo-Telus_279.png">
+            </div>
           </div>
-        </div>
-        <div class="row ns-credit ns-acknowledgement">
-          <h2>
-            The areas of Powell Street and Steveston, where the Japanese Canadian communities featured in this project once existed, are located on the unceded lands of the Coast Salish people.
-          </h2>
+          <div class="row ns-credit2">
+            <p>and by</p>
+            <p>The City of Vancouver - Great Beginnings Program</p>
+            <div class="ns-sponsor-logo"> 
+              <img src="/assets/Logo-CoV_216.png">
+            </div>
+          </div>
+          <div class="row ns-credit2">
+            <h2>Produced by</h2>
+            <p>
+              Orbit Films Inc.
+            </p>
+          </div>
+          <div class="row ns-credit2 ns-acknowledgement">
+            <p>
+              The stories featured in Nikkei Stories were produced on the unceded lands of the Musqueum, Squamish, and Tsleil-Waututh First Nations.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -984,8 +1043,10 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHhp-J2jqYmGiMNPYd_gX1prDjqoVp2Pc"></script>
     <script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="js/fresco/fresco.js"></script>
+
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+<!--    <script src="http://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script> DO NOT USE - CDN Messes up fullpage swipes when on map page -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/vegas/vegas.min.js"></script>
     <script type="text/javascript" src="js/scotchPanels.js"></script>
     <script type="text/javascript" src="js/main.js" async></script>

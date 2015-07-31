@@ -130,9 +130,7 @@ a:focus {
 ;
 
 // Import Google Fonts
-@import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400italic);
-@import url(http://fonts.googleapis.com/css?family=Slabo+13px);
-
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 // Google Maps API
 #map-canvas,
@@ -295,11 +293,19 @@ max-width: none;
   max-width: 660px;
 }
 
-.ns-credit {
-  padding-top: 10 px;
-  padding-bottom: 15px;
+#ns-lower-credit-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
 }
 
+.ns-credit {
+  padding: 10px 0 10px 0;
+}
+
+.ns-credit2 {
+  padding: 70px 0 10px 0;
+}
 
 .ns-navopen,
 .ns-info,
