@@ -104,7 +104,7 @@ $(document).ready(function() {
             proj.fromPointToLatLng(new google.maps.Point((coord.x + 1) * tileXSize, coord.y * tileYSize))
           );
           if (!mapBounds.intersects(tileBounds) || zoom < mapMinZoom || zoom > mapMaxZoom) return null;
-          return "{z}/{x}/{y}.png".replace('{z}',zoom).replace('{x}',coord.x).replace('{y}',coord.y);
+          return "/assets/map-powellstreet/{z}/{x}/{y}.png".replace('{z}',zoom).replace('{x}',coord.x).replace('{y}',coord.y);
         },
         tileSize: new google.maps.Size(256, 256),
         minZoom: mapMinZoom,
@@ -119,36 +119,50 @@ $(document).ready(function() {
 
 // Maptiler Steveston
 
-    // var mapBounds3 = new google.maps.LatLngBounds(
-    //         new google.maps.LatLng(49.11761504, -123.19478366),
-    //         new google.maps.LatLng(49.13018637, -123.16049511));
-    //     var mapMinZoom2 = 13;
-    //     var mapMaxZoom2 = 18;
+        var mapBoundsSteveston = new google.maps.LatLngBounds(
+            new google.maps.LatLng(49.11765444, -123.19464336),
+            new google.maps.LatLng(49.13023623, -123.16053058));
+        var mapMinZoom2 = 13;
+        var mapMaxZoom2 = 21;
 
-    //     var map = new google.maps.Map(document.getElementById("map-canvas-StevestonB"), optionsStevestonB);
+        // var map = new google.maps.Map(document.getElementById("map-canvas-StevestonB"), optionsStevestonB);
+        var mapStevestonB = new google.maps.Map(document.getElementById('map-canvas-StevestonB'), optionsStevestonB); // Steveston Map
+ 
+        // https://developers.google.com/maps/documentation/javascript/examples/maptype-image-overlay
+        var imageMapTypeSteveston = new google.maps.ImageMapType({
+            getTileUrl: function(coord, zoom) {
+              var proj = mapStevestonB.getProjection();
+              var z2 = Math.pow(2, zoom);
+              var tileXSize = 256 / z2;
+              var tileYSize = 256 / z2;
+              var tileBoundsSteveston = new google.maps.LatLngBounds(
+                proj.fromPointToLatLng(new google.maps.Point(coord.x * tileXSize, (coord.y + 1) * tileYSize)),
+                proj.fromPointToLatLng(new google.maps.Point((coord.x + 1) * tileXSize, coord.y * tileYSize))
+              );
+              if (!mapBoundsSteveston.intersects(tileBoundsSteveston) || zoom < mapMinZoom2 || zoom > mapMaxZoom2) return null;
+              return "/assets/map-steveston/{z}/{x}/{y}.png".replace('{z}',zoom).replace('{x}',coord.x).replace('{y}',coord.y);
+            },
+            tileSize: new google.maps.Size(256, 256),
+            minZoom: mapMinZoom2,
+            maxZoom: mapMaxZoom2,
+            name: 'Tiles'
+        });
+
+        mapStevestonB.overlayMapTypes.push(imageMapTypeSteveston);
+        mapStevestonB.fitBounds(mapBoundsSteveston);
+
+
+
+
         
-    //     // https://developers.google.com/maps/documentation/javascript/examples/maptype-image-overlay
-    //     var imageMapType2 = new google.maps.ImageMapType({
-    //         getTileUrl: function(coord, zoom) {
-    //           var proj = map.getProjection();
-    //           var z2 = Math.pow(2, zoom);
-    //           var tileXSize = 256 / z2;
-    //           var tileYSize = 256 / z2;
-    //           var tileBounds = new google.maps.LatLngBounds(
-    //             proj.fromPointToLatLng(new google.maps.Point(coord.x * tileXSize, (coord.y + 1) * tileYSize)),
-    //             proj.fromPointToLatLng(new google.maps.Point((coord.x + 1) * tileXSize, coord.y * tileYSize))
-    //           );
-    //           if (!mapBounds.intersects(tileBounds) || zoom < mapMinZoom || zoom > mapMaxZoom) return null;
-    //           return "{z}/{x}/{y}.png".replace('{z}',zoom).replace('{x}',coord.x).replace('{y}',coord.y);
-    //         },
-    //         tileSize: new google.maps.Size(256, 256),
-    //         minZoom: mapMinZoom,
-    //         maxZoom: mapMaxZoom,
-    //         name: 'Tiles'
-    //     });
+        // https://developers.google.com/maps/documentation/javascript/examples/maptype-image-overlay
 
-    //     map.overlayMapTypes.push(imageMapType2);
-    //     map.fitBounds(mapBounds3);
+
+
+
+
+
+
 
 // END Maptiler Steveston
 
@@ -185,7 +199,7 @@ $(document).ready(function() {
 // END UNCOMMENT FOR STEVESTON
 
 // UNCOMMENT for STEVESTON
-    var mapStevestonB = new google.maps.Map(document.getElementById('map-canvas-StevestonB'), optionsStevestonB); // Steveston Map
+    // var mapStevestonB = new google.maps.Map(document.getElementById('map-canvas-StevestonB'), optionsStevestonB); // Steveston Map
 // END UNCOMMENT FOR STEVESTON
 
     // Powell Street Marker Settings
