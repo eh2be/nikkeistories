@@ -251,13 +251,13 @@ $(document).ready(function() {
       icon: "/assets/01SE_32.png"
     });
     var markerSteveston02FirstImmigrantsB = new google.maps.Marker({
-      position: {lat: 49.124208, lng: -123.18410},
+      position: {lat: 49.1243000, lng: -123.18430},
       map: mapStevestonB,
       title: "First Immigrants",
       icon: "/assets/2_Women_32.png"
     });
     var markerSteveston03RintaroHayashiB = new google.maps.Marker({
-      position: {lat: 49.124572, lng: -123.18530},
+      position: {lat: 49.124208, lng: -123.1865},
       map: mapStevestonB,
       title: "Rintaro Hayashi",
       icon: "/assets/03SW_32.png"
@@ -269,16 +269,16 @@ $(document).ready(function() {
       icon: "/assets/04SE_32.png"
     });
     var markerSteveston05HideHyodoShimizuB = new google.maps.Marker({
-      position: {lat: 49.126630, lng: -123.179855},
-      map: mapStevestonB,
-      title: "Hide Hyodo Shimizu",
-      icon: "/assets/6_Shoyama_32.png"
-    });
-    var markerSteveston06CreatingCommunityB = new google.maps.Marker({
       position: {lat: 49.126630, lng: -123.18075},
       map: mapStevestonB,
-      title: "Creating Community",
+      title: "Hide Hyodo Shimizu",
       icon: "/assets/5_Internment_32.png"
+    });
+    var markerSteveston06CreatingCommunityB = new google.maps.Marker({
+      position: {lat: 49.126630, lng: -123.178000},
+      map: mapStevestonB,
+      title: "Creating Community",
+      icon: "/assets/6_Shoyama_32.png"
     });
     var markerSteveston07MartialArtsB = new google.maps.Marker({
       position: {lat: 49.1252888, lng: -123.177086},
@@ -299,7 +299,7 @@ $(document).ready(function() {
       icon: "/assets/9_JLS_32.png"
     });
     var markerSteveston10BackToStevestonB = new google.maps.Marker({
-      position: {lat: 49.1252888, lng: -123.18225},
+      position: {lat: 49.125000, lng: -123.1818000},
       map: mapStevestonB,
       title: "Back to Steveston",
       icon: "/assets/10_Redress_32.png"
@@ -488,7 +488,7 @@ $(document).ready(function() {
     google.maps.event.addListener(markerSteveston05HideHyodoShimizuB, 'click', function() {
       // infowindow5.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/143543292',
+        url: 'https://vimeo.com/143544566',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -497,7 +497,7 @@ $(document).ready(function() {
     google.maps.event.addListener(markerSteveston06CreatingCommunityB, 'click', function() {
       // infowindow6.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/143544566',
+        url: 'https://vimeo.com/143543292',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -533,7 +533,7 @@ $(document).ready(function() {
     google.maps.event.addListener(markerSteveston10BackToStevestonB, 'click', function() {
       // infowindow10.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/',
+        url: 'https://vimeo.com/144525261',
         options: {
           vimeo: { autoplay: 1 }
         }
