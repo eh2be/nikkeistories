@@ -360,7 +360,7 @@ $(document).ready(function() {
     google.maps.event.addListener(marker477PowellSt_Pole754, 'click', function() {
       // infowindow1.open(mapPowellStreet,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504239',
+        url: 'https://vimeo.com/145944762',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -369,7 +369,7 @@ $(document).ready(function() {
     google.maps.event.addListener(marker457PowellSt_Pole554, 'click', function() {
       // infowindow2.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504315',
+        url: 'https://vimeo.com/145944764',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -378,7 +378,7 @@ $(document).ready(function() {
     google.maps.event.addListener(marker369PowellSt_Pole753, 'click', function() {
       // infowindow3.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504240',
+        url: 'https://vimeo.com/145944768',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -387,7 +387,7 @@ $(document).ready(function() {
     google.maps.event.addListener(marker357PowellSt_Pole553, 'click', function() {
       // infowindow4.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504241',
+        url: 'https://vimeo.com/145944771',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -396,7 +396,7 @@ $(document).ready(function() {
     google.maps.event.addListener(marker314PowellSt_Pole153, 'click', function() {
       // infowindow5.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504189',
+        url: 'https://vimeo.com/145944766',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -405,7 +405,7 @@ $(document).ready(function() {
     google.maps.event.addListener(marker394PowellSt_Pole1053, 'click', function() {
       // infowindow6.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504316',
+        url: 'https://vimeo.com/145944770',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -414,7 +414,7 @@ $(document).ready(function() {
     google.maps.event.addListener(markerPowellGrounds_Pole254, 'click', function() {
       // infowindow7.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504187',
+        url: 'https://vimeo.com/145944763',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -423,7 +423,7 @@ $(document).ready(function() {
     google.maps.event.addListener(marker362AlexanderSt_Pole453, 'click', function() {
       // infowindow8.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504186',
+        url: 'https://vimeo.com/145944761',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -432,7 +432,7 @@ $(document).ready(function() {
     google.maps.event.addListener(marker487AlexanderSt_Pole254, 'click', function() {
       // infowindow9.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504188',
+        url: 'https://vimeo.com/145944765',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -441,7 +441,7 @@ $(document).ready(function() {
     google.maps.event.addListener(markerOppenheimerPark_Pole12, 'click', function() {
       // infowindow10.open(map,this);
       Fresco.show({
-        url: 'https://vimeo.com/126504242',
+        url: 'https://vimeo.com/145944772',
         options: {
           vimeo: { autoplay: 1 }
         }
@@ -591,9 +591,13 @@ $(document).ready(function() {
         $(this).removeClass('highlight');
     },
     click: function(){
-        var vimeoId = $(this).data('video');
+       var vimeoId = 'https://vimeo.com/' + $(this).data("video");
+       console.log(vimeoId);
+//        var vimeoId = $(this).attr('data-video');
+//        var vimeoId = https://vimeo.com/126504239;
         Fresco.show({
-            url: 'https://vimeo.com/' + vimeoId,
+//            url: 'https://vimeo.com/' + vimeoId,
+            url: vimeoId,
             options: {
                 vimeo: {autoplay: 1}
             }
