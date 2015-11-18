@@ -293,10 +293,10 @@ $(document).ready(function() {
       icon: "/assets/8_Morii_32.png"
     });
     var markerSteveston09InternmentB = new google.maps.Marker({
-      position: {lat: 49.1252888, lng: -123.18063},
+      position: {lat: 49.1252888, lng: -123.1810000},
       map: mapStevestonB,
       title: "Internment",
-      icon: "/assets/9_JLS_32.png"
+      icon: "/assets/9_SE_32.png"
     });
     var markerSteveston10BackToStevestonB = new google.maps.Marker({
       position: {lat: 49.125000, lng: -123.1818000},
